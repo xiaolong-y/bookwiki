@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Library Index</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@400;700&amp;family=IBM Plex Serif:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="XL's BookWiki"/><meta property="og:title" content="Library Index"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Library Index"/><meta name="twitter:description" content="Library Index All 153 books, alphabetical by author within each topic. Each entry links to the long-form book note."/><meta property="og:description" content="Library Index All 153 books, alphabetical by author within each topic. Each entry links to the long-form book note."/><meta property="og:image:alt" content="Library Index All 153 books, alphabetical by author within each topic. Each entry links to the long-form book note."/><meta property="og:image" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta property="og:image:url" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta name="twitter:image" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="xiaolong-y.github.io/bookwiki"/><meta property="og:url" content="https://xiaolong-y.github.io/bookwiki/00_Index/Library-Index"/><meta property="twitter:url" content="https://xiaolong-y.github.io/bookwiki/00_Index/Library-Index"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Library Index All 153 books, alphabetical by author within each topic. Each entry links to the long-form book note."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvYm9va3dpa2ktdmF1bHQvYm9va3dpa2ktdmF1bHQvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://xiaolong-y.github.io/bookwiki/index.xml"/></head><body data-slug="00_Index/Library-Index"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">XL's BookWiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>{let slug=node?.file?.slug??node?.slug;return!(slug&amp;&amp;slug.startsWith(\&quot;06_Source_Notes\&quot;)||node?.displayName===\&quot;06_Source_Notes\&quot;)}&quot;,&quot;mapFn&quot;:&quot;node=>{let names={\&quot;00_Index\&quot;:\&quot;Indices\&quot;,\&quot;01_Books\&quot;:\&quot;Books\&quot;,\&quot;02_Atomic_Concepts\&quot;:\&quot;Concepts\&quot;,\&quot;03_Arguments\&quot;:\&quot;Arguments\&quot;,\&quot;04_People\&quot;:\&quot;People\&quot;,\&quot;05_Comparative_Maps\&quot;:\&quot;Comparative Maps\&quot;};node?.displayName&amp;&amp;names[node.displayName]&amp;&amp;(node.displayName=names[node.displayName])}&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Browse</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-6" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../00_Index/">00_Index</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Library Index</a></div></nav><h1 class="article-title">Library Index</h1></div></div><article class="popover-hint"><h1 id="library-index">Library Index<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#library-index" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>All <strong>153 books</strong>, alphabetical by author within each topic. Each entry links to the long-form book note.</p>
+<h2 id="computing--ai">Computing &amp; AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#computing--ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>22 books</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Title</th><th>Author</th><th>Year</th></tr></thead><tbody><tr><td><a href="../01_Books/Adnan-Aziz---Elements-of-Programming-Interviews" class="internal alias" data-slug="01_Books/Adnan-Aziz---Elements-of-Programming-Interviews">Elements of Programming Interviews</a></td><td>Adnan Aziz, Tsung-Hsien Lee, Amit Prakash</td><td>2012</td></tr><tr><td><a href="../01_Books/Max-Bennett---A-Brief-History-of-Intelligence" class="internal alias" data-slug="01_Books/Max-Bennett---A-Brief-History-of-Intelligence">A Brief History of Intelligence</a></td><td>Max Bennett</td><td>2023</td></tr><tr><td><a href="../01_Books/Nick-Bostrom---Deep-Utopia" class="internal alias" data-slug="01_Books/Nick-Bostrom---Deep-Utopia">Deep Utopia</a></td><td>Nick Bostrom</td><td>2024</td></tr><tr><td><a href="../01_Books/Kate-Darling---The-New-Breed" class="internal alias" data-slug="01_Books/Kate-Darling---The-New-Breed">The New Breed: What Our History with Animals Reveals about Our Future with Robots</a></td><td>Kate Darling</td><td>2021</td></tr><tr><td><a href="../01_Books/Edsger-W.-Dijkstra---A-Discipline-of-Programming" class="internal alias" data-slug="01_Books/Edsger-W.-Dijkstra---A-Discipline-of-Programming">A Discipline of Programming</a></td><td>Edsger W. Dijkstra</td><td>1976</td></tr><tr><td><a href="../01_Books/Aurélien-Géron---Hands-On-Machine-Learning" class="internal alias" data-slug="01_Books/Aurélien-Géron---Hands-On-Machine-Learning">Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow</a></td><td>Aurélien Géron</td><td>2022</td></tr><tr><td><a href="../01_Books/Licklider---Libraries-of-the-Future" class="internal alias" data-slug="01_Books/Licklider---Libraries-of-the-Future">Libraries of the Future</a></td><td>J.C.R. Licklider</td><td>1965</td></tr><tr><td><a href="../01_Books/Warren-S.-McCulloch---Embodiments-of-Mind" class="internal alias" data-slug="01_Books/Warren-S.-McCulloch---Embodiments-of-Mind">Embodiments of Mind</a></td><td>Warren S. McCulloch</td><td>1965</td></tr><tr><td><a href="../01_Books/Marvin-Minsky---The-Society-of-Mind" class="internal alias" data-slug="01_Books/Marvin-Minsky---The-Society-of-Mind">The Society of Mind</a></td><td>Marvin Minsky</td><td>1986</td></tr><tr><td><a href="../01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines" class="internal alias" data-slug="01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines">Computation - Finite and Infinite Machines</a></td><td>Marvin Lee Minsky</td><td>1967</td></tr><tr><td><a href="../01_Books/Robin-R.-Murphy---Introduction-to-AI-Robotics" class="internal alias" data-slug="01_Books/Robin-R.-Murphy---Introduction-to-AI-Robotics">Introduction to AI Robotics (2nd Edition)</a></td><td>Robin R. Murphy</td><td>2019</td></tr><tr><td><a href="../01_Books/Robert-Nystrom---Crafting-Interpreters" class="internal alias" data-slug="01_Books/Robert-Nystrom---Crafting-Interpreters">Crafting Interpreters</a></td><td>Robert Nystrom</td><td>2021</td></tr><tr><td><a href="../01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons-(1988-reissue)" class="internal alias" data-slug="01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons-(1988-reissue)">Perceptrons (1988 Reissue, Expanded Edition)</a></td><td>Marvin Minsky and Seymour A. Papert</td><td>1988 (revised reissue of 1969 original; this printing carries Bottou’s 2017 foreword)</td></tr><tr><td><a href="../01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons" class="internal alias" data-slug="01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons">Perceptrons — An Introduction to Computational Geometry</a></td><td>Marvin Minsky and Seymour A. Papert</td><td>1969</td></tr><tr><td><a href="../01_Books/Seymour-A-Papert---Mindstorms" class="internal alias" data-slug="01_Books/Seymour-A-Papert---Mindstorms">Mindstorms - Children, Computers, and Powerful Ideas</a></td><td>Seymour A Papert</td><td>1980</td></tr><tr><td><a href="../01_Books/Simon-Prince---Understanding-Deep-Learning" class="internal alias" data-slug="01_Books/Simon-Prince---Understanding-Deep-Learning">Understanding Deep Learning</a></td><td>Simon Prince</td><td>2023</td></tr><tr><td><a href="../01_Books/Luciano-Ramalho---Fluent-Python" class="internal alias" data-slug="01_Books/Luciano-Ramalho---Fluent-Python">Fluent Python</a></td><td>Luciano Ramalho</td><td>2022</td></tr><tr><td><a href="../01_Books/Randal-E.-Bryant-and-David-O'Hallaron---Computer-Systems-A-Programmer's-Perspective" class="internal alias" data-slug="01_Books/Randal-E.-Bryant-and-David-O'Hallaron---Computer-Systems-A-Programmer's-Perspective">Computer Systems — A Programmer’s Perspective</a></td><td>Randal E. Bryant, David R. O’Hallaron</td><td>2015 (3rd edition)</td></tr><tr><td><a href="../01_Books/Marcello-La-Rocca---Grokking-Data-Structures" class="internal alias" data-slug="01_Books/Marcello-La-Rocca---Grokking-Data-Structures">Grokking Data Structures</a></td><td>Marcello La Rocca</td><td>2024</td></tr><tr><td><a href="../01_Books/Stuart-Russell-and-Peter-Norvig---Artificial-Intelligence-A-Modern-Approach" class="internal alias" data-slug="01_Books/Stuart-Russell-and-Peter-Norvig---Artificial-Intelligence-A-Modern-Approach">Artificial Intelligence — A Modern Approach (4th Edition)</a></td><td>Stuart Russell, Peter Norvig</td><td>2021</td></tr><tr><td><a href="../01_Books/Kevin-Werbach---The-Blockchain-and-the-New-Architecture-of-Trust" class="internal alias" data-slug="01_Books/Kevin-Werbach---The-Blockchain-and-the-New-Architecture-of-Trust">The Blockchain and the New Architecture of Trust</a></td><td>Kevin Werbach</td><td>2018</td></tr><tr><td><a href="../01_Books/Primavera-De-Filippi-and-Aaron-Wright---Blockchain-and-the-Law" class="internal alias" data-slug="01_Books/Primavera-De-Filippi-and-Aaron-Wright---Blockchain-and-the-Law">Blockchain and the Law - The Rule of Code</a></td><td>Primavera De Filippi and Aaron Wright</td><td>2018</td></tr></tbody></table></div>
+<h2 id="philosophy--mind">Philosophy &amp; Mind<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#philosophy--mind" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>20 books</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Title</th><th>Author</th><th>Year</th></tr></thead><tbody><tr><td><a href="../01_Books/Alain-de-Botton---Philosophy-in-40-Ideas" class="internal alias" data-slug="01_Books/Alain-de-Botton---Philosophy-in-40-Ideas">Philosophy in 40 Ideas</a></td><td>Alain de Botton, The School of Life</td><td>2017</td></tr><tr><td><a href="../01_Books/Alain-de-Botton---School-of-Life" class="internal alias" data-slug="01_Books/Alain-de-Botton---School-of-Life">How to Think More About Sex (School of Life series)</a></td><td>Alain de Botton</td><td>2012</td></tr><tr><td><a href="../01_Books/Alain-de-Botton---On-Love" class="internal alias" data-slug="01_Books/Alain-de-Botton---On-Love">On Love (Essays in Love)</a></td><td>Alain de Botton</td><td>1993</td></tr><tr><td><a href="../01_Books/Alain-de-Botton---Religion-for-Atheists" class="internal alias" data-slug="01_Books/Alain-de-Botton---Religion-for-Atheists">Religion for Atheists — A Non-believer’s Guide to the Uses of Religion</a></td><td>Alain de Botton</td><td>2012</td></tr><tr><td><a href="../01_Books/Alain-de-Botton---Status-Anxiety" class="internal alias" data-slug="01_Books/Alain-de-Botton---Status-Anxiety">Status Anxiety</a></td><td>Alain de Botton</td><td>2004</td></tr><tr><td><a href="../01_Books/Alain-de-Botton---The-Art-of-Travel" class="internal alias" data-slug="01_Books/Alain-de-Botton---The-Art-of-Travel">The Art of Travel</a></td><td>Alain de Botton</td><td>2002</td></tr><tr><td><a href="../01_Books/Alain-de-Botton---The-Course-of-Love" class="internal alias" data-slug="01_Books/Alain-de-Botton---The-Course-of-Love">The Course of Love</a></td><td>Alain de Botton</td><td>2016</td></tr><tr><td><a href="../01_Books/Lee-Braver---A-Thing-of-This-World" class="internal alias" data-slug="01_Books/Lee-Braver---A-Thing-of-This-World">A Thing of This World — A History of Continental Anti-Realism</a></td><td>Lee Braver</td><td>2007</td></tr><tr><td><a href="../01_Books/Daniel-C.-Dennett---The-Mind's-I" class="internal alias" data-slug="01_Books/Daniel-C.-Dennett---The-Mind's-I">The Mind’s I — Fantasies and Reflections on Self and Soul</a></td><td>Daniel C. Dennett, Douglas R. Hofstadter (eds.)</td><td>1981</td></tr><tr><td><a href="../01_Books/Daniel-C.-Dennett---Brainstorms" class="internal alias" data-slug="01_Books/Daniel-C.-Dennett---Brainstorms">Brainstorms — Philosophical Essays on Mind and Psychology</a></td><td>Daniel C. Dennett</td><td>1978</td></tr><tr><td><a href="../01_Books/Daniel-C.-Dennett---I've-Been-Thinking" class="internal alias" data-slug="01_Books/Daniel-C.-Dennett---I've-Been-Thinking">I’ve Been Thinking</a></td><td>Daniel C. Dennett</td><td>2023</td></tr><tr><td><a href="../01_Books/David-Deutsch---The-Beginning-of-Infinity" class="internal alias" data-slug="01_Books/David-Deutsch---The-Beginning-of-Infinity">The Beginning of Infinity</a></td><td>David Deutsch</td><td>2011</td></tr><tr><td><a href="../01_Books/Martin-Heidegger---The-Fundamental-Concepts-of-Metaphysics" class="internal alias" data-slug="01_Books/Martin-Heidegger---The-Fundamental-Concepts-of-Metaphysics">The Fundamental Concepts of Metaphysics — World, Finitude, Solitude</a></td><td>Martin Heidegger</td><td>1929-1930 (lecture course); 1995 English translation</td></tr><tr><td><a href="../01_Books/Thomas-S.-Kuhn---The-Structure-of-Scientific-Revolutions" class="internal alias" data-slug="01_Books/Thomas-S.-Kuhn---The-Structure-of-Scientific-Revolutions">The Structure of Scientific Revolutions</a></td><td>Thomas S. Kuhn</td><td>1962</td></tr><tr><td><a href="../01_Books/Marvin-Minsky---The-Emotion-Machine" class="internal alias" data-slug="01_Books/Marvin-Minsky---The-Emotion-Machine">The Emotion Machine — Commonsense Thinking, Artificial Intelligence, and the Future of the Human Mind</a></td><td>Marvin Minsky</td><td>2006</td></tr><tr><td><a href="../01_Books/Toril-Moi---Revolution-of-the-Ordinary" class="internal alias" data-slug="01_Books/Toril-Moi---Revolution-of-the-Ordinary">Revolution of the Ordinary — Literary Studies after Wittgenstein, Austin, and Cavell</a></td><td>Toril Moi</td><td>2017</td></tr><tr><td><a href="../01_Books/Steven-Pinker---When-Everyone-Knows-That-Everyone-Knows" class="internal alias" data-slug="01_Books/Steven-Pinker---When-Everyone-Knows-That-Everyone-Knows">When Everyone Knows That Everyone Knows — Common Knowledge and the Mysteries of Money, Power, and Everyday Life</a></td><td>Steven Pinker</td><td>2025</td></tr><tr><td><a href="../01_Books/Karl-Popper---The-Logic-of-Scientific-Discovery" class="internal alias" data-slug="01_Books/Karl-Popper---The-Logic-of-Scientific-Discovery">The Logic of Scientific Discovery</a></td><td>Karl Popper</td><td>1934 (German Logik der Forschung); 1959 (English first edition); 1968 (corrected)</td></tr><tr><td><a href="../01_Books/Ayn-Rand---Atlas-Shrugged" class="internal alias" data-slug="01_Books/Ayn-Rand---Atlas-Shrugged">Atlas Shrugged</a></td><td>Ayn Rand</td><td>1957</td></tr><tr><td><a href="../01_Books/George-Bernard-Shaw---Back-to-Methuselah" class="internal alias" data-slug="01_Books/George-Bernard-Shaw---Back-to-Methuselah">Back to Methuselah — A Metabiological Pentateuch</a></td><td>George Bernard Shaw</td><td>1921</td></tr></tbody></table></div>
+<h2 id="economics--policy">Economics &amp; Policy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#economics--policy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>19 books</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Title</th><th>Author</th><th>Year</th></tr></thead><tbody><tr><td><a href="../01_Books/Abhijit-V.-Banerjee---Good-Economics-for-Hard-Times" class="internal alias" data-slug="01_Books/Abhijit-V.-Banerjee---Good-Economics-for-Hard-Times">Good Economics for Hard Times</a></td><td>Abhijit V. Banerjee, Esther Duflo</td><td>2019</td></tr><tr><td><a href="../01_Books/Abhijit-V.-Banerjee---Poor-Economics" class="internal alias" data-slug="01_Books/Abhijit-V.-Banerjee---Poor-Economics">Poor Economics: A Radical Rethinking of the Way to Fight Global Poverty</a></td><td>Abhijit V. Banerjee, Esther Duflo</td><td>2011</td></tr><tr><td><a href="../01_Books/Stephen-Blyth---An-Introduction-to-Quantitative-Finance" class="internal alias" data-slug="01_Books/Stephen-Blyth---An-Introduction-to-Quantitative-Finance">An Introduction to Quantitative Finance</a></td><td>Stephen Blyth</td><td>2014</td></tr><tr><td><a href="../01_Books/Bryan-Caplan---The-Myth-of-the-Rational-Voter" class="internal alias" data-slug="01_Books/Bryan-Caplan---The-Myth-of-the-Rational-Voter">The Myth of the Rational Voter — Why Democracies Choose Bad Policies</a></td><td>Bryan Caplan</td><td>2007</td></tr><tr><td><a href="../01_Books/Daron-Acemoglu---Microeconomics" class="internal alias" data-slug="01_Books/Daron-Acemoglu---Microeconomics">Microeconomics</a></td><td>Daron Acemoglu, David I. Laibson, John A. List</td><td>2022</td></tr><tr><td><a href="../01_Books/J.-Storrs-Hall---Where-Is-My-Flying-Car" class="internal alias" data-slug="01_Books/J.-Storrs-Hall---Where-Is-My-Flying-Car">Where Is My Flying Car? A Memoir of Future Past</a></td><td>J. Storrs Hall</td><td>2018 (revised 2021)</td></tr><tr><td><a href="../01_Books/Goldstone-et-al---Family-Trusts" class="internal alias" data-slug="01_Books/Goldstone-et-al---Family-Trusts">Family Trusts — A Guide for Beneficiaries, Trustees, Trust Protectors, and Trust Creators</a></td><td>Hartley Goldstone, James E. Hughes Jr., Keith Whitaker</td><td>2015 (Bloomberg Press)</td></tr><tr><td><a href="../01_Books/Jonathan-Berk-and-Peter-DeMarzo---Corporate-Finance" class="internal alias" data-slug="01_Books/Jonathan-Berk-and-Peter-DeMarzo---Corporate-Finance">Corporate Finance</a></td><td>Jonathan Berk, Peter DeMarzo</td><td>2023</td></tr><tr><td><a href="../01_Books/James-E.-Hughes-Jr---Family-Wealth-Keeping-It-in-the-Family" class="internal alias" data-slug="01_Books/James-E.-Hughes-Jr---Family-Wealth-Keeping-It-in-the-Family">Family Wealth — Keeping It in the Family</a></td><td>James E. Hughes Jr.</td><td>2004 (revised 2010)</td></tr><tr><td><a href="../01_Books/Rosplock-and-Kirby---The-Complete-Family-Office-Handbook" class="internal alias" data-slug="01_Books/Rosplock-and-Kirby---The-Complete-Family-Office-Handbook">The Complete Family Office Handbook</a></td><td>Kirby Rosplock (with William J. Kambas, Ivan A. Sacks, David S. Guin, John Rosplock, Robert Kaufold, Barbara Hauser, Warner King Babcock, Miles Padgett, Don Kozusko)</td><td>2021</td></tr><tr><td><a href="../01_Books/Roger-Lowenstein---When-Genius-Failed" class="internal alias" data-slug="01_Books/Roger-Lowenstein---When-Genius-Failed">When Genius Failed — The Rise and Fall of Long-Term Capital Management</a></td><td>Roger Lowenstein</td><td>2000 (Afterword 2010)</td></tr><tr><td><a href="../01_Books/Maurice-Obstfeld-and-Kenneth-Rogoff---Foundations-of-International-Macroeconomics" class="internal alias" data-slug="01_Books/Maurice-Obstfeld-and-Kenneth-Rogoff---Foundations-of-International-Macroeconomics">Foundations of International Macroeconomics</a></td><td>Maurice Obstfeld, Kenneth S. Rogoff</td><td>1996</td></tr><tr><td><a href="../01_Books/Authoritarian-Commons---Neighborhood-Democratization-in-Urban-China" class="internal alias" data-slug="01_Books/Authoritarian-Commons---Neighborhood-Democratization-in-Urban-China">The Authoritarian Commons - Neighborhood Democratization in Urban China</a></td><td>Shitong Qiao</td><td>2025</td></tr><tr><td><a href="../01_Books/Meg-Rithmire---Precarious-Ties" class="internal alias" data-slug="01_Books/Meg-Rithmire---Precarious-Ties">Precarious Ties — Business and the State in Authoritarian Asia</a></td><td>Meg Rithmire</td><td>2023</td></tr><tr><td><a href="../01_Books/Meg-E.-Rithmire---Land-Bargains-and-Chinese-Capitalism" class="internal alias" data-slug="01_Books/Meg-E.-Rithmire---Land-Bargains-and-Chinese-Capitalism">Land Bargains and Chinese Capitalism — The Politics of Property Rights under Reform</a></td><td>Meg E. Rithmire</td><td>2015</td></tr><tr><td><a href="../01_Books/George-Soros---The-Alchemy-of-Finance" class="internal alias" data-slug="01_Books/George-Soros---The-Alchemy-of-Finance">The Alchemy of Finance — Reading the Mind of the Market</a></td><td>George Soros</td><td>1987 (revised 1994 with Crash-of-87 chapter and ERM appendix)</td></tr><tr><td><a href="../01_Books/Joseph-E.-Stiglitz---Globalization-and-Its-Discontents-Revisited" class="internal alias" data-slug="01_Books/Joseph-E.-Stiglitz---Globalization-and-Its-Discontents-Revisited">Globalization and Its Discontents Revisited — Anti-Globalization in the Era of Trump</a></td><td>Joseph E. Stiglitz</td><td>2017</td></tr><tr><td><a href="../01_Books/Tom-McCullough---Wealth-of-Wisdom" class="internal alias" data-slug="01_Books/Tom-McCullough---Wealth-of-Wisdom">Wealth of Wisdom — The Top 50 Questions Wealthy Families Ask</a></td><td>Tom McCullough, Keith Whitaker</td><td>2018</td></tr><tr><td><a href="../01_Books/Angela-Huyue-Zhang---High-Wire" class="internal alias" data-slug="01_Books/Angela-Huyue-Zhang---High-Wire">High Wire — How China Regulates Big Tech and Governs Its Economy</a></td><td>Angela Huyue Zhang</td><td>2024</td></tr></tbody></table></div>
+<h2 id="mathematics--formal">Mathematics &amp; Formal<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mathematics--formal" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>8 books</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Title</th><th>Author</th><th>Year</th></tr></thead><tbody><tr><td><a href="../01_Books/Tim-Urban---Napkin" class="internal alias" data-slug="01_Books/Tim-Urban---Napkin">An Infinitely Large Napkin (filed under provisional stem “Tim Urban - Napkin”)</a></td><td>Evan Chen (the manifest stem mis-attributes to Tim Urban; corrected here in body)</td><td>2014–2025 (continuously revised; extracted version v1.6.20250813)</td></tr><tr><td><a href="../01_Books/Philip-E.-Tetlock-and-Dan-Gardner---Superforecasting" class="internal alias" data-slug="01_Books/Philip-E.-Tetlock-and-Dan-Gardner---Superforecasting">Superforecasting: The Art and Science of Prediction</a></td><td>Philip E. Tetlock and Dan Gardner</td><td>2015</td></tr><tr><td><a href="../01_Books/G.-H.-Hardy---A-Mathematician's-Apology" class="internal alias" data-slug="01_Books/G.-H.-Hardy---A-Mathematician's-Apology">A Mathematician’s Apology</a></td><td>G. H. Hardy</td><td>1940</td></tr><tr><td><a href="../01_Books/Gareth-Loy---Musimathics" class="internal alias" data-slug="01_Books/Gareth-Loy---Musimathics">Musimathics — The Mathematical Foundations of Music</a></td><td>Gareth Loy</td><td>2006-2007 (2 volumes)</td></tr><tr><td><a href="../01_Books/Tristan-Needham---Visual-Complex-Analysis" class="internal alias" data-slug="01_Books/Tristan-Needham---Visual-Complex-Analysis">Visual Complex Analysis</a></td><td>Tristan Needham</td><td>1997</td></tr><tr><td><a href="../01_Books/Courant-and-Robbins---What-Is-Mathematics" class="internal alias" data-slug="01_Books/Courant-and-Robbins---What-Is-Mathematics">What Is Mathematics? An Elementary Approach to Ideas and Methods</a></td><td>Richard Courant, Herbert Robbins</td><td>1941 (revised by Ian Stewart 1996)</td></tr><tr><td><a href="../01_Books/Thomas-C.-Schelling---Micromotives-and-Macrobehavior" class="internal alias" data-slug="01_Books/Thomas-C.-Schelling---Micromotives-and-Macrobehavior">Micromotives and Macrobehavior</a></td><td>Thomas C. Schelling</td><td>1978</td></tr><tr><td><a href="../01_Books/Nassim-Nicholas-Taleb---Incerto" class="internal alias" data-slug="01_Books/Nassim-Nicholas-Taleb---Incerto">Incerto (Fooled by Randomness, The Black Swan, The Bed of Procrustes, Antifragile, Skin in the Game)</a></td><td>Nassim Nicholas Taleb</td><td>2001-2018</td></tr></tbody></table></div>
+<h2 id="science">Science<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#science" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>9 books</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Title</th><th>Author</th><th>Year</th></tr></thead><tbody><tr><td><a href="../01_Books/Bruce-Alberts---Molecular-Biology-of-the-Cell" class="internal alias" data-slug="01_Books/Bruce-Alberts---Molecular-Biology-of-the-Cell">Molecular Biology of the Cell (Seventh Edition)</a></td><td>Bruce Alberts, Rebecca Heald, Alexander Johnson, David Morgan, Martin Raff, Keith Roberts, Peter Walter</td><td>2022</td></tr><tr><td><a href="../01_Books/Daniel-Johnston---Foundations-of-Cellular-Neurophysiology" class="internal alias" data-slug="01_Books/Daniel-Johnston---Foundations-of-Cellular-Neurophysiology">Foundations of Cellular Neurophysiology</a></td><td>Daniel Johnston, Samuel Miao-Sin Wu</td><td>1995 (Bradford Books / MIT Press)</td></tr><tr><td><a href="../01_Books/James-Le-Fanu---The-Rise-and-Fall-of-Modern-Medicine" class="internal alias" data-slug="01_Books/James-Le-Fanu---The-Rise-and-Fall-of-Modern-Medicine">The Rise and Fall of Modern Medicine</a></td><td>James Le Fanu</td><td>1999</td></tr><tr><td><a href="../01_Books/Nick-Lane---Power-Sex-Suicide" class="internal alias" data-slug="01_Books/Nick-Lane---Power-Sex-Suicide">Power, Sex, Suicide — Mitochondria and the Meaning of Life</a></td><td>Nick Lane</td><td>2005</td></tr><tr><td><a href="../01_Books/Nick-Lane---The-Vital-Question" class="internal alias" data-slug="01_Books/Nick-Lane---The-Vital-Question">The Vital Question — Energy, Evolution, and the Origins of Complex Life</a></td><td>Nick Lane</td><td>2015</td></tr><tr><td><a href="../01_Books/Neil-Campbell---Biology-Seventh-Edition" class="internal alias" data-slug="01_Books/Neil-Campbell---Biology-Seventh-Edition">Biology (Seventh Edition)</a></td><td>Neil Campbell, Jane Reece</td><td>2005 (7th edition)</td></tr><tr><td><a href="../01_Books/Wallace-Nichols---Blue-Mind" class="internal alias" data-slug="01_Books/Wallace-Nichols---Blue-Mind">Blue Mind — The Surprising Science That Shows How Being Near, In, On, or Under Water Can Make You Happier, Healthier, More Connected, and Better at What You Do</a></td><td>Wallace J. Nichols</td><td>2014</td></tr><tr><td><a href="../01_Books/Carlo-Rovelli---Helgoland" class="internal alias" data-slug="01_Books/Carlo-Rovelli---Helgoland">Helgoland — Making Sense of the Quantum Revolution</a></td><td>Carlo Rovelli</td><td>2020</td></tr><tr><td><a href="../01_Books/Gerald-E.-Schneider---Brain-Structure-and-Its-Origins" class="internal alias" data-slug="01_Books/Gerald-E.-Schneider---Brain-Structure-and-Its-Origins">Brain Structure and Its Origins (in Development and in Evolution)</a></td><td>Gerald E. Schneider</td><td>2014</td></tr></tbody></table></div>
+<h2 id="business--startups">Business &amp; Startups<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#business--startups" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>12 books</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Title</th><th>Author</th><th>Year</th></tr></thead><tbody><tr><td><a href="../01_Books/Eric-Jorgenson---The-Book-of-Elon" class="internal alias" data-slug="01_Books/Eric-Jorgenson---The-Book-of-Elon">The Book of Elon — A Guide to Purpose and Success</a></td><td>Eric Jorgenson (compiler)</td><td>2025</td></tr><tr><td><a href="../01_Books/Marc-Andreessen---The-pmarca-Blog-Archives" class="internal alias" data-slug="01_Books/Marc-Andreessen---The-pmarca-Blog-Archives">The Pmarca Blog Archives (select posts from 2007-2009)</a></td><td>Marc Andreessen</td><td>2009</td></tr><tr><td><a href="../01_Books/Andrew-Chen---The-Cold-Start-Problem" class="internal alias" data-slug="01_Books/Andrew-Chen---The-Cold-Start-Problem">The Cold Start Problem — How to Start and Scale Network Effects</a></td><td>Andrew Chen</td><td>2021</td></tr><tr><td><a href="../01_Books/Andrew-S.-Grove---High-Output-Management" class="internal alias" data-slug="01_Books/Andrew-S.-Grove---High-Output-Management">High Output Management</a></td><td>Andrew S. Grove</td><td>1983</td></tr><tr><td><a href="../01_Books/Andrew-S.-Grove---Only-the-Paranoid-Survive" class="internal alias" data-slug="01_Books/Andrew-S.-Grove---Only-the-Paranoid-Survive">Only the Paranoid Survive: How to Exploit the Crisis Points That Challenge Every Company and Career</a></td><td>Andrew S. Grove</td><td>1996</td></tr><tr><td><a href="../01_Books/Eric-M.-Jackson---The-PayPal-Wars" class="internal alias" data-slug="01_Books/Eric-M.-Jackson---The-PayPal-Wars">The PayPal Wars — Battles with eBay, the Media, the Mafia, and the Rest of Planet Earth</a></td><td>Eric M. Jackson</td><td>2004</td></tr><tr><td><a href="../01_Books/Tracy-Kidder---The-Soul-of-a-New-Machine" class="internal alias" data-slug="01_Books/Tracy-Kidder---The-Soul-of-a-New-Machine">The Soul of a New Machine</a></td><td>Tracy Kidder</td><td>1981</td></tr><tr><td><a href="../01_Books/Sebastian-Mallaby---The-Power-Law" class="internal alias" data-slug="01_Books/Sebastian-Mallaby---The-Power-Law">The Power Law — Venture Capital and the Making of the New Future</a></td><td>Sebastian Mallaby</td><td>2022</td></tr><tr><td><a href="../01_Books/Gayle-Laakmann-McDowell---Cracking-the-Coding-Interview" class="internal alias" data-slug="01_Books/Gayle-Laakmann-McDowell---Cracking-the-Coding-Interview">Cracking the Coding Interview (6th ed)</a></td><td>Gayle Laakmann McDowell</td><td>2015</td></tr><tr><td><a href="../01_Books/Reid-Hoffman---The-Start-Up-of-You" class="internal alias" data-slug="01_Books/Reid-Hoffman---The-Start-Up-of-You">The Start-Up of You (Revised and Updated)</a></td><td>Reid Hoffman, Ben Casnocha</td><td>2022</td></tr><tr><td><a href="../01_Books/Eric-Ries---The-Lean-Startup" class="internal alias" data-slug="01_Books/Eric-Ries---The-Lean-Startup">The Lean Startup — How Today’s Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</a></td><td>Eric Ries</td><td>2011</td></tr><tr><td><a href="../01_Books/Jason-Schreier---Blood-Sweat-and-Pixels" class="internal alias" data-slug="01_Books/Jason-Schreier---Blood-Sweat-and-Pixels">Blood, Sweat, and Pixels — The Triumphant, Turbulent Stories Behind How Video Games Are Made</a></td><td>Jason Schreier</td><td>2017</td></tr></tbody></table></div>
+<h2 id="biography--life">Biography &amp; Life<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#biography--life" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>17 books</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Title</th><th>Author</th><th>Year</th></tr></thead><tbody><tr><td><a href="../01_Books/Masahiko-Aoki---Transboundary-Game-of-Life" class="internal alias" data-slug="01_Books/Masahiko-Aoki---Transboundary-Game-of-Life">Transboundary Game of Life — Memoir of Masahiko Aoki</a></td><td>Masahiko Aoki</td><td>2014</td></tr><tr><td><a href="../01_Books/E.-T.-Bell---Men-of-Mathematics" class="internal alias" data-slug="01_Books/E.-T.-Bell---Men-of-Mathematics">Men of Mathematics</a></td><td>Eric Temple Bell</td><td>1937</td></tr><tr><td><a href="../01_Books/Leslie-Berlin---The-Man-Behind-the-Microchip" class="internal alias" data-slug="01_Books/Leslie-Berlin---The-Man-Behind-the-Microchip">The Man Behind the Microchip: Robert Noyce and the Invention of Silicon Valley</a></td><td>Leslie Berlin</td><td>2005</td></tr><tr><td><a href="../01_Books/Robert-A.-Caro---The-Power-Broker" class="internal alias" data-slug="01_Books/Robert-A.-Caro---The-Power-Broker">The Power Broker: Robert Moses and the Fall of New York</a></td><td>Robert A. Caro</td><td>1974</td></tr><tr><td><a href="../01_Books/Richard-P.-Feynman---Surely-You're-Joking-Mr.-Feynman" class="internal alias" data-slug="01_Books/Richard-P.-Feynman---Surely-You're-Joking-Mr.-Feynman">”Surely You’re Joking, Mr. Feynman!” Adventures of a Curious Character</a></td><td>Richard P. Feynman</td><td>1985</td></tr><tr><td><a href="../01_Books/Richard-P.-Feynman---What-Do-You-Care-What-Other-People-Think" class="internal alias" data-slug="01_Books/Richard-P.-Feynman---What-Do-You-Care-What-Other-People-Think">What Do You Care What Other People Think?</a></td><td>Richard P. Feynman</td><td>1988</td></tr><tr><td><a href="../01_Books/Walter-Isaacson---Elon-Musk" class="internal alias" data-slug="01_Books/Walter-Isaacson---Elon-Musk">Elon Musk</a></td><td>Walter Isaacson</td><td>2023</td></tr><tr><td><a href="../01_Books/Tracy-Kidder---Mountains-Beyond-Mountains" class="internal alias" data-slug="01_Books/Tracy-Kidder---Mountains-Beyond-Mountains">Mountains Beyond Mountains: The Quest of Dr. Paul Farmer, a Man Who Would Cure the World</a></td><td>Tracy Kidder</td><td>2003</td></tr><tr><td><a href="../01_Books/Sebastian-Mallaby---The-Infinity-Machine" class="internal alias" data-slug="01_Books/Sebastian-Mallaby---The-Infinity-Machine">The Infinity Machine — Demis Hassabis, DeepMind, and the Quest for Superintelligence</a></td><td>Sebastian Mallaby</td><td>2026</td></tr><tr><td><a href="../01_Books/Carol-Parikh---The-Unreal-Life-of-Oscar-Zariski" class="internal alias" data-slug="01_Books/Carol-Parikh---The-Unreal-Life-of-Oscar-Zariski">The Unreal Life of Oscar Zariski</a></td><td>Carol Parikh</td><td>1991</td></tr><tr><td><a href="../01_Books/Randy-Pausch---The-Last-Lecture" class="internal alias" data-slug="01_Books/Randy-Pausch---The-Last-Lecture">The Last Lecture</a></td><td>Randy Pausch, Jeffrey Zaslow</td><td>2008</td></tr><tr><td><a href="../01_Books/Constance-Reid---Courant" class="internal alias" data-slug="01_Books/Constance-Reid---Courant">Courant in Göttingen and New York — The Story of an Improbable Mathematician</a></td><td>Constance Reid</td><td>1976</td></tr><tr><td><a href="../01_Books/Constance-Reid---Hilbert" class="internal alias" data-slug="01_Books/Constance-Reid---Hilbert">Hilbert</a></td><td>Constance Reid</td><td>1970</td></tr><tr><td><a href="../01_Books/Constance-Reid---Neyman" class="internal alias" data-slug="01_Books/Constance-Reid---Neyman">Neyman — From Life</a></td><td>Constance Reid</td><td>1982</td></tr><tr><td><a href="../01_Books/G.-Ng---The-38-Letters-from-J.D.-Rockefeller-to-His-Son" class="internal alias" data-slug="01_Books/G.-Ng---The-38-Letters-from-J.D.-Rockefeller-to-His-Son">The 38 Letters from J.D. Rockefeller to His Son</a></td><td>G. Ng (compiler / translator)</td><td>2020</td></tr><tr><td><a href="../01_Books/M.-Mitchell-Waldrop---The-Dream-Machine" class="internal alias" data-slug="01_Books/M.-Mitchell-Waldrop---The-Dream-Machine">The Dream Machine — J.C.R. Licklider and the Revolution That Made Computing Personal</a></td><td>M. Mitchell Waldrop</td><td>2001</td></tr><tr><td><a href="../01_Books/Lee-Kuan-Yew---From-Third-World-to-First" class="internal alias" data-slug="01_Books/Lee-Kuan-Yew---From-Third-World-to-First">From Third World to First — The Singapore Story 1965-2000</a></td><td>Lee Kuan Yew</td><td>2000</td></tr></tbody></table></div>
+<h2 id="society--culture">Society &amp; Culture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#society--culture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>10 books</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Title</th><th>Author</th><th>Year</th></tr></thead><tbody><tr><td><a href="../01_Books/Antoine-Picon-and-Carlo-Ratti---Atlas-of-the-Senseable-City" class="internal alias" data-slug="01_Books/Antoine-Picon-and-Carlo-Ratti---Atlas-of-the-Senseable-City">Atlas of the Senseable City</a></td><td>Antoine Picon, Carlo Ratti</td><td>2023</td></tr><tr><td><a href="../01_Books/Acharya-and-Lee---The-Cartel-System-of-States" class="internal alias" data-slug="01_Books/Acharya-and-Lee---The-Cartel-System-of-States">The Cartel System of States — An Economic Theory of International Politics</a></td><td>Avidit Acharya, Alexander Lee</td><td>2024</td></tr><tr><td><a href="../01_Books/David-D.-Burns---Feeling-Good" class="internal alias" data-slug="01_Books/David-D.-Burns---Feeling-Good">Feeling Good — The New Mood Therapy</a></td><td>David D. Burns</td><td>1980 (revised 1999)</td></tr><tr><td><a href="../01_Books/David-D.-Burns---Feeling-Great" class="internal alias" data-slug="01_Books/David-D.-Burns---Feeling-Great">Feeling Great — The Revolutionary New Treatment for Depression and Anxiety</a></td><td>David D. Burns</td><td>2020</td></tr><tr><td><a href="../01_Books/Will-and-Ariel-Durant---The-Lessons-of-History" class="internal alias" data-slug="01_Books/Will-and-Ariel-Durant---The-Lessons-of-History">The Lessons of History</a></td><td>Will Durant and Ariel Durant</td><td>1968</td></tr><tr><td><a href="../01_Books/Francis-D.K.-Ching---A-Global-History-of-Architecture" class="internal alias" data-slug="01_Books/Francis-D.K.-Ching---A-Global-History-of-Architecture">A Global History of Architecture</a></td><td>Francis D.K. Ching, Mark Jarzombek, Vikramaditya Prakash</td><td>2017 (3rd edition)</td></tr><tr><td><a href="../01_Books/Ryo-Morimoto---Nuclear-Ghost" class="internal alias" data-slug="01_Books/Ryo-Morimoto---Nuclear-Ghost">Nuclear Ghost - Atomic Livelihoods in Fukushima’s Gray Zone</a></td><td>Ryo Morimoto</td><td>2023</td></tr><tr><td><a href="../01_Books/Pete-Walker---Complex-PTSD" class="internal alias" data-slug="01_Books/Pete-Walker---Complex-PTSD">Complex PTSD - From Surviving to Thriving — A Guide and Map for Recovering from Childhood Trauma</a></td><td>Pete Walker</td><td>2013</td></tr><tr><td><a href="../01_Books/Lin-Zhongjie---Kenzo-Tange-and-the-Metabolist-Movement-(alt)" class="internal alias" data-slug="01_Books/Lin-Zhongjie---Kenzo-Tange-and-the-Metabolist-Movement-(alt)">Kenzo Tange and the Metabolist Movement (alternate edition)</a></td><td>Lin Zhongjie</td><td>2010</td></tr><tr><td><a href="../01_Books/Lin-Zhongjie---Kenzo-Tange-and-the-Metabolist-Movement" class="internal alias" data-slug="01_Books/Lin-Zhongjie---Kenzo-Tange-and-the-Metabolist-Movement">Kenzo Tange and the Metabolist Movement — Urban Utopias of Modern Japan</a></td><td>Lin Zhongjie</td><td>2010</td></tr></tbody></table></div>
+<h2 id="literature--arts">Literature &amp; Arts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#literature--arts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>8 books</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Title</th><th>Author</th><th>Year</th></tr></thead><tbody><tr><td><a href="../01_Books/Douglas-Adams---The-Ultimate-Hitchhikers-Guide-to-the-Galaxy" class="internal alias" data-slug="01_Books/Douglas-Adams---The-Ultimate-Hitchhikers-Guide-to-the-Galaxy">The Ultimate Hitchhiker’s Guide to the Galaxy (Five Novels in One Outrageous Volume)</a></td><td>Douglas Adams</td><td>1979-1992 (collected 2002)</td></tr><tr><td><a href="../01_Books/Wendy-Cope---Serious-Concerns" class="internal alias" data-slug="01_Books/Wendy-Cope---Serious-Concerns">Serious Concerns</a></td><td>Wendy Cope</td><td>1992</td></tr><tr><td><a href="../01_Books/László-Krasznahorkai---The-Melancholy-of-Resistance" class="internal alias" data-slug="01_Books/László-Krasznahorkai---The-Melancholy-of-Resistance">The Melancholy of Resistance</a></td><td>László Krasznahorkai</td><td>1989 (Hungarian); 2000 (English translation, George Szirtes)</td></tr><tr><td><a href="../01_Books/Mary-Oliver---A-Poetry-Handbook" class="internal alias" data-slug="01_Books/Mary-Oliver---A-Poetry-Handbook">A Poetry Handbook</a></td><td>Mary Oliver</td><td>1994</td></tr><tr><td><a href="../01_Books/Mary-Oliver---Dream-Work" class="internal alias" data-slug="01_Books/Mary-Oliver---Dream-Work">Dream Work</a></td><td>Mary Oliver</td><td>1986</td></tr><tr><td><a href="../01_Books/Mary-Oliver---Felicity" class="internal alias" data-slug="01_Books/Mary-Oliver---Felicity">Felicity — Poems</a></td><td>Mary Oliver</td><td>2015</td></tr><tr><td><a href="../01_Books/Mary-Oliver---House-of-Light" class="internal alias" data-slug="01_Books/Mary-Oliver---House-of-Light">House of Light - Poems</a></td><td>Mary Oliver</td><td>1990</td></tr><tr><td><a href="../01_Books/Percy-Bysshe-Shelley---Complete-Works" class="internal alias" data-slug="01_Books/Percy-Bysshe-Shelley---Complete-Works">Complete Works of Percy Bysshe Shelley</a></td><td>Percy Bysshe Shelley</td><td>1810s-1820s (compiled posthumously)</td></tr></tbody></table></div>
+<h2 id="other">Other<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#other" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>28 books</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Title</th><th>Author</th><th>Year</th></tr></thead><tbody><tr><td><a href="../01_Books/Geoff-Colvin---Talent-Is-Overrated" class="internal alias" data-slug="01_Books/Geoff-Colvin---Talent-Is-Overrated">Talent Is Overrated — What Really Separates World-Class Performers from Everybody Else</a></td><td>Geoff Colvin</td><td>2008</td></tr><tr><td><a href="../01_Books/Rob-Fitzpatrick---The-Mom-Test" class="internal alias" data-slug="01_Books/Rob-Fitzpatrick---The-Mom-Test">The Mom Test: How to Talk to Customers and Learn If Your Business Is a Good Idea When Everyone Is Lying to You</a></td><td>Rob Fitzpatrick</td><td>2013</td></tr><tr><td><a href="../01_Books/Julia-Galef---The-Scout-Mindset" class="internal alias" data-slug="01_Books/Julia-Galef---The-Scout-Mindset">The Scout Mindset: Why Some People See Things Clearly and Others Don’t</a></td><td>Julia Galef</td><td>2021</td></tr><tr><td><a href="../01_Books/Tristan-Gooley---How-to-Read-a-Tree" class="internal alias" data-slug="01_Books/Tristan-Gooley---How-to-Read-a-Tree">How to Read a Tree — Clues and Patterns from Bark to Leaves</a></td><td>Tristan Gooley</td><td>2023</td></tr><tr><td><a href="../01_Books/Robert-J.-Gordon---The-Rise-and-Fall-of-American-Growth" class="internal alias" data-slug="01_Books/Robert-J.-Gordon---The-Rise-and-Fall-of-American-Growth">The Rise and Fall of American Growth</a></td><td>Robert J. Gordon</td><td>2016</td></tr><tr><td><a href="../01_Books/Thich-Nhat-Hanh---Peace-Is-Every-Step" class="internal alias" data-slug="01_Books/Thich-Nhat-Hanh---Peace-Is-Every-Step">Peace Is Every Step — The Path of Mindfulness in Everyday Life</a></td><td>Thich Nhat Hanh</td><td>1991</td></tr><tr><td><a href="../01_Books/Thich-Nhat-Hanh---The-Miracle-of-Mindfulness" class="internal alias" data-slug="01_Books/Thich-Nhat-Hanh---The-Miracle-of-Mindfulness">The Miracle of Mindfulness — An Introduction to the Practice of Meditation</a></td><td>Thich Nhat Hanh</td><td>1975</td></tr><tr><td><a href="../01_Books/Hamilton-Helmer---7-Powers" class="internal alias" data-slug="01_Books/Hamilton-Helmer---7-Powers">7 Powers: The Foundations of Business Strategy</a></td><td>Hamilton Helmer</td><td>2016</td></tr><tr><td><a href="../01_Books/Andy-Hertzfeld---Revolution-in-the-Valley" class="internal alias" data-slug="01_Books/Andy-Hertzfeld---Revolution-in-the-Valley">Revolution in the Valley: The Insanely Great Story of How the Mac Was Made</a></td><td>Andy Hertzfeld</td><td>2004</td></tr><tr><td><a href="../01_Books/Anton-Howes---Arts-and-Minds" class="internal alias" data-slug="01_Books/Anton-Howes---Arts-and-Minds">Arts and Minds: How the Royal Society of Arts Changed a Nation</a></td><td>Anton Howes</td><td>2020</td></tr><tr><td><a href="../01_Books/Frederick-P.-Brooks-Jr.---The-Mythical-Man-Month" class="internal alias" data-slug="01_Books/Frederick-P.-Brooks-Jr.---The-Mythical-Man-Month">The Mythical Man-Month: Essays on Software Engineering</a></td><td>Frederick P. Brooks Jr.</td><td>1975</td></tr><tr><td><a href="../01_Books/K.-Dane-Wittrup---Quantitative-Fundamentals-of-Bioengineering" class="internal alias" data-slug="01_Books/K.-Dane-Wittrup---Quantitative-Fundamentals-of-Bioengineering">Quantitative Fundamentals of Molecular and Cellular Bioengineering</a></td><td>K. Dane Wittrup, Bruce Tidor, Benjamin J. Hackel, Casim A. Sarkar</td><td>2019</td></tr><tr><td><a href="../01_Books/David-Kushner---Masters-of-Doom" class="internal alias" data-slug="01_Books/David-Kushner---Masters-of-Doom">Masters of Doom: How Two Guys Created an Empire and Transformed Pop Culture</a></td><td>David Kushner</td><td>2003</td></tr><tr><td><a href="../01_Books/Steven-Levy---Hackers" class="internal alias" data-slug="01_Books/Steven-Levy---Hackers">Hackers: Heroes of the Computer Revolution</a></td><td>Steven Levy</td><td>1984</td></tr><tr><td><a href="../01_Books/Wendy-Smith-and-Marianne-Lewis---Both-And-Thinking" class="internal alias" data-slug="01_Books/Wendy-Smith-and-Marianne-Lewis---Both-And-Thinking">And Thinking: Embracing Creative Tensions to Solve Your Toughest Problems</a></td><td>Wendy Smith and Marianne Lewis</td><td>2022</td></tr><tr><td><a href="../01_Books/Stuart-Lucas---Wealth" class="internal alias" data-slug="01_Books/Stuart-Lucas---Wealth">Wealth — Grow It, Protect It, Spend It, and Share It</a></td><td>Stuart E. Lucas</td><td>2006 (revised 2012)</td></tr><tr><td><a href="../01_Books/Gary-Goertz-and-James-Mahoney---A-Tale-of-Two-Cultures" class="internal alias" data-slug="01_Books/Gary-Goertz-and-James-Mahoney---A-Tale-of-Two-Cultures">A Tale of Two Cultures — Qualitative and Quantitative Research in the Social Sciences</a></td><td>Gary Goertz and James Mahoney</td><td>2012</td></tr><tr><td><a href="../01_Books/Chris-Miller---Chip-War" class="internal alias" data-slug="01_Books/Chris-Miller---Chip-War">Chip War — The Fight for the World’s Most Critical Technology</a></td><td>Chris Miller</td><td>2022</td></tr><tr><td><a href="../01_Books/Joel-Mokyr---A-Culture-of-Growth" class="internal alias" data-slug="01_Books/Joel-Mokyr---A-Culture-of-Growth">A Culture of Growth: The Origins of the Modern Economy</a></td><td>Joel Mokyr</td><td>2016</td></tr><tr><td><a href="../01_Books/Joel-Mokyr---The-Gifts-of-Athena" class="internal alias" data-slug="01_Books/Joel-Mokyr---The-Gifts-of-Athena">The Gifts of Athena: Historical Origins of the Knowledge Economy</a></td><td>Joel Mokyr</td><td>2002</td></tr><tr><td><a href="../01_Books/John-Ousterhout---A-Philosophy-of-Software-Design" class="internal alias" data-slug="01_Books/John-Ousterhout---A-Philosophy-of-Software-Design">A Philosophy of Software Design</a></td><td>John Ousterhout</td><td>2018</td></tr><tr><td><a href="../01_Books/Mitchel-Resnick---Turtles-Termites-and-Traffic-Jams" class="internal alias" data-slug="01_Books/Mitchel-Resnick---Turtles-Termites-and-Traffic-Jams">Turtles, Termites, and Traffic Jams — Explorations in Massively Parallel Microworlds</a></td><td>Mitchel Resnick</td><td>1994</td></tr><tr><td><a href="../01_Books/Richard-Rhodes---The-Making-of-the-Atomic-Bomb" class="internal alias" data-slug="01_Books/Richard-Rhodes---The-Making-of-the-Atomic-Bomb">The Making of the Atomic Bomb</a></td><td>Richard Rhodes</td><td>1986</td></tr><tr><td><a href="../01_Books/Sareen-Gropper---Advanced-Nutrition-and-Human-Metabolism" class="internal alias" data-slug="01_Books/Sareen-Gropper---Advanced-Nutrition-and-Human-Metabolism">Advanced Nutrition and Human Metabolism (Seventh Edition)</a></td><td>Sareen S. Gropper, Jack L. Smith, Timothy P. Carr</td><td>2018</td></tr><tr><td><a href="../01_Books/CZ---Freedom-of-Money" class="internal alias" data-slug="01_Books/CZ---Freedom-of-Money">Freedom of Money — A CZ memoir (authenticity disputed)</a></td><td>stated as CZ / Changpeng Zhao (provenance unverified)</td><td>2025</td></tr><tr><td><a href="../01_Books/Sara-Imari-Walker---Life-As-No-One-Knows-It" class="internal alias" data-slug="01_Books/Sara-Imari-Walker---Life-As-No-One-Knows-It">Life As No One Knows It — The Physics of Life’s Emergence</a></td><td>Sara Imari Walker</td><td>2024</td></tr><tr><td><a href="../01_Books/Reid-Hoffman-and-Chris-Yeh---Blitzscaling" class="internal alias" data-slug="01_Books/Reid-Hoffman-and-Chris-Yeh---Blitzscaling">Blitzscaling: The Lightning-Fast Path to Building Massively Valuable Companies</a></td><td>Reid Hoffman and Chris Yeh</td><td>2018</td></tr><tr><td><a href="../01_Books/G.-Pascal-Zachary---Showstopper" class="internal alias" data-slug="01_Books/G.-Pascal-Zachary---Showstopper">Showstopper!: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft</a></td><td>G. Pascal Zachary</td><td>1994</td></tr></tbody></table></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#library-index" data-for="library-index">Library Index</a></li><li class="depth-1"><a href="#computing--ai" data-for="computing--ai">Computing &amp; AI</a></li><li class="depth-1"><a href="#philosophy--mind" data-for="philosophy--mind">Philosophy &amp; Mind</a></li><li class="depth-1"><a href="#economics--policy" data-for="economics--policy">Economics &amp; Policy</a></li><li class="depth-1"><a href="#mathematics--formal" data-for="mathematics--formal">Mathematics &amp; Formal</a></li><li class="depth-1"><a href="#science" data-for="science">Science</a></li><li class="depth-1"><a href="#business--startups" data-for="business--startups">Business &amp; Startups</a></li><li class="depth-1"><a href="#biography--life" data-for="biography--life">Biography &amp; Life</a></li><li class="depth-1"><a href="#society--culture" data-for="society--culture">Society &amp; Culture</a></li><li class="depth-1"><a href="#literature--arts" data-for="literature--arts">Literature &amp; Arts</a></li><li class="depth-1"><a href="#other" data-for="other">Other</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../" class="internal">XL's BookWiki</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/xiaolong-y/bookwiki">Source</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

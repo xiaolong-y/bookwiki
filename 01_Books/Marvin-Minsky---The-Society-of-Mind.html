@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>The Society of Mind</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@400;700&amp;family=IBM Plex Serif:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="XL's BookWiki"/><meta property="og:title" content="The Society of Mind"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="The Society of Mind"/><meta name="twitter:description" content="Marvin Minsky - The Society of Mind One-sentence thesis The mind is not a single unified computational mechanism (as Minsky’s earlier [[Marvin Lee Minsky - Computation Finite and Infinite Machines|Computation]] implied) but a society of agents — many small specialized processes that compete, coopera..."/><meta property="og:description" content="Marvin Minsky - The Society of Mind One-sentence thesis The mind is not a single unified computational mechanism (as Minsky’s earlier [[Marvin Lee Minsky - Computation Finite and Infinite Machines|Computation]] implied) but a society of agents — many small specialized processes that compete, coopera..."/><meta property="og:image:alt" content="Marvin Minsky - The Society of Mind One-sentence thesis The mind is not a single unified computational mechanism (as Minsky’s earlier [[Marvin Lee Minsky - Computation Finite and Infinite Machines|Computation]] implied) but a society of agents — many small specialized processes that compete, coopera..."/><meta property="og:image" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta property="og:image:url" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta name="twitter:image" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="xiaolong-y.github.io/bookwiki"/><meta property="og:url" content="https://xiaolong-y.github.io/bookwiki/01_Books/Marvin-Minsky---The-Society-of-Mind"/><meta property="twitter:url" content="https://xiaolong-y.github.io/bookwiki/01_Books/Marvin-Minsky---The-Society-of-Mind"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Marvin Minsky - The Society of Mind One-sentence thesis The mind is not a single unified computational mechanism (as Minsky’s earlier [[Marvin Lee Minsky - Computation Finite and Infinite Machines|Computation]] implied) but a society of agents — many small specialized processes that compete, coopera..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvYm9va3dpa2ktdmF1bHQvYm9va3dpa2ktdmF1bHQvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://xiaolong-y.github.io/bookwiki/index.xml"/></head><body data-slug="01_Books/Marvin-Minsky---The-Society-of-Mind"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">XL's BookWiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>{let slug=node?.file?.slug??node?.slug;return!(slug&amp;&amp;slug.startsWith(\&quot;06_Source_Notes\&quot;)||node?.displayName===\&quot;06_Source_Notes\&quot;)}&quot;,&quot;mapFn&quot;:&quot;node=>{let names={\&quot;00_Index\&quot;:\&quot;Indices\&quot;,\&quot;01_Books\&quot;:\&quot;Books\&quot;,\&quot;02_Atomic_Concepts\&quot;:\&quot;Concepts\&quot;,\&quot;03_Arguments\&quot;:\&quot;Arguments\&quot;,\&quot;04_People\&quot;:\&quot;People\&quot;,\&quot;05_Comparative_Maps\&quot;:\&quot;Comparative Maps\&quot;};node?.displayName&amp;&amp;names[node.displayName]&amp;&amp;(node.displayName=names[node.displayName])}&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-253"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Browse</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-253" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../01_Books/">01_Books</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>The Society of Mind</a></div></nav><h1 class="article-title">The Society of Mind</h1><ul class="tags"><li><a href="../tags/book" class="internal tag-link">book</a></li><li><a href="../tags/foundations-of-AI" class="internal tag-link">foundations-of-AI</a></li><li><a href="../tags/cognitive-science" class="internal tag-link">cognitive-science</a></li><li><a href="../tags/philosophy-of-mind" class="internal tag-link">philosophy-of-mind</a></li></ul></div></div><article class="popover-hint"><h1 id="marvin-minsky---the-society-of-mind">Marvin Minsky - The Society of Mind<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#marvin-minsky---the-society-of-mind" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="one-sentence-thesis">One-sentence thesis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#one-sentence-thesis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The mind is <em>not</em> a single unified computational mechanism (as Minsky’s earlier [[Marvin Lee Minsky - Computation Finite and Infinite Machines|<em>Computation</em>]] implied) but a <em>society of agents</em> — many small specialized processes that compete, cooperate, suppress and exploit one another, and aggregate into the appearance of unified thought; intelligence is the emergent property of how the society is organized, not of any individual agent within it.</p>
+<h2 id="why-this-book-matters">Why this book matters<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-this-book-matters" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A 270-section structural shift away from the universal-machine framing of Minsky’s 1967 textbook toward a <em>modular</em>, <em>agent-based</em> account of cognition. The book contains roughly thirty topical chapters (Prologue through Mental Models, plus an Appendix on heredity and environment) decomposed into one-page numbered fragments — each section is a self-contained micro-argument cross-linked to neighbors. The whole book is read as a network of small ideas that mirror its own thesis. The shift anticipates the modern AI move toward composite agentic systems (LLM agents, multi-step tool use, mixture-of-experts, mechanistic-interpretability circuits) and is methodologically aligned with Bennett’s <a href="../02_Atomic_Concepts/Five-Breakthroughs-of-Intelligence" class="internal alias" data-slug="02_Atomic_Concepts/Five-Breakthroughs-of-Intelligence">breakthrough-additivity</a> account of intelligence — different mechanisms doing different jobs without a master controller. For Yang’s purposes, <em>Society of Mind</em> is the resolution Minsky himself reached after twenty years of working on AI: intelligence is not one thing, it is a coordination problem among many small things. The book therefore provides a direct vocabulary for the <em>governance-of-multi-agent-systems</em> question that current AI policy faces — when systems with multiple specialized sub-agents act, who is responsible for the action, and how can outside regulators intervene at the right level of organization?</p>
+<h2 id="core-argument">Core argument<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-argument" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>
+<p><strong>The brain is composed of many specialized agents</strong> (Prologue §1.1; ch. 1.6). Each does one small thing — recognizing a vowel, comparing two numbers, suppressing a competing impulse, finding a block, grasping a cup — and <em>none of them is intelligent on its own</em>. Minsky (Prologue §1.6) explicitly distinguishes <em>agent</em> (a simple sub-process, viewed from inside) from <em>agency</em> (a group of agents that, viewed from outside, appears to know its job). The agent/agency double is load-bearing: it is the same machinery looked at two ways, and confusing the two is the canonical fallacy that makes psychology hard.</p>
+</li>
+<li>
+<p><strong>Wholes are not magic</strong> (ch. 2). Minsky (ch. 2.2-2.4) rejects both reductionism (only the lowest-level laws matter) and <em>holism-as-explanation</em> (“gestalt”, “mind-stuff”). Properties of agencies must be explained in terms of <em>interactions</em> among parts, not by appeal to mysterious wholes. The “mousetightness” parody (ch. 2.4) makes the move concrete: containing a mouse is a <em>relation</em> among the boards of the box, not a property hidden in any board.</p>
+</li>
+<li>
+<p><strong>Mind emerges from agents organized into hierarchical and heterarchical structures</strong> (ch. 3). Hierarchical control (Builder calls Add, which calls Find/Get/Put — ch. 3.3) explains stable skill stacks. <em>Heterarchy</em> — closed loops of mutual control (See uses Move, Move uses See — ch. 3.4) — is needed when no single agent can be on top. The <em>Principle of Noncompromise</em> (ch. 3.2) governs deadlocks: when subordinates fight too long, control migrates upward and the supervisor is dismissed; this is a <em>bureaucratic</em> control law, not a neural one.</p>
+</li>
+<li>
+<p><strong>Memory is K-lines</strong> (ch. 8). A K-line is a wire-like agent that records <em>which agents were active</em> when a problem was solved, and re-activates them when invoked (ch. 8.1-8.2). Memory in this scheme is not storage of <em>content</em> but storage of <em>recipe-for-state</em>: re-membering is re-instantiating the prior coalition. The level-band theory (ch. 8.5) explains why we remember at one resolution and not others — K-lines attach more strongly to mid-level agents.</p>
+</li>
+<li>
+<p><strong>The phenomena cognitive science treats as unified — perception, memory, reasoning, emotion, self-awareness — decompose into many partial mechanisms</strong> (chs. 4-6, 15-17). The <em>Self</em> is “a society of ideas” (ch. 4.2), not a Cartesian observer. Consciousness (ch. 6.1, ch. 15.1) is not present-time awareness but reading recent records; the records themselves are the only thing inspectable. Emotions (ch. 16.1) are not interruptions to rational thought but <em>modes</em> of the same underlying machinery — fantasy of Professor Challenger arousing Anger to suppress Sleep (ch. 4.5) is the canonical worked exhibit.</p>
+</li>
+<li>
+<p><strong>Frames represent stereotyped situations</strong> (ch. 24). A frame is “a sort of skeleton, somewhat like an application form with many blanks or slots” (ch. 24.2); slots are filled by <em>default assumptions</em> drawn from past experience and overridden by current input. Trans-frames (ch. 24.3) extend this to actions and changes; frame-arrays (ch. 25) extend it to multiple simultaneous viewpoints. The frame apparatus is Minsky’s main contribution to <em>knowledge representation</em> — and the core of why early symbolic AI thought it could win.</p>
+</li>
+<li>
+<p><strong>Apparent unity of mind is an illusion maintained by constant negotiation among agents; the self is a coalition, not a thing</strong> (ch. 4-5). Minsky leans on Theodore Melnechuk’s “Punch and Judy” verses (ch. 5 epigraph) to image nested ventriloquism. The <em>Conservative Self</em> (ch. 4.4) keeps the coalition stable by constraining how fast we can change our own goals — a <em>practical necessity</em>, not a metaphysical luxury.</p>
+</li>
+<li>
+<p><strong>AI implications: building intelligence requires <em>many</em> mechanisms, not the search for a single master algorithm</strong> (Postscript; ch. 30). The Computer-Theory-of-Mind needs replacing with the Society-Theory-of-Mind. Contemporary multi-agent LLM stacks rhyme with this moral even though engineering details (transformer attention, gradient descent) differ from the 1986 vocabulary (K-lines, polynemes, isonomes). Minsky’s earlier <em>Common Sense</em> discussion (Prologue §1.5) frames the integration problem his book centers: an immense society of hard-earned practical ideas is what cognitive systems lack, not any one capability.</p>
+</li>
+<li>
+<p><strong>Pedagogical corollary</strong>: because competence is distributed, teaching should engineer environments where partial experts can coordinate — mirroring how minds actually recruit specialists rather than forcing monolithic flowcharts. This is the bridge to <a href="../01_Books/Seymour-A-Papert---Mindstorms" class="internal alias" data-slug="01_Books/Seymour-A-Papert---Mindstorms">Papert</a> and the <a href="../02_Atomic_Concepts/Constructionism" class="internal alias" data-slug="02_Atomic_Concepts/Constructionism">constructionist</a> tradition (ch. 10 — <em>Papert’s Principle</em>).</p>
+</li>
+<li>
+<p><strong>Censors and humor reveal what minds suppress</strong> (ch. 27). Censors and suppressors (ch. 27.2-27.3) are agents that prevent us from generating <em>bad ideas</em> in the first place, not merely punish them after the fact; jokes (Freud) function by briefly defeating censors. This argument extends the social/political-bureaucratic framing of mind into the <em>unconscious</em> — the shape of what is unsayable is what shapes thought.</p>
+</li>
+</ol>
+<h2 id="argument-map">Argument map<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#argument-map" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Minsky’s rhetorical trick is <strong>form mirrors content</strong>: hundreds of micro-sections enact the society thesis. Before any diagram, grasp that reading order is intentionally non-linear — browsable fragments approximate parallel agents. The fenced graphic below sketches dependency among the major argumentative moves, not chapter order. Read top-to-bottom for the dependency arc; read left-to-right for the <em>kind</em> of move (descriptive vs explanatory vs implication).</p>
+<pre><code>                    ┌──────────────────────────────┐
+                    │  Agents (smallest unit)       │  Prologue, ch. 1
+                    └──────────────┬───────────────┘
+                                   │ aggregate via interaction
+                                   ↓
+       ┌───────────────────────────┴───────────────────────────┐
+       ↓                           ↓                           ↓
+  Hierarchies              Heterarchies                  Noncompromise
+  (Builder/Add)            (See ↔ Move)                  (deadlocks fail
+   ch. 3.3                  ch. 3.4                       upward) ch. 3.2
+       └─────────────────┬─────────────────────────────────────┘
+                         ↓
+              Memory machinery: K-lines, frames, polynemes
+                         chs. 8, 19-26
+                         ↓
+       ┌─────────────────┴────────────────┐
+       ↓                                  ↓
+  Self / Consciousness             Emotion / Censors
+  (coalition, not core)            (modes of thought, not
+   chs. 4, 6, 15                    interrupts) chs. 16, 27
+       └─────────────────┬────────────────┘
+                         ↓
+              AI implication: many mechanisms, no master
+                         ch. 30, Postscript
+                         ↓
+                Pedagogical corollary (Papert): build
+                environments, not monolithic curricula
+                       ch. 10
+</code></pre>
+<p>The diagram reads top-down: agents are the basic unit; their interactions yield hierarchies and heterarchies governed by noncompromise; on top of this control structure sits memory machinery (K-lines, frames); these together explain higher-order phenomena (self, consciousness, emotion, censors) without invoking any homunculus; the whole apparatus then yields an AI moral (no master algorithm) and a pedagogical moral (build coordinative environments). Each downward arrow is a chapter-cluster argumentative move.</p>
+<h2 id="key-concepts">Key concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><em>Agent / agency</em> — Minsky’s basic unit-pair. Agent: simple sub-process. Agency: group of agents whose collective behavior, viewed from outside, looks competent (Prologue §1.6). The double-aspect framing is itself a key concept.</li>
+<li><em>K-line</em> — A memory mechanism (ch. 8.1): a wire that, when activated, restores the mental state in which a problem was previously solved. Not a record of content; a record of <em>which agents to recruit</em>.</li>
+<li><em>Frame</em> — A structured representation of a stereotyped situation (ch. 24.2), with terminals/slots filled by default assumptions when current input is missing.</li>
+<li><em>Trans-frame</em> — A frame for an action/change (ch. 24.3): origin, destination, instrument, agent. Bridges static frames to dynamic events.</li>
+<li><em>Principle of Noncompromise</em> (ch. 3.2) — When subordinate agents deadlock too long, the supervising agency loses status to its competitors. Explains why minds don’t freeze in stalemate.</li>
+<li><em>Censor / Suppressor</em> (ch. 27.2-27.3) — Agents that prevent us from generating or pursuing bad ideas. Censors intercept <em>upstream of</em> the bad thought; suppressors block its action <em>downstream</em>. Freud’s preconscious, mechanized.</li>
+<li><a href="../02_Atomic_Concepts/Theory-of-Mind" class="internal alias" data-slug="02_Atomic_Concepts/Theory-of-Mind">Theory of Mind</a> — The book devotes substantial space to how agents model other agents, both within one mind (introspection) and across minds (social cognition). Anticipates Bennett’s evolutionary breakthrough framing.</li>
+<li><a href="../02_Atomic_Concepts/Heterarchy" class="internal" data-slug="02_Atomic_Concepts/Heterarchy">Heterarchy</a> — Closed-loop control (See ↔ Move, ch. 3.4); inherited from McCulloch but applied to within-mind agency interaction.</li>
+<li><a href="../02_Atomic_Concepts/Generative-Model" class="internal alias" data-slug="02_Atomic_Concepts/Generative-Model">Generative Model</a> — Frames + default assumptions amount to a <em>generative model</em> in the modern sense: a structure that fills in unobserved elements from typical-case priors.</li>
+<li><a href="../02_Atomic_Concepts/Effective-Procedure" class="internal alias" data-slug="02_Atomic_Concepts/Effective-Procedure">Effective Procedure</a> — The 1967 Minsky framing this book partially supersedes; comparison is informative not contradictory.</li>
+<li><em>Polyneme / Isonome</em> (chs. 19-21) — Minsky’s vocabulary for cross-agency representations: a polyneme arouses different agents in different agencies (e.g., the New York polyneme means different things to Travel vs Politics vs Memory); an isonome is a control signal that operates the same way across agencies (e.g., <em>more</em> applied to any quantity).</li>
+</ul>
+<h2 id="best-chapterspages-to-actually-read">Best chapters/pages to actually read<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#best-chapterspages-to-actually-read" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p><strong>Prologue (chs. 1.1-1.6)</strong> — Core thesis stated and the agent vocabulary introduced; tea-cup example (1.3) and Builder/Wrecker setup (1.4-1.5) are the empirical anchors. Essential before sampling later fragments. Approx. 12 pp. of substantive content.</p>
+</li>
+<li>
+<p><strong>Chapter 2 — Wholes and Parts (especially 2.2-2.4)</strong> — The methodological heart: how to think about emergence without holistic mysticism. The <em>Holist vs Citizen</em> mouse-box parody (ch. 2.4) is the cleanest statement of Minsky’s reductionism-without-erasure stance, and is the section most worth handing to anyone confused about how decomposition works in cognitive science.</p>
+</li>
+<li>
+<p><strong>Chapter 3 — Conflict and Compromise (3.2-3.4)</strong> — Hierarchies, heterarchies, the Principle of Noncompromise. Most useful for engineers thinking about multi-agent control: Minsky’s bureaucratic-failure metaphor (ch. 3.2-3.3) is unusually precise about <em>why</em> agent stacks deadlock.</p>
+</li>
+<li>
+<p><strong>Chapter 4 — The Self (4.1-4.6)</strong> — Self-as-society, self-control as exploitation (Professor Challenger episode, ch. 4.4-4.5). The <em>Conservative Self</em> argument (ch. 4.4) is the strongest answer in the book to “but what about free will?” — selves are <em>constraints on rapid change</em>, not metaphysical agents.</p>
+</li>
+<li>
+<p><strong>Chapter 8 — A Theory of Memory (8.1-8.5)</strong> — K-lines, partial mental states, level-bands. The technical core of the book. Even if you reject everything else, the K-line theory is a usable computational hypothesis (Kenneth Haase’s red-paint/bicycle parable, ch. 8.1, is the standard exposition).</p>
+</li>
+<li>
+<p><strong>Chapter 15 — Consciousness and Memory (15.1-15.3)</strong> — Consciousness reframed as reading recent records, not present-time awareness. The most careful philosophical work in the book; pair with Dennett (heterophenomenology) for full effect.</p>
+</li>
+<li>
+<p><strong>Chapter 16 — Emotion (16.1-16.2)</strong> — Why emotion is not a separate substance. Sets up <em>Emotion Machine</em> (Minsky 2006).</p>
+</li>
+<li>
+<p><strong>Chapter 24 — Frames (24.1-24.3)</strong> — The frame apparatus that influenced two decades of knowledge-representation AI. Read for historical context; for modern AI, the relevant heir is the <em>prompt template / structured tool-use schema</em>.</p>
+</li>
+<li>
+<p><strong>Chapter 27 — Censors and Jokes (27.1-27.3)</strong> — Demons (recognizers that wait), suppressors (block actions), censors (block precursor thoughts). Surprisingly modern reading of Freud.</p>
+</li>
+<li>
+<p><strong>Chapter 30 — Mental Models (30.1-30.3)</strong> — The closing summative chapter; what knowledge <em>is</em> in this framework (a model another agent can interrogate). Read last; it crystalizes everything.</p>
+</li>
+<li>
+<p><strong>Reading tactic</strong> — Carry two bookmarks: one for systematic linear march from Prologue forward, one for <em>stochastic dipping</em> when a section title catches current curiosity. The book <em>rewards</em> discontinuous reading; the table of contents ([source extract]) is the right random-access index.</p>
+</li>
+<li>
+<p><em>Skim</em> the rest — chs. 7, 9, 11-14, 18, 20-23, 25-26, 28-29 are framework-extension and example-piling; they apply the apparatus already in place rather than introducing new architecture. The 1-section-per-page structure means many sections can be read or skipped without losing the thread unless you need exhaustive Minsky exegesis. Appendix on heredity and environment is mostly peripheral except for its concise restatement of why nature/nurture is a bad dichotomy (Appendix §1).</p>
+</li>
+</ul>
+<h2 id="chapter-by-chapter-distillation">Chapter-by-chapter distillation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chapter-by-chapter-distillation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The book has 270+ short numbered sections (each one printed page) grouped into 30 chapters plus a Prologue, Postscript, Appendix, Glossary/Bibliography, and Index. Macro-structure:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>Chapter</th><th>Anchor sections</th><th>Argumentative move</th></tr></thead><tbody><tr><td>Prologue</td><td>Prologue</td><td>§1.1 Agents of the Mind, §1.3 Society of Mind, §1.6 Agents and Agencies</td><td>Thesis statement: mind is built of mindless parts; agent/agency double aspect introduced.</td></tr><tr><td>2</td><td>Wholes and Parts</td><td>§2.2 Novelists and Reductionists, §2.4 Holes and Parts</td><td>Methodology: explanation is via interaction, not via mysterious wholes.</td></tr><tr><td>3</td><td>Conflict and Compromise</td><td>§3.2 Noncompromise, §3.3 Hierarchies, §3.4 Heterarchies</td><td>Control structure: deadlock dynamics; circular control loops.</td></tr><tr><td>4</td><td>The Self</td><td>§4.1-4.2 Self as society, §4.4 Conservative Self, §4.5 Exploitation</td><td>Self as coalition, self-control as one-agency-using-another.</td></tr><tr><td>5</td><td>Individuality</td><td>§5.1 Circular Causality, §5.2 Unanswerable Questions</td><td>Why “first cause” thinking fails for circular systems.</td></tr><tr><td>6</td><td>Insight and Introspection</td><td>§6.1 Consciousness, §6.2 Signals and Signs</td><td>Consciousness is using mental signals, not transparent self-knowledge.</td></tr><tr><td>7</td><td>Problems and Goals</td><td>Difference engines, generate-and-test</td><td>Goal-pursuit machinery; bridge to early AI search methods.</td></tr><tr><td>8</td><td>A Theory of Memory</td><td>§8.1 K-Lines, §8.4 Partial States, §8.5 Level-Bands</td><td>Memory as state-recipe; the technical core.</td></tr><tr><td>9</td><td>Summaries</td><td>Compression of mental states</td><td>How K-lines retrieve summaries rather than full traces.</td></tr><tr><td>10</td><td>Papert’s Principle</td><td>§10.1 Piaget’s Experiments, §10.2-10.3 Society of More</td><td>Cognitive development is acquiring control over already-held skills, not new skills.</td></tr><tr><td>11-13</td><td>Shape, Learning Meaning, Seeing-and-Believing</td><td>Spatial frames, semantic learning</td><td>How perception and meaning interact with frame machinery.</td></tr><tr><td>14</td><td>Reformulation</td><td>§14.1 Using Reformulations, §14.2 Body-Support Concept</td><td>Problem-solving by re-description; transfer between realms.</td></tr><tr><td>15</td><td>Consciousness and Memory</td><td>§15.1 Momentary Mental State, §15.3 Memory</td><td>Consciousness is reading recent records, not present-time awareness.</td></tr><tr><td>16</td><td>Emotion</td><td>§16.1 Emotion, §16.2 Mental Growth</td><td>Emotion as mode of thought, not interrupt. Proto-specialists merge in development.</td></tr><tr><td>17</td><td>Development</td><td>§17.1 Teaching-Selves, §17.2 Attachment-Learning</td><td>Stages teach later stages; attachment changes which goals are worthy.</td></tr><tr><td>18</td><td>Reasoning</td><td>§18.1 Must Machines Be Logical?, §18.2 Chains of Reasoning</td><td>Logic comes after thought, as cleanup; minds are not natively logical.</td></tr><tr><td>19-23</td><td>Words, Context, Trans-frames, Expression, Comparisons</td><td>Polynemes, isonomes, pronomes</td><td>Cross-agency representation machinery.</td></tr><tr><td>24-26</td><td>Frames, Frame-Arrays, Language-Frames</td><td>§24.2 Frames of Mind, §24.3 Trans-Frames, §24.4 Default Assumptions</td><td>Frame apparatus: knowledge as filled-in stereotyped situations.</td></tr><tr><td>27</td><td>Censors and Jokes</td><td>§27.1 Demons, §27.2 Suppressors, §27.3 Censors</td><td>Mind suppresses generation of bad ideas, not just their execution.</td></tr><tr><td>28</td><td>Mind and World</td><td>§28.1 Mental Energy, §28.2 Magnitude and Marketplace</td><td>”Mental energy” is metaphor; quantities arise from forced choice.</td></tr><tr><td>30</td><td>Mental Models</td><td>§30.1 Knowing, §30.3 Mental Models</td><td>Knowledge is having a model that an observer can interrogate.</td></tr><tr><td>Appendix</td><td>Heredity and Environment</td><td>§1 Genes as small societies</td><td>Nature/nurture is a false dichotomy.</td></tr><tr><td>Postscript</td><td>Postscript &amp; Acknowledgments</td><td>Reflections on the project</td><td>What the book aimed at and what it left undone.</td></tr></tbody></table></div>
+<p>(No <code>06_Source_Notes/chapter_summaries/&lt;slug>/ch_NN_*.md</code> files yet; raw chapter texts are present in <code>[source extract]</code> and the summaries are derived above. Future revisions can promote these to dedicated chapter-summary files if needed.)</p>
+<h2 id="important-examples--cases">Important examples / cases<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#important-examples--cases" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Tower-building Builder</strong> (Prologue §1.4-1.5; ch. 2.1) — The recurring worked example: Builder calls Begin/Add/End; Add calls Find/Get/Put; each calls See/Move/Grasp/Release. The example is calibrated to be <em>embarrassingly simple</em> (a child stacking blocks) precisely so the <em>organizational</em> complexity becomes visible. Minsky and Papert built this as an actual MIT robot in the late 1960s (ch. 2.5).</li>
+<li><strong>Professor Challenger</strong> (ch. 4.4-4.5) — Minsky’s autobiographical anecdote: he gets sleepy while trying to work, imagines competitor Challenger about to solve the same problem, and Anger is recruited by Work to defeat Sleep. Canonical illustration of <em>agency exploits agency</em> via roundabout indirection. Generalizes to all self-control: directness is too dangerous, evolution removed direct connections, fantasy supplies the missing paths.</li>
+<li><strong>Tea-cup grasping</strong> (Prologue §1.3) — Grasping, Balancing, Thirst, Moving agents coordinate without conscious supervision; a hundred muscle programs run in parallel. The minimal-cost demonstration that distributed control is <em>normal</em>, not exotic.</li>
+<li><strong>Piaget’s egg-cup and water-jar conservation tasks</strong> (ch. 10.1-10.2) — Five-year-olds say more eggs after spreading; seven-year-olds say same. Minsky’s reading: the older child has not learned a <em>new fact</em> about quantity but acquired <em>priority structure</em> among already-held agents (Tall/Thin/Confined). Learning is mostly meta-learning.</li>
+<li><strong>Kite-flying / Mary’s gift</strong> (chs. 8.5, 27.1) — Comprehension example: “Jack is flying his kite”, “Mary was invited to Jack’s party. She wondered if he would like a kite. Jane said, ‘Jack already has a kite.‘” Used to motivate K-lines (level-bands) and demons (Charniak’s recognizers that wait for related events).</li>
+<li><strong>Mousetightness parody</strong> (ch. 2.4) — A “Holist” argues no box can hold a mouse because no single board has mousetightness. Used to expose the conflation of part-properties with relational properties; mousetightness <em>is</em> the relation among the boards.</li>
+</ul>
+<h2 id="critiques-and-limitations">Critiques and limitations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#critiques-and-limitations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>No formal theory.</strong> Unlike <em>Computation</em>, the book offers metaphors and vocabulary, not theorems. There are no proofs, no convergence results, no quantitative predictions. Whether that is a feature (it is honest about pre-formal phase) or a bug (it cannot be empirically falsified at the level of its main claims) is contested. From Yang’s policy-research vantage, the under-specification means the framework cannot ground compliance metrics — a regulator cannot operationalize “agent” or “agency” precisely enough to use as legal terminology.</li>
+<li><strong>Empirically loose.</strong> Specific neuroscientific claims have aged unevenly. Modern systems neuroscience has different decompositions (cortical microcircuits, predictive-coding hierarchies, basal-ganglia loops) that do not map cleanly onto agents/agencies/K-lines. The 1986 vocabulary persists in cognitive science as a <em>lingua franca</em> but is rarely the working theory.</li>
+<li><strong>Reads as miscellany.</strong> The 1-section-per-page structure rewards browsing more than systematic study; readers wanting a tight argument may find the form frustrating. The <em>form-mirrors-content</em> defense is rhetorically clever but pragmatically taxing — it shifts integration burden from author to reader, and most readers do not finish.</li>
+<li><strong>Agent vocabulary insufficiently differentiated.</strong> “Agent” in 1986 Minsky is much looser than today’s <em>RL agent</em> or <em>LLM agent</em>; modern usage has tightened around goal-directed, environment-coupled, learning entities, whereas Minsky’s agents include reflex-like recognizers and pure logical AND-gates. Importing modern agent frameworks back into Minsky’s vocabulary risks anachronism in both directions.</li>
+<li><strong>Symbolic-AI commitments date the proposal.</strong> Frames, polynemes, and the K-line theory belong to the symbolic-representation tradition that connectionism (1986 onward, ironically the same year) and later deep learning largely displaced. Minsky’s response — that learning systems will eventually need <em>something like</em> the structured representations he describes — has partial empirical support (mechanistic-interpretability circuits, retrieval-augmented generation, structured prompts) but is not yet decisive.</li>
+<li><strong>Light on learning algorithms.</strong> The book describes structures (K-lines attach to active agents) without specifying credit-assignment rules. This is the same gap <a href="../01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons" class="internal alias" data-slug="01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons">Perceptrons</a> famously identified in connectionist models; ironically Minsky’s own constructive proposal here inherits the deficit.</li>
+<li><strong>Underweights the role of the body.</strong> Embodied/situated cognition (Brooks, Clark) argues that much “agency” Minsky ascribes to internal sub-processes is actually distributed across the body and environment. The book mentions this (the steering-wheel agency analogy, ch. 6.1) but does not develop it; later embodied-cognition work treats this as a fundamental gap rather than a stylistic choice.</li>
+</ul>
+<h2 id="links-to-other-books">Links to other books<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#links-to-other-books" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Minsky’s earlier view, contrasting</strong> <a href="../01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines" class="internal alias" data-slug="01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines">Marvin Lee Minsky - Computation Finite and Infinite Machines</a> — Minsky 1967 sought <em>one</em> formal theory of computation; Minsky 1986 explicitly rejects the search for a single master algorithm and proposes a society. Reading both is reading Minsky’s own intellectual evolution. The compare-and-contrast is captured directly in <a href="../05_Comparative_Maps/McCulloch-vs-Minsky-on-Computation" class="internal alias" data-slug="05_Comparative_Maps/McCulloch-vs-Minsky-on-Computation">McCulloch vs Minsky on Computation</a>.</li>
+<li><strong>Minsky’s later view, extending</strong> <a href="../01_Books/Marvin-Minsky---The-Emotion-Machine" class="internal alias" data-slug="01_Books/Marvin-Minsky---The-Emotion-Machine">Marvin Minsky - The Emotion Machine</a> (2006) — Where <em>Society of Mind</em> fragmented cognition into agents without systematically organizing affect, <em>The Emotion Machine</em> adds stacked cognitive levels and the Critic–Selector control loop. The two books are the early and late synthetic statements of the same underlying program; the 1986 book is more readable, the 2006 book is more architecturally precise.</li>
+<li><strong>Cybernetic-AI critique reflected in</strong> <a href="../01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons" class="internal alias" data-slug="01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons">Marvin Minsky and Seymour Papert - Perceptrons</a> (1969 / 1988 reissue) — The Perceptrons critique of single-layer connectionism is the <em>destructive</em> counterpart to <em>Society of Mind</em>’s <em>constructive</em> proposal. Minsky’s argument: simple uniform networks cannot capture the structured composition that minds require; what is needed is <em>organized heterogeneity</em>, the society. Reading the two together inoculates against both naive connectionism and naive symbolicism.</li>
+<li><strong>Anticipates</strong> <a href="../01_Books/Max-Bennett---A-Brief-History-of-Intelligence" class="internal alias" data-slug="01_Books/Max-Bennett---A-Brief-History-of-Intelligence">Max Bennett - A Brief History of Intelligence</a> — Bennett’s <a href="../02_Atomic_Concepts/Five-Breakthroughs-of-Intelligence" class="internal alias" data-slug="02_Atomic_Concepts/Five-Breakthroughs-of-Intelligence">Five Breakthroughs of Intelligence</a> are agent-like specializations evolved over 600 million years. Minsky’s society and Bennett’s stack are different cuts on the same intuition: intelligence is many mechanisms, evolved at different times for different jobs, glued together. Bennett gives the evolutionary timing Minsky lacks; Minsky gives the within-mind organization Bennett gestures at.</li>
+<li><strong>Direct intellectual ancestor</strong> <a href="../01_Books/Warren-S.-McCulloch---Embodiments-of-Mind" class="internal alias" data-slug="01_Books/Warren-S.-McCulloch---Embodiments-of-Mind">Warren S. McCulloch - Embodiments of Mind</a> — McCulloch’s <a href="../02_Atomic_Concepts/Heterarchy" class="internal" data-slug="02_Atomic_Concepts/Heterarchy">Heterarchy</a> (1945) is Minsky’s heterarchy (ch. 3.4) one generation later, applied within a mind rather than across nervous nets. McCulloch supplied the topological vocabulary; Minsky supplied the bureaucratic vocabulary. The intellectual lineage is direct.</li>
+<li><strong>Deep ancestor of</strong> <a href="../01_Books/Seymour-A-Papert---Mindstorms" class="internal alias" data-slug="01_Books/Seymour-A-Papert---Mindstorms">Seymour A Papert - Mindstorms</a> (Papert was Minsky’s collaborator) — agent-as-mind extends naturally to constructionist learning environments where the child’s <em>own</em> agents are gradually trained. <em>Papert’s Principle</em> (ch. 10) is named for Papert and credits him with the priority-structure observation. The two books are companion volumes for anyone thinking about education in agent-based terms.</li>
+<li><strong>Philosophical companion to</strong> <a href="../01_Books/Daniel-C.-Dennett---Brainstorms" class="internal alias" data-slug="01_Books/Daniel-C.-Dennett---Brainstorms">Daniel C. Dennett - Brainstorms</a> and <a href="../01_Books/Daniel-C.-Dennett---The-Mind's-I" class="internal alias" data-slug="01_Books/Daniel-C.-Dennett---The-Mind's-I">Daniel C. Dennett - The Mind’s I</a> — Dennett’s <em>intentional stance</em> and <em>multiple drafts model</em> of consciousness occupy the same conceptual territory as Minsky’s society and self-as-coalition. Dennett is the philosopher’s version of Minsky’s program; reading both gives the rigorous-philosophy and engineering-imagination versions of the same family of ideas. <a href="../01_Books/Daniel-C.-Dennett---I've-Been-Thinking" class="internal alias" data-slug="01_Books/Daniel-C.-Dennett---I've-Been-Thinking">Daniel C. Dennett - I’ve Been Thinking</a> (Dennett’s autobiography) gives the personal arc that complements Minsky’s quasi-autobiographical chapters.</li>
+<li><strong>Pinker’s social extension</strong> <a href="../01_Books/Steven-Pinker---When-Everyone-Knows-That-Everyone-Knows" class="internal alias" data-slug="01_Books/Steven-Pinker---When-Everyone-Knows-That-Everyone-Knows">Steven Pinker - When Everyone Knows That Everyone Knows</a> — Pinker takes <a href="../02_Atomic_Concepts/Theory-of-Mind" class="internal alias" data-slug="02_Atomic_Concepts/Theory-of-Mind">Theory of Mind</a> (which Minsky models <em>within</em> the head as agent-modeling-agent) and extends it iteratively <em>across</em> heads (<a href="../02_Atomic_Concepts/Common-Knowledge" class="internal alias" data-slug="02_Atomic_Concepts/Common-Knowledge">Common Knowledge</a>). The two books together cover the within-mind and across-mind cases of mentalizing.</li>
+<li><strong>AI-policy adjacent to</strong> <a href="../01_Books/Nick-Bostrom---Deep-Utopia" class="internal alias" data-slug="01_Books/Nick-Bostrom---Deep-Utopia">Nick Bostrom - Deep Utopia</a> — Bostrom asks what happens when machine-superintelligence is built. Minsky’s society-of-mind frame supplies a <em>non-monolithic</em> picture of intelligence that complicates Bostrom’s superintelligence framing: if intelligence is intrinsically a coordination of many mechanisms, then “intelligence explosion” is a coordination problem with regulatory entry points at every layer, not a single takeoff.</li>
+</ul>
+<h2 id="open-questions">Open questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Is there a <em>strict</em> mathematical formalization of the society-of-agents thesis?</strong> Some descendants exist (mixture of experts, hierarchical reinforcement learning, multi-agent LLM systems, neural-module networks) but none is uniquely the formal Minsky. A formalization that captures noncompromise dynamics, K-line state-recipes, and frame default-inheritance simultaneously is still missing.</li>
+<li><strong>Do modern LLMs implement <em>implicit</em> society-of-agents-like behavior?</strong> Mechanistic interpretability work on attention-head circuits, induction heads, and retrieval-augmented behavior reads suggestively like agents/agencies. Whether this validates Minsky 1986 or merely <em>echoes</em> its vocabulary is empirically open. The danger is reading society-of-mind as confirmation bias for whatever decomposition one prefers.</li>
+<li><strong>Where does emotion live in the architecture?</strong> Minsky 1986 treats emotion as a mode of thought (ch. 16); Minsky 2006 (<em>Emotion Machine</em>) adds a Critic-Selector loop that more directly models affect. The 1986/2006 transition is not fully reconciled even in Minsky’s own writing.</li>
+<li><strong>How does the society scale to language?</strong> Frames and language-frames (chs. 24-26) handle stereotyped utterances but Minsky never fully addresses productive compositionality (how novel sentences arise). Later work (Steedman, Goldberg, transformer language models) attacks the problem by other means.</li>
+<li><strong>Is the Self really just a coalition?</strong> Minsky’s coalition account is philosophically attractive but offers no decision procedure for <em>when</em> the coalition decides — when does the agent-vote complete? Predictive processing accounts (Friston, Clark) provide an alternative formalization; the relation between Minsky’s coalition and Friston’s free-energy is unsettled.</li>
+<li><strong>What is the regulatory unit for AI policy?</strong> If a deployed AI is a <em>society</em> of agents, who is responsible when it acts? The agent (per-call decision)? The agency (the deployed system)? The architect? Minsky’s framework makes this question vivid but does not answer it.</li>
+</ul>
+<h2 id="research-uses">Research uses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-uses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>AI policy / capability evaluation</strong>: the agent-based framing is increasingly the right one for understanding modern AI systems (composite, tool-using, multi-step). For Yang’s AI-policy and lobbying-network research, <em>Society of Mind</em> supplies a vocabulary in which “AI capability” is not a scalar but a <em>coordinative property</em> — robustness, brittleness, and risk all live at the agency level, not the agent level. This reframes how to specify capability thresholds in legislation: thresholds keyed to single-model parameters miss the relevant phenomenon when a deployed system is itself a society.</li>
+<li><strong>Multi-agent LLM regulation</strong>: with the post-2023 rise of agentic LLM stacks (tool-using, planning, memory-augmented), regulators face a Minsky-shaped problem: which sub-agent is the <em>responsible</em> unit? Minsky’s <em>agent vs agency</em> distinction (Prologue §1.6) provides direct guidance — accountability should attach at the agency level (the deployed system) where competence emerges, not at the agent level (any single sub-process) where competence is absent. This is operationally useful for drafting model-spec disclosure rules and for agency-level (rather than model-level) evaluation pipelines.</li>
+<li><strong>Blockchain-regulation framing</strong>: smart-contract systems are heterarchical (ch. 3.4) — modules call modules in closed loops. Minsky’s principle of noncompromise (ch. 3.2) predicts deadlock dynamics; this maps directly onto governance-deadlock failures observed in DAO contexts (gas wars, protocol-upgrade stalls). Reading on-chain governance through the noncompromise lens identifies <em>which</em> layer is failing and where intervention is appropriate.</li>
+<li><strong>Lobbying-network / coalition analysis</strong>: lobbying coalitions are themselves societies — many specialized actors coordinating with mutually-incompatible objectives. Minsky’s vocabulary (agency calls subordinate agents, conflicts migrate upward, priority structures arise) imports almost verbatim into lobbying-network research methodology, and supplies a non-rational-actor framing that complements Yang’s existing network analysis with In Song Kim. The <em>Conservative Self</em> idea (ch. 4.4) — coalitions resist rapid change as a structural property — predicts the empirical rigidity of lobbying coalitions across electoral cycles.</li>
+<li><strong>Personal cognitive architecture</strong>: the <em>self as coalition</em> framing (ch. 4.2) — useful for understanding internal conflicts, multiple competing motivations, the discipline of choosing which inner agent to listen to in any given moment. The Professor Challenger episode (ch. 4.5) is a usable model for self-management: rather than fight Sleep directly, recruit Anger via fantasy. This is operationalizable in productivity practice.</li>
+<li><strong>Constructionist tool design</strong>: tools that give the user explicit access to <em>their own</em> sub-agents (planners, memory aids, focus tools) operationalize Minsky’s idea more directly than monolithic AI assistants. Pair with <a href="../01_Books/Seymour-A-Papert---Mindstorms" class="internal alias" data-slug="01_Books/Seymour-A-Papert---Mindstorms">Mindstorms</a> for the implementation philosophy.</li>
+<li><strong>AI-evaluation methodology</strong>: the K-line theory (ch. 8.1) suggests that evaluating a model on a single benchmark is evaluating the wrong unit. The right unit is the <em>recoverable mental state</em> across related tasks — capability is the breadth of K-lines an agent can re-instantiate. This argues for transfer-evaluation and contextual-task batteries over single-shot scoring.</li>
+</ul>
+<h2 id="what-i-would-miss-if-i-only-read-this-note">What I would miss if I only read this note<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-i-would-miss-if-i-only-read-this-note" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The book is its own <em>exhibit</em> — its 270-page structure of 1-section-per-page is the society-of-mind argument made manifest. You read it the way you read a society: episodically, returning, building the picture from many angles. The note compresses propositions; the <em>experience</em> of the book is the thing the note cannot reproduce. Tiny ironic jokes and abrupt tonal jumps reward repeated passes — humor signals agent-like perspective shifts Minsky refuses to hammer academically. Without flipping pages, you also lose tactile sense of <em>how often</em> he restates the same insight — repetition itself performs insistence against homunculus cravings.</p>
+<p>Nor can the note convey the <em>cumulative weight</em> of small worked examples. The Builder/Wrecker pair, the tea-cup, Mary’s kite, Jack’s party, Piaget’s eggs and jars, the conservation-of-water jar, the Professor Challenger anecdote, Kenneth Haase’s red-paint bicycle parable, the steering-wheel agency, Charniak’s gift-return demons, the Holist mouse-box parody — each appears in passing in this note as a one-line gloss, but the book <em>interleaves</em> them so that each one re-illuminates the others on subsequent pages. That interleaving is the book’s pedagogical signature; flat enumeration loses it.</p>
+<p>Finally, the <em>epigraphs</em> and the <em>Postscript</em>. Each chapter opens with a poem or quotation (Einstein, Asimov, Bartlett, Berlin, Vonnegut, Eliot, Buddha, Theodore Melnechuk’s “Punch and Judy”, Chesterton, Bierce, Proust) that frames the section’s argument from outside Minsky’s own voice; they are not decorative but constitutive of the <em>humanistic</em> register the book aims for. The Postscript and Acknowledgments give Minsky’s own honest accounting of what the project did and did not accomplish — including unusual frankness about which collaborators (Papert above all) shaped which ideas, and which problems remain open. A reader who only consumes propositional summaries misses the texture that makes <em>Society of Mind</em> the <em>kind</em> of book it is — a <em>structured anthology of interrogations</em>, not a treatise.</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-90" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#marvin-minsky---the-society-of-mind" data-for="marvin-minsky---the-society-of-mind">Marvin Minsky - The Society of Mind</a></li><li class="depth-1"><a href="#one-sentence-thesis" data-for="one-sentence-thesis">One-sentence thesis</a></li><li class="depth-1"><a href="#why-this-book-matters" data-for="why-this-book-matters">Why this book matters</a></li><li class="depth-1"><a href="#core-argument" data-for="core-argument">Core argument</a></li><li class="depth-1"><a href="#argument-map" data-for="argument-map">Argument map</a></li><li class="depth-1"><a href="#key-concepts" data-for="key-concepts">Key concepts</a></li><li class="depth-1"><a href="#best-chapterspages-to-actually-read" data-for="best-chapterspages-to-actually-read">Best chapters/pages to actually read</a></li><li class="depth-1"><a href="#chapter-by-chapter-distillation" data-for="chapter-by-chapter-distillation">Chapter-by-chapter distillation</a></li><li class="depth-1"><a href="#important-examples--cases" data-for="important-examples--cases">Important examples / cases</a></li><li class="depth-1"><a href="#critiques-and-limitations" data-for="critiques-and-limitations">Critiques and limitations</a></li><li class="depth-1"><a href="#links-to-other-books" data-for="links-to-other-books">Links to other books</a></li><li class="depth-1"><a href="#open-questions" data-for="open-questions">Open questions</a></li><li class="depth-1"><a href="#research-uses" data-for="research-uses">Research uses</a></li><li class="depth-1"><a href="#what-i-would-miss-if-i-only-read-this-note" data-for="what-i-would-miss-if-i-only-read-this-note">What I would miss if I only read this note</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../00_Index/Library-Index" class="internal">Library Index</a></li><li><a href="../01_Books/Carlo-Rovelli---Helgoland" class="internal">Helgoland — Making Sense of the Quantum Revolution</a></li><li><a href="../01_Books/Daniel-C.-Dennett---Brainstorms" class="internal">Brainstorms — Philosophical Essays on Mind and Psychology</a></li><li><a href="../01_Books/Daniel-C.-Dennett---I've-Been-Thinking" class="internal">I've Been Thinking</a></li><li><a href="../01_Books/Daniel-C.-Dennett---The-Mind's-I" class="internal">The Mind's I — Fantasies and Reflections on Self and Soul</a></li><li><a href="../01_Books/David-D.-Burns---Feeling-Good" class="internal">Feeling Good — The New Mood Therapy</a></li><li><a href="../01_Books/David-D.-Burns---Feeling-Great" class="internal">Feeling Great — The Revolutionary New Treatment for Depression and Anxiety</a></li><li><a href="../01_Books/Douglas-Adams---The-Ultimate-Hitchhikers-Guide-to-the-Galaxy" class="internal">The Ultimate Hitchhiker's Guide to the Galaxy (Five Novels in One Outrageous Volume)</a></li><li><a href="../01_Books/Gerald-E.-Schneider---Brain-Structure-and-Its-Origins" class="internal">Brain Structure and Its Origins (in Development and in Evolution)</a></li><li><a href="../01_Books/Kate-Darling---The-New-Breed" class="internal">The New Breed: What Our History with Animals Reveals about Our Future with Robots</a></li><li><a href="../01_Books/Licklider---Libraries-of-the-Future" class="internal">Libraries of the Future</a></li><li><a href="../01_Books/M.-Mitchell-Waldrop---The-Dream-Machine" class="internal">The Dream Machine — J.C.R. Licklider and the Revolution That Made Computing Personal</a></li><li><a href="../01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines" class="internal">Computation - Finite and Infinite Machines</a></li><li><a href="../01_Books/Marvin-Minsky---The-Emotion-Machine" class="internal">The Emotion Machine — Commonsense Thinking, Artificial Intelligence, and the Future of the Human Mind</a></li><li><a href="../01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons-(1988-reissue)" class="internal">Perceptrons (1988 Reissue, Expanded Edition)</a></li><li><a href="../01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons" class="internal">Perceptrons — An Introduction to Computational Geometry</a></li><li><a href="../01_Books/Max-Bennett---A-Brief-History-of-Intelligence" class="internal">A Brief History of Intelligence</a></li><li><a href="../01_Books/Mitchel-Resnick---Turtles-Termites-and-Traffic-Jams" class="internal">Turtles, Termites, and Traffic Jams — Explorations in Massively Parallel Microworlds</a></li><li><a href="../01_Books/Pete-Walker---Complex-PTSD" class="internal">Complex PTSD - From Surviving to Thriving — A Guide and Map for Recovering from Childhood Trauma</a></li><li><a href="../01_Books/Robin-R.-Murphy---Introduction-to-AI-Robotics" class="internal">Introduction to AI Robotics (2nd Edition)</a></li><li><a href="../01_Books/Simon-Prince---Understanding-Deep-Learning" class="internal">Understanding Deep Learning</a></li><li><a href="../01_Books/Steven-Pinker---When-Everyone-Knows-That-Everyone-Knows" class="internal">When Everyone Knows That Everyone Knows — Common Knowledge and the Mysteries of Money, Power, and Everyday Life</a></li><li><a href="../01_Books/Stuart-Russell-and-Peter-Norvig---Artificial-Intelligence-A-Modern-Approach" class="internal">Artificial Intelligence — A Modern Approach (4th Edition)</a></li><li><a href="../01_Books/Warren-S.-McCulloch---Embodiments-of-Mind" class="internal">Embodiments of Mind</a></li><li><a href="../02_Atomic_Concepts/Critic-Selector-Architecture" class="internal">Critic-Selector Architecture</a></li><li><a href="../02_Atomic_Concepts/Intentional-Stance" class="internal">Intentional Stance</a></li><li><a href="../02_Atomic_Concepts/Self-Model" class="internal">Self-Model</a></li><li><a href="../02_Atomic_Concepts/Theory-of-Mind" class="internal">Theory of Mind</a></li><li><a href="../02_Atomic_Concepts/Way-to-Think" class="internal">Way to Think</a></li><li><a href="../03_Arguments/Emotions-are-configurations-of-cognitive-control,-not-rival-faculties" class="internal">Emotions are configurations of cognitive control, not rival faculties</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/xiaolong-y/bookwiki">Source</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

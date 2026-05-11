@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Embodiments of Mind</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@400;700&amp;family=IBM Plex Serif:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="XL's BookWiki"/><meta property="og:title" content="Embodiments of Mind"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Embodiments of Mind"/><meta name="twitter:description" content="Warren S."/><meta property="og:description" content="Warren S."/><meta property="og:image:alt" content="Warren S."/><meta property="og:image" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta property="og:image:url" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta name="twitter:image" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="xiaolong-y.github.io/bookwiki"/><meta property="og:url" content="https://xiaolong-y.github.io/bookwiki/01_Books/Warren-S.-McCulloch---Embodiments-of-Mind"/><meta property="twitter:url" content="https://xiaolong-y.github.io/bookwiki/01_Books/Warren-S.-McCulloch---Embodiments-of-Mind"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Warren S."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvYm9va3dpa2ktdmF1bHQvYm9va3dpa2ktdmF1bHQvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://xiaolong-y.github.io/bookwiki/index.xml"/></head><body data-slug="01_Books/Warren-S.-McCulloch---Embodiments-of-Mind"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">XL's BookWiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>{let slug=node?.file?.slug??node?.slug;return!(slug&amp;&amp;slug.startsWith(\&quot;06_Source_Notes\&quot;)||node?.displayName===\&quot;06_Source_Notes\&quot;)}&quot;,&quot;mapFn&quot;:&quot;node=>{let names={\&quot;00_Index\&quot;:\&quot;Indices\&quot;,\&quot;01_Books\&quot;:\&quot;Books\&quot;,\&quot;02_Atomic_Concepts\&quot;:\&quot;Concepts\&quot;,\&quot;03_Arguments\&quot;:\&quot;Arguments\&quot;,\&quot;04_People\&quot;:\&quot;People\&quot;,\&quot;05_Comparative_Maps\&quot;:\&quot;Comparative Maps\&quot;};node?.displayName&amp;&amp;names[node.displayName]&amp;&amp;(node.displayName=names[node.displayName])}&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-375"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Browse</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-375" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../01_Books/">01_Books</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Embodiments of Mind</a></div></nav><h1 class="article-title">Embodiments of Mind</h1><ul class="tags"><li><a href="../tags/book" class="internal tag-link">book</a></li><li><a href="../tags/cybernetics" class="internal tag-link">cybernetics</a></li><li><a href="../tags/neuroscience" class="internal tag-link">neuroscience</a></li><li><a href="../tags/philosophy-of-mind" class="internal tag-link">philosophy-of-mind</a></li></ul></div></div><article class="popover-hint"><h1 id="warren-s-mcculloch---embodiments-of-mind">Warren S. McCulloch - Embodiments of Mind<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#warren-s-mcculloch---embodiments-of-mind" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p><strong>Read chapter-by-chapter →</strong> <a href=".././06_Source_Notes/chapter_summaries/warren-s-mcculloch-embodiments-of-mind/" class="internal" data-slug="06_Source_Notes/chapter_summaries/warren-s-mcculloch-embodiments-of-mind/index">Deep dive of <em>Embodiments of Mind</em></a> (1 chapters)</p>
+</blockquote>
+<h2 id="one-sentence-thesis">One-sentence thesis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#one-sentence-thesis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Mind is what nervous nets <em>do</em>: any logical proposition the brain can entertain corresponds to a topological pattern of all-or-none neural activity, and any logical expression that meets weak conditions can be realized by some net — so a “physiological theory of knowledge” is mathematically possible, and <em>values</em> (not just truths) inherit the same topology, so even preference cycles become evidence of higher-dimensional structure rather than irrationality.</p>
+<h2 id="why-this-book-matters">Why this book matters<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-this-book-matters" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>McCulloch’s collected papers (1943–1962) originate two of the deepest moves in cognitive science: (i) the <em>logical calculus</em> that proves neural nets and propositional logic are intertranslatable (Pitts–McCulloch 1943), foundational to all later neural-network theory; and (ii) <a href="../02_Atomic_Concepts/Heterarchy" class="internal" data-slug="02_Atomic_Concepts/Heterarchy">Heterarchy</a>, the topological proof that intransitive preferences are not irrational but evidence of a value structure too high-dimensional to map onto a single scale. The first feeds <a href="../01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines" class="internal alias" data-slug="01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines">Minsky’s</a> formal computation theory, [[Marvin Minsky and Seymour Papert - Perceptrons|Minsky and Papert’s <em>Perceptrons</em>]] (the direct technical successor literature that proves what one-layer threshold-net machines cannot compute), and <a href="../01_Books/Max-Bennett---A-Brief-History-of-Intelligence" class="internal alias" data-slug="01_Books/Max-Bennett---A-Brief-History-of-Intelligence">Bennett’s</a> history of brain models. The second is a live concept in network theory, distributed systems, organizational design, and political economy.</p>
+<p>The volume is also a sociological artifact of a period when philosophy of mind, neurophysiology, mathematical logic, and engineering still talked to one another. Seymour Papert wrote the introduction (situating McCulloch alongside Kenneth Craik, Wiener-Rosenblueth-Bigelow, and Piaget as co-founders of cybernetic epistemology, p. xv); Pitts, Lettvin, Maturana co-authored chapters; the Macy Conferences hover in the background. Reading the book is reading a network as much as an argument.</p>
+<p>Readers approaching from ML today should bracket modern training narratives: McCulloch is not claiming brains <em>are</em> logistic circuits; he is proving a <strong>correspondence class</strong> between a deliberately idealized neuron model and propositional logic, which later work relaxes into richer dynamical systems without losing the foundational clarity about <strong>what “realizability” meant</strong> in 1943. The contemporary reader benefits most from <em>what does and does not survive translation</em> into modern theory, which the book itself flags repeatedly via McCulloch’s own admissions of idealization.</p>
+<h2 id="core-argument">Core argument<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-argument" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The book is a series of essays threaded by one programmatic claim: <strong>knowledge has a physiology, and the right level of theory for that physiology is the topology of nervous nets</strong>. Six numbered moves give the spine.</p>
+<ol>
+<li><strong>All-or-none activity as licensing premise.</strong> A neuron either fires fully or not at all (premise from neurophysiology, ch. 2, p. 22 — the first of five “physical assumptions for our calculus”). The other four assumptions: synapses must sum within a fixed window of latent addition; only synaptic delay matters; inhibition absolutely prevents firing; net structure is fixed in time. These are deliberate idealizations, all admitted as such.</li>
+<li><strong>Propositional encoding.</strong> Because firing is binary, neuron <em>c_i</em> firing at time <em>t</em> can be encoded as a proposition <code>N_i(t)</code>. The synaptic structure determines how these atomic propositions compose via conjunction (multiple required excitations), disjunction (alternative paths), and negation (inhibitory synapses). A net’s behavior is then a logical formula whose primitives are neurons (Pitts–McCulloch 1943, ch. 2).</li>
+<li><strong>Two realizability theorems.</strong> Theorem I: every net of order zero (no circles) has a <em>solution</em> — a set of sentences expressing each non-peripheral neuron’s firing as a temporal propositional expression (TPE) in the peripheral inputs (p. 25). Theorem II: every TPE is <em>realizable</em> by a net of order zero — the converse direction, which establishes the bidirectionality (p. 25). Together these prove that nets and propositional logic are intertranslatable. Theorem III gives the precise condition for what counts as a TPE; subsequent theorems extend to nets with circles using recursive functions, allowing reference to indefinite past times (theorems IV–IX).</li>
+<li><strong>Empirical complications absorbed by formal substitution.</strong> Two facts of real nervous systems — facilitation/extinction (state-dependent threshold change) and learning (permanent threshold change) — would seem to break the calculus. McCulloch’s move (ch. 2, p. 21): replace any plastic net with a fictitious equivalent net of constant connections that produces the same input-output behavior. This is the move that makes the apparatus <em>agnostic about plasticity mechanism</em>: whether learning is Hebbian, gradient-descent, or basal-ganglia-mediated, the formal theorems survive.</li>
+<li><strong>From truth to value: the heterarchy extension.</strong> The same topological apparatus handles purposive behavior. Reflexes and reverberating loops are <em>closed circuits</em> (dromes / endromes), and interactions between them are <em>heterodromic</em> (cross-circuit) — heterodromic excitatory or inhibitory paths between dromes are the substrate for choice (ch. 3, p. 41). When choice produces a hierarchy (A>B>C linearly), the irreducible nervous net maps onto a plane <em>without</em> diallels (crossovers). When choice produces a cycle (A>B>C>A — the “value anomaly”), the irreducible net requires <em>at least one diallel</em> in any planar embedding (ch. 3, p. 43, Figure 4).</li>
+<li><strong>Higher-order consistency.</strong> Because the cyclic-preference net cannot be embedded in a plane without crossover, McCulloch concludes that values are <em>not magnitudes of one kind</em>. Apparent intransitivity is <em>consistency of an order higher than philosophy had imagined</em> (ch. 3, p. 43): the value space is genuinely higher-dimensional, and a scalar utility cannot capture it. The smallest such organism — six neurons — is “unpredictable from any theory founded on a scale of values” and “internectively too rich to submit to a summum bonum” (p. 43). McCulloch does not name a specific surface (his own phrasing: the simplest surface on which the net maps without a diallel is “a tore,” ch. 3, p. 43; but the controlling claim is non-planarity, not the specific genus). The note prefers “non-planar” to avoid over-reading the surface specificity.</li>
+</ol>
+<p>The conclusion of the program is <strong>experimental epistemology</strong> (the umbrella term used throughout, e.g., preface and ch. 19): theories of knowledge that are <em>testable like physiology</em>, not asserted like metaphysics. Both representation (what a net can entertain) and evaluation (what it can prefer) become objects of mechanism, and so subjects of an observational science.</p>
+<h2 id="argument-map">Argument map<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#argument-map" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>McCulloch’s essays converge on one programmatic claim: once neurons are treated as <strong>logical primitives</strong>, both <strong>representation</strong> (what can be entertained) and <strong>evaluation</strong> (what can be preferred) become objects for <strong>experimental epistemology</strong> — testable like physiology, not asserted like metaphysics. The heterarchy papers extend the same machinery from truth-functions to preference structures.</p>
+<pre><code>                   FIVE PHYSICAL ASSUMPTIONS (p. 22)
+                   1. all-or-none neural firing
+                   2. fixed-threshold synaptic summation in latent-addition window
+                   3. only synaptic delay matters
+                   4. absolute inhibition
+                   5. net structure fixed in time
+                                  │
+                                  ▼
+   ┌─────────────────────────────────────────────────────────────┐
+   │  PROPOSITIONAL ENCODING: N_i(t) = &quot;neuron i fires at t&quot;      │
+   │  conjunction = co-firing  /  disjunction = alternative path  │
+   │  negation = inhibition                                       │
+   └─────────────────────────────────────────────────────────────┘
+                                  │
+              ┌───────────────────┼───────────────────┐
+              ▼                   ▼                   ▼
+       Theorem I              Theorem II           Theorem III
+   net → formula            formula → net      precise TPE-condition
+  (every net solvable     (every TPE realiz-    (truth-table criterion
+   in TPEs)                able by some net)     for realizability)
+              │                   │                   │
+              └───────────────────┴───────────────────┘
+                                  │
+                                  ▼
+              physiological theory of knowledge
+                                  │
+                                  ▼
+   purposive behavior → closed circuits (dromes / endromes)
+                                  │
+              heterodromic interactions = choice substrate
+                                  │
+        ┌─────────────────────────┴─────────────────────────┐
+        ▼                                                   ▼
+  hierarchy of values:                          heterarchy of values:
+  cycle-free preference                         cyclic preference
+  → planar net (no diallels)                    → non-planar net (≥1 diallel)
+  → values are magnitudes of one kind           → values are NOT magnitudes
+                                                   of one kind
+                                                → consistency of higher order
+                                                → &quot;internectively too rich
+                                                   to submit to a summum bonum&quot;
+</code></pre>
+<h2 id="key-concepts">Key concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../02_Atomic_Concepts/All-or-None-Activity" class="internal alias" data-slug="02_Atomic_Concepts/All-or-None-Activity">All-or-None Activity</a> — the discrete-firing premise that licenses propositional representation (the first physical assumption, p. 22)</li>
+<li><a href="../02_Atomic_Concepts/Logical-Calculus-of-Neural-Activity" class="internal alias" data-slug="02_Atomic_Concepts/Logical-Calculus-of-Neural-Activity">Logical Calculus of Neural Activity</a> — the Pitts–McCulloch theorem (Theorems I–III)</li>
+<li><a href="../02_Atomic_Concepts/Net-Realizability" class="internal alias" data-slug="02_Atomic_Concepts/Net-Realizability">Net Realizability</a> — the family of theorems concerning what nets can implement (Pitts–McCulloch 1943 establishes the foundational case; theorem II is the realizability direction)</li>
+<li><a href="../02_Atomic_Concepts/Heterarchy" class="internal" data-slug="02_Atomic_Concepts/Heterarchy">Heterarchy</a> — non-hierarchical value/control topology; McCulloch’s distinctive contribution (ch. 3)</li>
+<li><a href="../02_Atomic_Concepts/Experimental-Epistemology" class="internal alias" data-slug="02_Atomic_Concepts/Experimental-Epistemology">Experimental Epistemology</a> — McCulloch’s name for the whole project: testable theories of knowledge (used throughout; programmatic statement in ch. 19)</li>
+<li><a href="../02_Atomic_Concepts/Effective-Procedure" class="internal alias" data-slug="02_Atomic_Concepts/Effective-Procedure">Effective Procedure</a> — the realizability theorems give a <em>constructive</em> procedure for net synthesis; this is McCulloch’s instantiation of computability avant la lettre</li>
+<li><a href="../02_Atomic_Concepts/Theory-of-Mind" class="internal alias" data-slug="02_Atomic_Concepts/Theory-of-Mind">Theory of Mind</a> — McCulloch’s “physiological theory of knowledge” is the early-cybernetic ancestor of later philosophical theories of mind</li>
+</ul>
+<h2 id="key-arguments-created-from-this-book">Key arguments created from this book<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-arguments-created-from-this-book" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../03_Arguments/Neural-activity-is-propositional" class="internal alias" data-slug="03_Arguments/Neural-activity-is-propositional">Neural activity is propositional</a> — the Pitts–McCulloch thesis</li>
+<li><a href="../03_Arguments/Values-are-heterarchical" class="internal alias" data-slug="03_Arguments/Values-are-heterarchical">Values are heterarchical</a> — empirical preference cycles imply non-planar value topology</li>
+</ul>
+<h2 id="best-chapterspages-to-actually-read">Best chapters/pages to actually read<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#best-chapterspages-to-actually-read" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Ch. 1 — “What Is a Number, that a Man May Know It…”</strong> (1961 Korzybski Lecture, pp. 1-18). McCulloch’s most accessible introduction to <em>experimental epistemology</em>. Reframes the question of knowledge by tracing the philosophical history (Aristotle, Aquinas, Ockham, Hume, Russell) and arriving at: <em>what kind of mechanism could represent number such that a man might know it?</em> (pp. 5-7). Worth reading as a frame for the technical chapter that follows.</li>
+<li><strong>Ch. 2 — “A Logical Calculus of the Ideas Immanent in Nervous Activity”</strong> (Pitts &amp; McCulloch, 1943; pp. 19-39 of the collection). The seminal paper. The five physical assumptions appear at p. 22, the realizability theorems follow (Theorem I p. 25, Theorem II p. 25-26, Theorem III p. 26). Even skimmed, it gives the core idea. The technical proof depends on Carnap’s Language II augmented with Russell-Whitehead notation that has aged, but the intuition (every net ↔ a logical formula) survives intact and is <em>the</em> origin of computational neuroscience.</li>
+<li><strong>Ch. 3 — “A Heterarchy of Values Determined by the Topology of Nervous Nets”</strong> (McCulloch, 1945; pp. 40-45). Six pages, dense, but contains the topological argument that intransitive preferences require a non-planar nervous net (McCulloch’s own term: a surface “sufficient to map the dromes” without a <em>diallel</em> / crossover, p. 40). The Bell-Magendie / drome / endrome vocabulary is established at the start (p. 40). Figures 1-4 are the key constructions; the value-anomaly net at Figure 4 (p. 43) is the load-bearing diagram.</li>
+<li><strong>Ch. 6 — “Why the Mind Is in the Head”</strong> (1951 Hixon Symposium, pp. 72-141). The most philosophically explicit essay. Defines “mind” (ideas and purposes) and “body” (stuff and process) in terms compatible with information theory, then asks why information processing happens in heads (pp. 72-73). Long, but the first 10 pages contain the core philosophical position.</li>
+<li><strong>Ch. 11 — “Toward Some Circuitry of Ethical Robots”</strong> (1956, pp. 194-202). McCulloch’s most explicit discussion of what would now be called AI ethics, half a century early. Connects the heterarchy result to the value-circularity problem in cooperating machines (pp. 194-198). Speculative but influential.</li>
+<li><strong>Ch. 14 — “What the Frog’s Eye Tells the Frog’s Brain”</strong> (Lettvin, Maturana, McCulloch, Pitts 1959; pp. 230-255). Empirical follow-on to the realizability theorems. Frog retinal ganglion cells implement bug-detection directly — perception is structured at the retina, not the cortex. McCulloch describes this as “our first major step in experimental epistemology” (preface).</li>
+<li><strong>Ch. 19 — “A Historical Introduction to the Postulational Foundations of Experimental Epistemology”</strong> (1964, pp. 359-372). Late synthesis. McCulloch’s own retrospective on what the program was about and what it now needs.</li>
+<li><strong>Preface and Acknowledgments (pp. v-viii)</strong> — McCulloch states his program as “experimental epistemology” and lists the dramatis personae (Pitts, Lettvin, Maturana). Useful map of the cybernetic milieu.</li>
+<li><strong>Seymour Papert’s Introduction (pp. xiii-xx)</strong> — Excellent secondary framing; situates McCulloch alongside Craik, Wiener-Rosenblueth-Bigelow, and Piaget as the four parents of cybernetic epistemology. Worth reading first if approaching cold.</li>
+<li><em>Skip</em> the experimental-electrophysiology papers — chs. 5, 9, 10 (cortical strychnine threshold experiments, dorsal-root reflex inhibition) — unless you want the lab method; they are dated and the argument does not depend on them.</li>
+</ul>
+<h2 id="chapter-by-chapter-distillation">Chapter-by-chapter distillation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chapter-by-chapter-distillation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The book is a 21-chapter collection of reprinted papers (1943–1964) arranged thematically, framed by Papert’s introduction. Page numbers from the 1965 MIT Press edition.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>Title (year)</th><th>Pages</th><th>Summary</th><th>Link</th></tr></thead><tbody><tr><td>Intro</td><td>Papert’s Introduction</td><td>xiii-xx</td><td>Frames McCulloch as one of four parents of cybernetic epistemology (Craik, Wiener-Rosenblueth-Bigelow, Piaget). Excellent overview.</td><td>(TODO summary)</td></tr><tr><td>1</td><td>”What Is a Number, that a Man May Know It…” (1961)</td><td>1-18</td><td>Korzybski Lecture. McCulloch reframes numbers and knowing in terms of an organism’s logical capacity.</td><td>(TODO summary)</td></tr><tr><td>2</td><td>”A Logical Calculus…” (Pitts &amp; McCulloch, 1943)</td><td>19-39</td><td>The seminal neuron-as-proposition paper. Five physical assumptions (p. 22). Realizability theorems (pp. 25-26).</td><td><a href="../06_Source_Notes/chapter_summaries/warren-s-mcculloch-embodiments-of-mind/ch_02_a-logical-calculus-of-the-ideas-immanent-in-nervous-activity" class="internal alias" data-slug="06_Source_Notes/chapter_summaries/warren-s-mcculloch-embodiments-of-mind/ch_02_a-logical-calculus-of-the-ideas-immanent-in-nervous-activity">ch.2</a></td></tr><tr><td>3</td><td>”A Heterarchy of Values…” (1945)</td><td>40-45</td><td>Topological proof that preference cycles require non-planar nervous nets. Coins <em>heterarchy</em>.</td><td>(TODO summary — high priority)</td></tr><tr><td>4</td><td>”How We Know Universals” (Pitts &amp; McCulloch, 1947)</td><td>46-66</td><td>Group-theoretic mechanism for invariant perception (translation/scale invariance).</td><td>(TODO summary)</td></tr><tr><td>5</td><td>”Modes of Functional Organization of the Cerebral Cortex” (1947)</td><td>67-71</td><td>Empirical complement to ch. 2-4. Skip unless reading ch. 4.</td><td>skip</td></tr><tr><td>6</td><td>”Why the Mind Is in the Head” (1951)</td><td>72-141</td><td>Hixon Symposium. McCulloch’s most philosophically explicit statement of position.</td><td>(TODO summary — high priority)</td></tr><tr><td>7</td><td>”Through the Den of the Metaphysician” (1948)</td><td>142-156</td><td>Speculative; reflects on relations to philosophy of science.</td><td>(TODO)</td></tr><tr><td>8</td><td>”Mysterium Iniquitatis…” (1955)</td><td>157-164</td><td>Theological-toned essay on sin and machine purpose. Idiosyncratic.</td><td>(TODO)</td></tr><tr><td>9</td><td>Strychnine effects on spinal afferents (1955, with Wall, Lettvin, Pitts)</td><td>165-176</td><td>Dated electrophysiology.</td><td>skip</td></tr><tr><td>10</td><td>Reflex inhibition by dorsal-root interaction (1955)</td><td>177-193</td><td>Dated electrophysiology.</td><td>skip</td></tr><tr><td>11</td><td>”Toward Some Circuitry of Ethical Robots” (1956)</td><td>194-202</td><td>Ethics in the cybernetic frame. Influential on later AI ethics.</td><td>(TODO)</td></tr><tr><td>12</td><td>”Agatha Tyche: Of Nervous Nets…” (1959)</td><td>203-215</td><td>Net unreliability and noise tolerance.</td><td>(TODO)</td></tr><tr><td>13</td><td>”Where Is Fancy Bred?” (1961)</td><td>216-229</td><td>Late synthesis on imagination and computation.</td><td>(TODO)</td></tr><tr><td>14</td><td>”What the Frog’s Eye…” (Lettvin et al., 1959)</td><td>230-255</td><td>The empirical follow-on to “How We Know Universals”.</td><td>(TODO summary — high priority)</td></tr><tr><td>15</td><td>”Finality and Form” (1952)</td><td>256-275</td><td>Goal-directed behavior in cybernetic terms.</td><td>(TODO)</td></tr><tr><td>16</td><td>”The Past of a Delusion” (1953)</td><td>276-306</td><td>Historical essay; less load-bearing.</td><td>(TODO)</td></tr><tr><td>17</td><td>”Machines That Think and Want” (1950)</td><td>307-318</td><td>Early statement of the program for non-experts.</td><td>(TODO)</td></tr><tr><td>18</td><td>”The Natural Fit” (1959)</td><td>319-358</td><td>Late synthetic essay. Pulls threads together.</td><td>(TODO)</td></tr><tr><td>19</td><td>”A Historical Introduction to the Postulational Foundations of Experimental Epistemology” (1964)</td><td>359-372</td><td>Retrospective programmatic statement.</td><td>(TODO summary — high priority)</td></tr><tr><td>20</td><td>”Physiological Processes Underlying Psychoneuroses” (1949)</td><td>373-386</td><td>Application to clinical psychiatry.</td><td>(TODO)</td></tr><tr><td>21</td><td>”What’s in the Brain That Ink May Character?” (1964)</td><td>387-398</td><td>Late lecture; loose synthesis.</td><td>(TODO)</td></tr></tbody></table></div>
+<p>(Most chapter summaries are not yet written; this batch wrote only the foundational ones. Chapter summaries are in <code>06_Source_Notes/chapter_summaries/warren-s-mcculloch-embodiments-of-mind/</code>.)</p>
+<h2 id="important-examples--cases">Important examples / cases<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#important-examples--cases" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The <strong>propositional encoding of a 3-neuron net</strong> (ch. 2, Figure 1, p. 26) showing how synaptic structure becomes a logical formula. Subfigures (a–d) realize SS₂, S(p∨q), S(p∧q), and S(p∧¬q) respectively — these are the four primitive net-fragments out of which any TPE can be constructed by the proof of Theorem II.</li>
+<li>The <strong>heat-illusion example</strong> (ch. 2, pp. 26-27): a brief application of cold to skin produces a transient sensation of heat, prolonged cold does not. McCulloch derives a 5-neuron net realizing this temporal logic via Theorem III, illustrating the constructive synthesis procedure of theorems I-III.</li>
+<li><strong>The 6-neuron preference-cycle net</strong> (ch. 3, Figure 4, p. 43) requiring at least one <em>diallel</em> in any planar embedding. Smallest non-planar net implementing intransitivity. McCulloch describes the simplest non-planar surface for embedding without a diallel as “a tore” (p. 43); the load-bearing claim is non-planarity, not the specific genus.</li>
+<li><strong>Lettvin–Maturana–McCulloch–Pitts’s “What the Frog’s Eye Tells the Frog’s Brain”</strong> (ch. 14) — the empirical follow-on to “How We Know Universals”. The frog has retinal ganglion cells that detect bug-like motion directly; perception is structured at the retina, not the cortex. McCulloch frames it (preface) as “our first major step in experimental epistemology.”</li>
+</ul>
+<h2 id="critiques-and-limitations">Critiques and limitations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#critiques-and-limitations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The Pitts–McCulloch neuron is a <em>binary threshold unit</em>. Real neurons are continuous, asynchronous, and use spike-timing codes. The paper acknowledges this (the “all-or-none” idealization is admitted as such, p. 22) but later neural-network theory had to relax it (sigmoids, rate coding, spiking nets). <a href="../01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons" class="internal alias" data-slug="01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons">Minsky and Papert (1969)</a> later showed <em>what one-layer threshold-net machines cannot compute</em> (parity, connectedness) — a direct technical limitation of the realizability theorems’ threshold-unit basis.</li>
+<li>The realizability theorems are about <em>what nets could in principle do</em>, not about what real brains do. <a href="../01_Books/Max-Bennett---A-Brief-History-of-Intelligence" class="internal alias" data-slug="01_Books/Max-Bennett---A-Brief-History-of-Intelligence">Bennett (2023)</a> and modern systems neuroscience map the actual circuits very differently (basal ganglia loops, predictive coding, cortical hierarchy), and the empirical neuroscience has overtaken the formal apparatus by 60 years.</li>
+<li>McCulloch’s late essays drift into metaphysical exuberance (Aquinas, Aristotle, Saint Anselm) that the formal apparatus does not actually support. The reader has to disentangle the load-bearing technical claims from the surrounding cultural-philosophical scaffolding.</li>
+<li>The experimental-electrophysiology chapters (5, 9, 10) use 1950s techniques and conclusions that are largely superseded; they are reprinted for completeness but contribute little to the central program.</li>
+<li>The Carnap–Russell–Whitehead notation in ch. 2 is a barrier; the <em>idea</em> survives the notation. (The chapter summary traces this in more detail.)</li>
+<li>The empirical foundation of the heterarchy claim — that preference cycles persist <em>under careful experimental control</em> rather than reflecting noise or sequence effects — is far weaker than the formal apparatus. Modern decision theory (Tversky’s preference-reversal work, bounded-rationality literature) treats observed intransitivities as cognitive limits, not as evidence of higher-dimensional value space. The formal half of the heterarchy argument is strong; the empirical half deserves replication before the topological framing is preferred over the bounded-rationality framing for any specific decision problem.</li>
+<li>The “agnostic about plasticity” move (replace plastic nets with fictitious equivalent nets) is elegant but has a hidden cost: it cannot distinguish between learning algorithms that converge to the same fixed points but via different dynamics. Modern ML theory (where the <em>training trajectory</em> matters as much as the equilibrium) cannot be expressed within the Pitts-McCulloch frame.</li>
+</ul>
+<h2 id="links-to-other-books">Links to other books<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#links-to-other-books" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Foundational for</strong> <a href="../01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines" class="internal alias" data-slug="01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines">Marvin Lee Minsky - Computation Finite and Infinite Machines</a> — Minsky’s finite-state machine theory builds directly on the Pitts–McCulloch translation between nets and logic. Read Minsky’s ch. 1 with McCulloch’s ch. 2 in mind to see the lineage.</li>
+<li><strong>Direct continuation in</strong> <a href="../01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons" class="internal alias" data-slug="01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons">Marvin Minsky and Seymour Papert - Perceptrons</a> — Minsky-Papert prove what <em>one-layer</em> threshold-net machines (the descendant of the McCulloch-Pitts neuron) cannot compute. Reads as a partial answer to the realizability theorems’ question of what nets can do.</li>
+<li><strong>Historical antecedent of</strong> <a href="../01_Books/Max-Bennett---A-Brief-History-of-Intelligence" class="internal alias" data-slug="01_Books/Max-Bennett---A-Brief-History-of-Intelligence">Max Bennett - A Brief History of Intelligence</a> — Bennett narrates the 20th-century brain-as-computer thread that McCulloch starts. McCulloch’s 1943 paper is treated as the originating event of the modern computational thread (Bennett’s framing).</li>
+<li><strong>Methodological contrast with</strong> <a href="../01_Books/Seymour-A-Papert---Mindstorms" class="internal alias" data-slug="01_Books/Seymour-A-Papert---Mindstorms">Seymour A Papert - Mindstorms</a> — Papert (a student of Piaget; introducer of <em>Embodiments of Mind</em>) holds that learning is constructed by the child manipulating microworlds; McCulloch holds that the <em>substrate</em> of mind is fixed logical-topological structure. Both are right at different levels; the contrast is real. Papert’s introduction to McCulloch’s volume (pp. xiii-xx) is the most articulate statement of how to read the substrate-vs-construction split.</li>
+<li><strong>Philosophy-of-mind successor literature</strong> <a href="../01_Books/Daniel-C.-Dennett---Brainstorms" class="internal alias" data-slug="01_Books/Daniel-C.-Dennett---Brainstorms">Daniel C. Dennett - Brainstorms</a>, <a href="../01_Books/Daniel-C.-Dennett---The-Mind's-I" class="internal alias" data-slug="01_Books/Daniel-C.-Dennett---The-Mind's-I">Daniel C. Dennett - The Mind’s I</a>, <a href="../01_Books/Marvin-Minsky---The-Society-of-Mind" class="internal alias" data-slug="01_Books/Marvin-Minsky---The-Society-of-Mind">Marvin Minsky - The Society of Mind</a>, <a href="../01_Books/Marvin-Minsky---The-Emotion-Machine" class="internal alias" data-slug="01_Books/Marvin-Minsky---The-Emotion-Machine">Marvin Minsky - The Emotion Machine</a> — each takes a piece of McCulloch’s program (mind as embodied function, mind as collective of agents, etc.) and extends it without the formal-realizability constraint. Reading McCulloch first surfaces what these successors discard.</li>
+<li><strong>Historical adjacency to</strong> <a href="../01_Books/M.-Mitchell-Waldrop---The-Dream-Machine" class="internal alias" data-slug="01_Books/M.-Mitchell-Waldrop---The-Dream-Machine">M. Mitchell Waldrop - The Dream Machine</a> — Waldrop’s Licklider biography covers the same MIT/cybernetics generation institutionally; McCulloch directed the RLE neurophysiology group at MIT (1952-1969) at the same institution Licklider’s Project MAC inhabited. Different intellectual project, overlapping sociology.</li>
+<li><strong>Rationalist epistemology adjacent</strong> <a href="../01_Books/Karl-Popper---The-Logic-of-Scientific-Discovery" class="internal alias" data-slug="01_Books/Karl-Popper---The-Logic-of-Scientific-Discovery">Karl Popper - The Logic of Scientific Discovery</a> — McCulloch and Popper both defend an <em>epistemology of testable hypothesis</em>; Popper formalizes falsifiability for theories, McCulloch formalizes a physiological substrate for theory-formation itself. They never engage directly but the projects are commensurable.</li>
+</ul>
+<h2 id="open-questions">Open questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Does the realizability-of-logical-expressions theorem extend to <em>learnable</em> nets (Hebbian, gradient-descent)? McCulloch sketches this via the “fictitious equivalent net” move (ch. 2, p. 21) but the modern proofs (universal approximation theorems for sigmoid and ReLU networks) are independent results. What does the McCulloch-Pitts apparatus <em>miss</em> about gradient-descent learning that the universal approximation theorem captures?</li>
+<li>Heterarchy was empirically motivated by preference-cycle experiments (ch. 3, citing experimental aesthetics, economics, and conditioned reflexology — without specific references, p. 43). How replicable are those experiments under modern experimental controls? Modern decision theory treats intransitivity as boundedly-rational; McCulloch treats it as evidence of higher-dimensional structure. Which framing is more productive in any <em>specific</em> domain (consumer choice, voting, animal foraging)?</li>
+<li>The “ethical robots” essay (ch. 11) raises the modern AI-alignment question half a century early. Does anything formal in McCulloch’s apparatus translate? The heterarchy result implies that any sufficiently rich agent will exhibit cyclic preferences — does this mean alignment-via-utility-function is mathematically doomed?</li>
+<li>The frog’s-eye paper (ch. 14) is the empirical realization of the realizability theorems’ “what’s actually computed at the periphery” question. Modern systems neuroscience (V1 simple/complex cells, motion detection in MT) has answered this in much richer detail. Where does McCulloch’s framework still bite empirically, and where has it been simply superseded?</li>
+</ul>
+<h2 id="research-uses">Research uses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-uses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>AI / cybernetics history:</strong> the Pitts–McCulloch paper is the <em>origin event</em> for any account of computational neuroscience or neural networks. For Yang’s history-of-AI work, McCulloch’s 1943 paper sits at the joint with Turing 1936 (computability) and Wiener 1948 (cybernetics) — the three founding texts of the computational theory of mind. Chapter 19’s retrospective is a useful primary source for the program’s self-understanding circa 1964.</li>
+<li><strong>Political economy / institutions:</strong> <a href="../02_Atomic_Concepts/Heterarchy" class="internal" data-slug="02_Atomic_Concepts/Heterarchy">Heterarchy</a> is the formal underpinning of “non-hierarchical” governance, distributed coordination, and network organization. Useful concept for Yang’s lobbying-network research — political-influence flows are heterodromic, not hierarchical, and Arrow-style impossibility theorems can be reread as topological constraints, not just logical ones. The McCulloch reframe (“intransitivity as consistency of higher order”) supplies a vocabulary for treating constitutional ambiguity, separation-of-powers conflicts, and voting cycles as productive features rather than bugs.</li>
+<li><strong>Personal intellectual development:</strong> McCulloch as a model for the <em>programmatic essay</em> — every paper sits in a coherent multi-decade project (“experimental epistemology”). The collected-essays form is itself an intellectual move worth imitating. The book is also a sociological study: its 21 papers trace a network of collaborators (Pitts, Lettvin, Maturana, Wiener, von Foerster) over 20 years, illustrating how interdisciplinary research consortia actually work.</li>
+<li><strong>Methodological:</strong> the move from “X is irrational” (intransitive preferences) to “X is consistent at higher dimension” is a generalizable rhetorical strategy when an apparent paradox blocks an analysis. It surfaces in modern econ/political-economy work (multi-attribute decision theory, preference-as-pseudo-Boolean-function) and is worth importing wholesale where evidence of intransitivity threatens to break a model.</li>
+<li><strong>AI safety / alignment:</strong> the heterarchy-implies-no-summum-bonum result (ch. 3, p. 43) is a 1945 statement of why aligning powerful agents to a <em>scalar</em> utility may be mathematically impossible at sufficient richness. This connects to modern alignment debates (corrigibility, multi-objective RL, preference learning) without anyone usually citing it.</li>
+</ul>
+<h2 id="what-i-would-miss-if-i-only-read-this-note">What I would miss if I only read this note<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-i-would-miss-if-i-only-read-this-note" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The collection is McCulloch’s <em>voice</em> — Aquinas-quoting, Latin-loving, neurology-fluent, polymathic. The note can convey what McCulloch argued; it cannot convey the texture of an essay where Bell-Magendie laws, propositional calculus, and the <em>Summa Theologica</em> coexist in the same paragraph. Reading him also surfaces the sociology of mid-century cybernetics — Wiener, Pitts, Lettvin, von Foerster, Northrop, von Domarus move through these papers as collaborators and interlocutors, and the network of relations is itself an artifact worth studying. Papert’s introduction (xiii-xx) is one of the cleanest external statements of the cybernetic-epistemology program and is worth reading in full; the note can paraphrase it but not substitute for it. The reader of the note also misses Pitts’s own brief, brilliant biographical presence — McCulloch’s preface notes Pitts was “in his teens” when the 1943 paper was written, and the book hints at the larger story without telling it. (Specific Pitts biographical claims circulating in secondary literature — age 17, runaway, <em>Principia</em> at 12 — are not in this source and should not be inferred as such.) Finally, the heterarchy paper’s six pages (ch. 3, pp. 40-45) reward a slow second reading: the figure-by-figure construction of the value-anomaly net (Figures 1-4) is the actual proof, and the prose is dense enough that a chapter summary will compress out the construction’s elegance.</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-151" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#warren-s-mcculloch---embodiments-of-mind" data-for="warren-s-mcculloch---embodiments-of-mind">Warren S. McCulloch - Embodiments of Mind</a></li><li class="depth-1"><a href="#one-sentence-thesis" data-for="one-sentence-thesis">One-sentence thesis</a></li><li class="depth-1"><a href="#why-this-book-matters" data-for="why-this-book-matters">Why this book matters</a></li><li class="depth-1"><a href="#core-argument" data-for="core-argument">Core argument</a></li><li class="depth-1"><a href="#argument-map" data-for="argument-map">Argument map</a></li><li class="depth-1"><a href="#key-concepts" data-for="key-concepts">Key concepts</a></li><li class="depth-1"><a href="#key-arguments-created-from-this-book" data-for="key-arguments-created-from-this-book">Key arguments created from this book</a></li><li class="depth-1"><a href="#best-chapterspages-to-actually-read" data-for="best-chapterspages-to-actually-read">Best chapters/pages to actually read</a></li><li class="depth-1"><a href="#chapter-by-chapter-distillation" data-for="chapter-by-chapter-distillation">Chapter-by-chapter distillation</a></li><li class="depth-1"><a href="#important-examples--cases" data-for="important-examples--cases">Important examples / cases</a></li><li class="depth-1"><a href="#critiques-and-limitations" data-for="critiques-and-limitations">Critiques and limitations</a></li><li class="depth-1"><a href="#links-to-other-books" data-for="links-to-other-books">Links to other books</a></li><li class="depth-1"><a href="#open-questions" data-for="open-questions">Open questions</a></li><li class="depth-1"><a href="#research-uses" data-for="research-uses">Research uses</a></li><li class="depth-1"><a href="#what-i-would-miss-if-i-only-read-this-note" data-for="what-i-would-miss-if-i-only-read-this-note">What I would miss if I only read this note</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../00_Index/Library-Index" class="internal">Library Index</a></li><li><a href="../01_Books/Carlo-Rovelli---Helgoland" class="internal">Helgoland — Making Sense of the Quantum Revolution</a></li><li><a href="../01_Books/Daniel-C.-Dennett---Brainstorms" class="internal">Brainstorms — Philosophical Essays on Mind and Psychology</a></li><li><a href="../01_Books/Daniel-C.-Dennett---I've-Been-Thinking" class="internal">I've Been Thinking</a></li><li><a href="../01_Books/Daniel-C.-Dennett---The-Mind's-I" class="internal">The Mind's I — Fantasies and Reflections on Self and Soul</a></li><li><a href="../01_Books/Daniel-Johnston---Foundations-of-Cellular-Neurophysiology" class="internal">Foundations of Cellular Neurophysiology</a></li><li><a href="../01_Books/Gerald-E.-Schneider---Brain-Structure-and-Its-Origins" class="internal">Brain Structure and Its Origins (in Development and in Evolution)</a></li><li><a href="../01_Books/Licklider---Libraries-of-the-Future" class="internal">Libraries of the Future</a></li><li><a href="../01_Books/M.-Mitchell-Waldrop---The-Dream-Machine" class="internal">The Dream Machine — J.C.R. Licklider and the Revolution That Made Computing Personal</a></li><li><a href="../01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines" class="internal">Computation - Finite and Infinite Machines</a></li><li><a href="../01_Books/Marvin-Minsky---The-Emotion-Machine" class="internal">The Emotion Machine — Commonsense Thinking, Artificial Intelligence, and the Future of the Human Mind</a></li><li><a href="../01_Books/Marvin-Minsky---The-Society-of-Mind" class="internal">The Society of Mind</a></li><li><a href="../01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons-(1988-reissue)" class="internal">Perceptrons (1988 Reissue, Expanded Edition)</a></li><li><a href="../01_Books/Marvin-Minsky-and-Seymour-Papert---Perceptrons" class="internal">Perceptrons — An Introduction to Computational Geometry</a></li><li><a href="../01_Books/Max-Bennett---A-Brief-History-of-Intelligence" class="internal">A Brief History of Intelligence</a></li><li><a href="../01_Books/Mitchel-Resnick---Turtles-Termites-and-Traffic-Jams" class="internal">Turtles, Termites, and Traffic Jams — Explorations in Massively Parallel Microworlds</a></li><li><a href="../01_Books/Seymour-A-Papert---Mindstorms" class="internal">Mindstorms - Children, Computers, and Powerful Ideas</a></li><li><a href="../01_Books/Stuart-Russell-and-Peter-Norvig---Artificial-Intelligence-A-Modern-Approach" class="internal">Artificial Intelligence — A Modern Approach (4th Edition)</a></li><li><a href="../02_Atomic_Concepts/All-or-None-Activity" class="internal">All-or-None Activity</a></li><li><a href="../02_Atomic_Concepts/Experimental-Epistemology" class="internal">Experimental Epistemology</a></li><li><a href="../02_Atomic_Concepts/Finite-State-Machine" class="internal">Finite-State Machine</a></li><li><a href="../02_Atomic_Concepts/Heterarchy" class="internal">Heterarchy</a></li><li><a href="../02_Atomic_Concepts/Logical-Calculus-of-Neural-Activity" class="internal">Logical Calculus of Neural Activity</a></li><li><a href="../02_Atomic_Concepts/Net-Realizability" class="internal">Net Realizability</a></li><li><a href="../03_Arguments/Neural-activity-is-propositional" class="internal">Neural activity is propositional</a></li><li><a href="../03_Arguments/Values-are-heterarchical" class="internal">Values are heterarchical</a></li><li><a href="../04_People/Walter-Pitts" class="internal">Walter Pitts</a></li><li><a href="../04_People/Warren-McCulloch" class="internal">Warren McCulloch</a></li><li><a href="../05_Comparative_Maps/McCulloch-vs-Bennett-on-the-Mechanical-Theory-of-Mind" class="internal">McCulloch vs Bennett on the Mechanical Theory of Mind</a></li><li><a href="../05_Comparative_Maps/McCulloch-vs-Minsky-on-Computation" class="internal">McCulloch vs Minsky on Computation</a></li><li><a href="../06_Source_Notes/chapter_summaries/" class="internal">Chapter Deep Dives</a></li><li><a href="../06_Source_Notes/chapter_summaries/warren-s-mcculloch-embodiments-of-mind/ch_02_a-logical-calculus-of-the-ideas-immanent-in-nervous-activity" class="internal">A Logical Calculus of the Ideas Immanent in Nervous Activity</a></li><li><a href="../06_Source_Notes/chapter_summaries/warren-s-mcculloch-embodiments-of-mind/" class="internal">Embodiments of Mind — Chapter Deep Dives</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/xiaolong-y/bookwiki">Source</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

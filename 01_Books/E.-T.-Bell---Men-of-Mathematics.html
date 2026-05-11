@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Men of Mathematics</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@400;700&amp;family=IBM Plex Serif:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="XL's BookWiki"/><meta property="og:title" content="Men of Mathematics"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Men of Mathematics"/><meta name="twitter:description" content="E. T."/><meta property="og:description" content="E. T."/><meta property="og:image:alt" content="E. T."/><meta property="og:image" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta property="og:image:url" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta name="twitter:image" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="xiaolong-y.github.io/bookwiki"/><meta property="og:url" content="https://xiaolong-y.github.io/bookwiki/01_Books/E.-T.-Bell---Men-of-Mathematics"/><meta property="twitter:url" content="https://xiaolong-y.github.io/bookwiki/01_Books/E.-T.-Bell---Men-of-Mathematics"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="E. T."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvYm9va3dpa2ktdmF1bHQvYm9va3dpa2ktdmF1bHQvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://xiaolong-y.github.io/bookwiki/index.xml"/></head><body data-slug="01_Books/E.-T.-Bell---Men-of-Mathematics"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">XL's BookWiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>{let slug=node?.file?.slug??node?.slug;return!(slug&amp;&amp;slug.startsWith(\&quot;06_Source_Notes\&quot;)||node?.displayName===\&quot;06_Source_Notes\&quot;)}&quot;,&quot;mapFn&quot;:&quot;node=>{let names={\&quot;00_Index\&quot;:\&quot;Indices\&quot;,\&quot;01_Books\&quot;:\&quot;Books\&quot;,\&quot;02_Atomic_Concepts\&quot;:\&quot;Concepts\&quot;,\&quot;03_Arguments\&quot;:\&quot;Arguments\&quot;,\&quot;04_People\&quot;:\&quot;People\&quot;,\&quot;05_Comparative_Maps\&quot;:\&quot;Comparative Maps\&quot;};node?.displayName&amp;&amp;names[node.displayName]&amp;&amp;(node.displayName=names[node.displayName])}&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-140"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Browse</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-140" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../01_Books/">01_Books</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Men of Mathematics</a></div></nav><h1 class="article-title">Men of Mathematics</h1><ul class="tags"><li><a href="../tags/book" class="internal tag-link">book</a></li><li><a href="../tags/biography" class="internal tag-link">biography</a></li><li><a href="../tags/mathematics" class="internal tag-link">mathematics</a></li><li><a href="../tags/history-of-science" class="internal tag-link">history-of-science</a></li></ul></div></div><article class="popover-hint"><h1 id="e-t-bell---men-of-mathematics">E. T. Bell - Men of Mathematics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#e-t-bell---men-of-mathematics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="one-sentence-thesis">One-sentence thesis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#one-sentence-thesis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Bell’s 1937 collection of biographical essays on great mathematicians from Zeno to Cantor is popular, dramatic, sometimes inaccurate, but it remains a landmark recruiting text because it presents mathematics as a human adventure told through vivid character sketches rather than as a dry genealogy of theorems, and its rhetorical success is precisely what later critics have had to deconstruct.</p>
+<h2 id="why-this-book-matters">Why this book matters<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-this-book-matters" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Pedagogically influential beyond its academic reliability. Bell writes for non-mathematicians; the prose is dramatic, the characterizations are sharp (and sometimes unfair to the subjects), and the cumulative effect is a vivid impression of mathematics as a <em>human</em> enterprise pursued by recognizably human figures. For readers building a reading stack around how mathematics feels from the inside and how communities remember their heroes, Bell supplies narrative momentum that more careful historians often refuse to provide. The book is best paired with a corrective: newer scholarship corrects specific legends Bell helped amplify, yet Bell still clarifies why biography became a gateway genre for mathematical culture in the twentieth century. For Yang, the book functions as the popular-history complement to <a href="../01_Books/Constance-Reid---Hilbert" class="internal alias" data-slug="01_Books/Constance-Reid---Hilbert">Constance Reid - Hilbert</a>, where Reid is more reliable on Hilbert specifically and Bell is more sweeping across eras. It also stands as a case study in how a <em>bad</em> historian can produce a <em>good</em> recruitment text, and why the two functions are worth keeping separate when one is teaching, citing, or building one’s own canon. Bell’s voice — disdainful of stupidity, intoxicated with genius, suspicious of bureaucracies and committees — is itself an artifact worth analyzing as much as the lives he narrates (ch. 1).</p>
+<h2 id="core-argument">Core argument<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-argument" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>Men of Mathematics</em> is not a single thesis-driven monograph; it is a curated gallery of lives meant to convince the reader that mathematical creativity is continuous with ordinary human motives — rivalry, pride, loyalty, aesthetic craving — while also suggesting that a few individuals disproportionately redirect what counts as thinkable. Bell organizes mathematicians into long arcs (Greek origins, early modern invention of analytic languages, eighteenth-century consolidation, nineteenth-century ruptures in rigor and abstraction) and uses each chapter to foreground personality and conflict as engines of discovery. The narrative logic is cumulative: you are meant to feel how notation, standards of proof, and the shifting boundaries of “number” and “function” emerge from concrete disputes and biographical constraints rather than from teleological inevitability (ch. 1).</p>
+<p>The argument breaks down into several layered claims:</p>
+<ol>
+<li><strong>Mathematics is a human practice, not an inhuman edifice.</strong> Bell’s introductory chapter explicitly attacks the popular-culture stereotype of the mathematician as “a slovenly dreamer totally devoid of common sense” and argues that mathematicians “as a class are probably less familiar to the general reader than any other group of brain workers” (ch. 1). Restoring mathematicians to ordinary human stakes is presented as a <em>prerequisite</em> to caring about their results.</li>
+<li><strong>Continuity vs. discreteness is the long-running thread.</strong> Bell repeatedly returns to the dialectic between the discrete (counting, algebra, number theory, symbolic logic) and the continuous (calculus, analysis, geometry of curves), framing major figures by their position in this dialectic — Newton and Leibniz on the continuous side, Cantor and Boole on the discrete side, Riemann and Poincaré straddling both (ch. 1, ch. 6, ch. 23, ch. 26, ch. 28, ch. 29).</li>
+<li><strong>Originators dominate developers.</strong> Bell explicitly chooses to privilege “originators” over “developers” — the first to formulate a method matters more than those who refined it (ch. 1). This narrative choice is partly aesthetic and partly ideological; it produces a “great-man” history that is rhetorically powerful but historiographically simplifying.</li>
+<li><strong>Pedagogical mythmaking is part of the goal.</strong> Where Bell is strongest is when he dramatizes problems that were genuinely controversial in their day (the calculus priority quarrel, the reception of non-Euclidean ideas, the anxieties surrounding infinities and set theory) by attaching them to memorable human stakes. The Galois chapter (ch. 20) is the canonical example; the Cantor chapter (ch. 29) the structurally most ambitious, since it stages the entire foundations crisis as the climax of the book.</li>
+<li><strong>Documentary caution is a casualty.</strong> Where Bell is weakest is documentary caution: several portraits simplify or sensationalize, and some anecdotes that entered wider culture were later challenged by historians who had access to richer correspondence and archival detail. The reader-facing recommendation is therefore methodological as much as historical: treat Bell as an introduction that earns emotional investment, then cross-check any biography-dependent claim before repeating it as fact in scholarship or teaching.</li>
+<li><strong>Mathematical taste is a real driver.</strong> Across the collection, a recurring implicit argument is that mathematical taste matters — mathematicians are portrayed as people who bet careers on what “should” be true, what definitions “ought” to look like, and what counts as an acceptable shortcut versus an unacceptable sleight of hand. That emphasis aligns Bell with a tradition that treats mathematical judgment as something closer to craft and connoisseurship than to grinding computation, which connects naturally to <a href="../01_Books/G.-H.-Hardy---A-Mathematician's-Apology" class="internal alias" data-slug="01_Books/G.-H.-Hardy---A-Mathematician's-Apology">G. H. Hardy - A Mathematician’s Apology</a> even though Hardy’s tone is more austere and Hardy is reasoning <em>from</em> the mathematician’s chair, where Bell is reasoning <em>toward</em> it.</li>
+<li><strong>The shape of a canon is rhetorical.</strong> Bell helps beginners map names to roles: who consolidated analysis, who pushed geometry, who fought for logical foundations, who imported physics-shaped intuition into pure mathematics. But the implicit canon — twenty-nine chapters, almost all male, almost all European, barely any twentieth-century figure — is itself a thesis about <em>who counts</em>. Reading Bell against <a href="../01_Books/Carol-Parikh---The-Unreal-Life-of-Oscar-Zariski" class="internal alias" data-slug="01_Books/Carol-Parikh---The-Unreal-Life-of-Oscar-Zariski">Carol Parikh - The Unreal Life of Oscar Zariski</a> makes this visible: Parikh’s mid-twentieth-century algebraic-geometry world is invisible in Bell’s frame.</li>
+</ol>
+<h2 id="argument-map">Argument map<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#argument-map" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Bell’s argument flows in three layered moves. The starting <strong>premise</strong> is that mathematics looks inhuman to outsiders. Bell’s <strong>rhetorical move</strong> is to tell stories about mathematicians as humans, treating biography as the gateway. From that move, three branches grow.</p>
+<p>The first branch is the <strong>“originators over developers” selection rule</strong> — Bell privileges the first formulators and demotes the refiners — which produces a great-man canon that is rhetorically powerful but historically simplifying. The second branch is the <strong>dramatization of controversies of the day</strong>, with Galois (ch. 20) as the stupidity-vs-genius flagship, Newton and Leibniz (ch. 6–7) as the priority quarrel, Lobachevsky (ch. 16) as the non-Euclidean rupture, and Cantor (ch. 29) as the foundational set-theory climax. The third branch is the <strong>assumption that taste is a real driver of discovery</strong>, which links outward to <a href="../02_Atomic_Concepts/Mathematical-Aesthetics" class="internal alias" data-slug="02_Atomic_Concepts/Mathematical-Aesthetics">Mathematical Aesthetics</a> (Hardy, Minsky, Dijkstra) and supplies a cross-book vocabulary for what Bell dramatizes without formalizing.</p>
+<p>The <strong>conclusion</strong> Bell wants the reader to absorb is that mathematics is a <em>culture</em> — with heroes, quarrels, taste, and politics — not an inhuman machine. The unintended <strong>side-effect</strong> is that factual fidelity is sometimes sacrificed to narrative: the Galois night-before-the-duel composition story is largely myth, the Cauchy-as-villain rendering compresses archival ambiguity, and Cantor’s institutional persecution is overdrawn. This is the trade Bell makes, and the reader who notices it learns <em>both</em> a canon and a lesson in the limits of canon-formation.</p>
+<pre><code>Premise: mathematics looks inhuman to outsiders
+   |
+   v
+Bell's move: tell stories about mathematicians as humans
+   |
+   +--> originators > developers (selection rule)
+   |       |
+   |       v
+   |   produces a &quot;great-man&quot; canon
+   |       |
+   |       +--> rhetorically powerful
+   |       +--> historically simplifying
+   |
+   +--> dramatize controversies of the day
+   |       |
+   |       v
+   |   Galois (ch.20) -- stupidity vs genius
+   |   Newton/Leibniz (ch.6-7) -- priority
+   |   non-Euclidean (ch.16) -- foundations
+   |   Cantor (ch.29) -- the infinite, set theory
+   |
+   +--> assume taste is a real driver of discovery
+           |
+           v
+       links to Mathematical Aesthetics (Hardy, Minsky, Dijkstra)
+
+Conclusion: mathematics is a *culture* with heroes,
+            quarrels, taste, and politics --- not a machine.
+
+Side-effect: factual fidelity sometimes sacrificed to narrative
+            (Galois night-before-the-duel myth; Cauchy-as-villain;
+             Cantor's institutional persecution overdrawn).
+</code></pre>
+<h2 id="key-concepts">Key concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><em>Mathematician-as-character</em> — Bell’s device is to render technical progression through recognizable motives; this is closer to narrative history than to proof-centric exposition, and it interacts with how beginners build intuition before they can read primary sources.</li>
+<li><em>Heroic lineage storytelling</em> — the book’s chapter sequence implies a canon; readers should compare that implicit canon with modern historical scholarship and with textbooks such as <a href="../01_Books/Courant-and-Robbins---What-Is-Mathematics" class="internal alias" data-slug="01_Books/Courant-and-Robbins---What-Is-Mathematics">Courant and Robbins - What Is Mathematics</a>, which emphasize ideas rather than lives.</li>
+<li><em>Reliability vs romance trade-off</em> — <em>Men of Mathematics</em> is a canonical example of a text whose cultural influence outran its strict factual precision on certain episodes; the appropriate stance is enthusiastic-but-skeptical reading.</li>
+<li><a href="../02_Atomic_Concepts/Mathematical-Aesthetics" class="internal alias" data-slug="02_Atomic_Concepts/Mathematical-Aesthetics">Mathematical Aesthetics</a> — Bell’s portraits repeatedly foreground taste and beauty as drivers; that theme ties outward to a cross-book vocabulary for naming what Bell dramatizes without formalizing.</li>
+<li><a href="../02_Atomic_Concepts/Falsifiability" class="internal" data-slug="02_Atomic_Concepts/Falsifiability">Falsifiability</a> — Bell’s casual relationship to verification is itself an example of the <em>opposite</em> of a falsificationist epistemology; the methodological critique he invites can be read as a Popperian one even though Popper is never named.</li>
+<li><a href="../02_Atomic_Concepts/Effective-Procedure" class="internal alias" data-slug="02_Atomic_Concepts/Effective-Procedure">Effective Procedure</a> — Bell’s framing of the discrete vs. continuous tension (ch. 1, ch. 29) anticipates the twentieth-century formal-effective-method tradition that this concept names; Bell’s Cantor chapter sets up the foundational anxiety that later motivates Hilbert’s formalism and the computability tradition.</li>
+<li><a href="../02_Atomic_Concepts/Halting-Problem" class="internal alias" data-slug="02_Atomic_Concepts/Halting-Problem">Halting Problem</a> — Bell ends with Cantor and the foundations crisis (ch. 29) but does not live to narrate the Gödel/Turing resolution; the book’s closing question — <em>where stands mathematics today?</em> — is exactly the one the halting result later sharpens.</li>
+</ul>
+<h2 id="chapter-by-chapter-distillation">Chapter-by-chapter distillation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chapter-by-chapter-distillation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Bell’s twenty-nine chapters cluster into four eras. Numbering matches the book’s contents page (ch. 2 begins the biographical sequence; ch. 1 is the introduction).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Ch.</th><th>Subject(s)</th><th>Era</th><th>What it gives you</th></tr></thead><tbody><tr><td>1</td><td>Introduction</td><td>meta</td><td>The continuity-vs-discreteness frame and the “originators > developers” selection rule.</td></tr><tr><td>2</td><td>Zeno, Eudoxus, Archimedes</td><td>Greek</td><td>Method of exhaustion as the taproot of analysis; Archimedes as Bell’s archetype of greatness-under-pressure.</td></tr><tr><td>3</td><td>Descartes</td><td>early modern</td><td>Analytic geometry as a <em>method</em>; Descartes as gentleman-soldier-philosopher.</td></tr><tr><td>4</td><td>Fermat</td><td>early modern</td><td>Number theory as a recreational vocation; “infinite descent.”</td></tr><tr><td>5</td><td>Pascal</td><td>early modern</td><td>Probability theory’s emergence in correspondence with Fermat; piety vs. invention.</td></tr><tr><td>6</td><td>Newton</td><td>classical</td><td>Calculus, <em>Principia</em>, the priority quarrel as the prototype of the mathematical scandal.</td></tr><tr><td>7</td><td>Leibniz</td><td>classical</td><td>Notation as substantive contribution; symbolic-logic intuitions ahead of their time.</td></tr><tr><td>8</td><td>The Bernoullis</td><td>classical</td><td>Calculus of variations; the heredity-of-talent rumination.</td></tr><tr><td>9</td><td>Euler</td><td>classical</td><td>Analysis incarnate; productivity as a moral category.</td></tr><tr><td>10</td><td>Lagrange</td><td>classical</td><td><em>Mécanique analytique</em>; modesty as a working style.</td></tr><tr><td>11</td><td>Laplace</td><td>classical</td><td>Celestial mechanics; political opportunism.</td></tr><tr><td>12</td><td>Monge, Fourier</td><td>classical</td><td>Descriptive geometry, harmonic analysis; mathematics in the Napoleonic state.</td></tr><tr><td>13</td><td>Poncelet</td><td>classical</td><td>Projective geometry born in a Russian prison camp.</td></tr><tr><td>14</td><td>Gauss</td><td>nineteenth</td><td>Bell’s “Prince of Mathematicians” archetype — the universalist whose unpublished work shaped a century.</td></tr><tr><td>15</td><td>Cauchy</td><td>nineteenth</td><td>The new analytical rigor; institutional politics; the Galois mishap (ch. 20 sets up).</td></tr><tr><td>16</td><td>Lobachevsky</td><td>nineteenth</td><td>Non-Euclidean geometry as “Copernican” revolution.</td></tr><tr><td>17</td><td>Abel</td><td>nineteenth</td><td>Quintic insolubility; poverty-as-killer narrative.</td></tr><tr><td>18</td><td>Jacobi</td><td>nineteenth</td><td>Elliptic functions; algorist-as-craftsman.</td></tr><tr><td>19</td><td>Hamilton</td><td>nineteenth</td><td>Quaternions; abandonment of commutativity.</td></tr><tr><td>20</td><td>Galois</td><td>nineteenth</td><td><strong>Bell at his most dramatic and least reliable</strong>; group theory in the eve-of-duel myth.</td></tr><tr><td>21</td><td>Sylvester, Cayley</td><td>nineteenth</td><td>Invariant theory; matrices; <em>n</em>-dimensional space.</td></tr><tr><td>22</td><td>Weierstrass, Kowalewski</td><td>nineteenth</td><td>Arithmetization of analysis; the master-pupil dyad as Bell’s only sustained female portrait.</td></tr><tr><td>23</td><td>Boole</td><td>nineteenth</td><td>Symbolic logic; algebra of thought.</td></tr><tr><td>24</td><td>Hermite</td><td>nineteenth</td><td>Transcendence of <em>e</em>; the “old problems, new methods” theme.</td></tr><tr><td>25</td><td>Kronecker</td><td>nineteenth</td><td>Constructivist skepticism; “God made the integers” stance.</td></tr><tr><td>26</td><td>Riemann</td><td>nineteenth</td><td>Topology, foundations of geometry, the Riemann hypothesis.</td></tr><tr><td>27</td><td>Kummer, Dedekind</td><td>nineteenth</td><td>Ideal numbers; Dedekind cuts; arithmetic-the-second.</td></tr><tr><td>28</td><td>Poincaré</td><td>early twentieth</td><td>Bell’s “last universalist”; automorphic functions, <em>n</em>-body, mathematical-discovery psychology.</td></tr><tr><td>29</td><td>Cantor</td><td>early twentieth</td><td>Set theory; transfinite cardinals; institutional persecution narrative; the foundations crisis as the book’s climax.</td></tr></tbody></table></div>
+<h2 id="best-chapterspages-to-actually-read">Best chapters/pages to actually read<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#best-chapterspages-to-actually-read" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Start with the <strong>Galois chapter (ch. 20)</strong> if you want Bell at his most dramatically readable; it is the essay most often credited with steering young readers toward mathematics, and — regardless of historical nuance — it compresses the emotional stakes of radical ideas meeting institutional resistance into a compact storyline. Read it <em>with</em> the awareness (see Critiques) that Tony Rothman and others have shown the night-before-duel composition story is essentially myth, and that Bell’s “stupidity” framing is editorial overlay rather than archival fact.</p>
+<p>Read the <strong>Gauss chapter (ch. 14)</strong> next if you want Bell’s template for the “towering universalist” archetype: it is where his habit of synoptic portrait-making is easiest to see, and it helps you notice how Bell balances anecdote with a rapid survey of contributions. Gauss’s ten-year-old arithmetic-progression anecdote and the Ceres orbit story both originate as widely-circulated set pieces here.</p>
+<p>The <strong>Cantor chapter (ch. 29)</strong> is worth attention specifically because it connects intuition about infinity to personal struggle and professional controversy; if you are mapping a path toward set theory and foundations, it gives you a memorable narrative spine before you encounter modern treatments. Bell’s framing of Kronecker as villain is overdrawn but the conflict it dramatizes — actual-vs-potential infinity, constructivism vs. completed totalities — is exactly the foundational fault line that later motivates Hilbert’s program and the computability theorems.</p>
+<p>The <strong>Riemann chapter (ch. 26)</strong> is similarly useful as a bridge between complex analysis’s emergence and the myth of quiet, almost spectral genius — again, read as orientation rather than as sole authority, and pair with <a href="../01_Books/Tristan-Needham---Visual-Complex-Analysis" class="internal alias" data-slug="01_Books/Tristan-Needham---Visual-Complex-Analysis">Tristan Needham - Visual Complex Analysis</a> for modern visual exposition that makes Riemann’s intuitions concrete.</p>
+<p><strong>Newton and Leibniz (ch. 6, 7)</strong> are obligatory stops if you care about how priority fights became part of the public memory of mathematics; Bell narrates the calculus quarrel in a way that clarifies why “who invented what when” became culturally sticky even when the underlying mathematics is better explained elsewhere. <strong>Archimedes (ch. 2)</strong> works well as an opener into Bell’s classical chapters because the geometric imagination is easy to visualize and the “war machines and theorems” framing is memorable.</p>
+<p>If you are reading primarily for critical literacy rather than delight, pick any two chapters about mathematicians you already admire and ask what Bell amplifies, what he omits, and what emotional outcome he is engineering; then compare at least one episode against a specialist biography or a scholarly article so you feel the gap between myth and documentation. Skip treating the preface as moral guidance without contextualizing its era; it is historically interesting but not a reliable lens on contemporary norms. The <strong>introduction (ch. 1)</strong> itself rewards close reading: it states the <em>originators-over-developers</em> rule and the <em>continuous-vs-discrete</em> spine that govern the rest of the book, and it lets you see Bell’s ideology before it goes to work on individual lives.</p>
+<h2 id="critiques-and-limitations">Critiques and limitations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#critiques-and-limitations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Bell has been challenged on three distinct grounds.</p>
+<p>First, <strong>factual reliability of specific portraits.</strong> The Galois chapter (ch. 20) is the most-cited example: Bell’s image of Galois feverishly composing his theory of equations on the night before his fatal duel (“riddle of equations solved” / “Galois’ last night”) was substantially overstated, as Tony Rothman’s 1982 <em>American Mathematical Monthly</em> article “Genius and Biographers” documents in detail. The Cauchy-as-careless-villain framing in both the Galois and the Abel chapters (chs. 17, 20) likewise compresses a more complicated archival record. Cantor’s persecution by Kronecker (ch. 29) is real but Bell’s rendering tilts toward melodrama. Bell’s set pieces work as drama because they trim ambiguity that an honest historian would preserve.</p>
+<p>Second, <strong>selection and tone.</strong> Bell’s almost exclusive focus on European male mathematicians is partly a function of his sources but is not flagged in the text; the only sustained female portrait (Sonja Kowalewski, ch. 22) is filtered through Weierstrass’s mentorship. Bell’s voice indulges in casual ethnic and class characterizations that have aged poorly. The “originators over developers” rule produces a great-man history that has been criticized by working historians of mathematics (notably Ivor Grattan-Guinness) as importing a romantic-genius framework into a domain that progresses primarily through communities, schools, and institutions.</p>
+<p>Third, <strong>historiographic method.</strong> Bell rarely cites primary correspondence; his characterizations of motives often go beyond what the documentary record can support. The “stupidity” framing of Galois’s pedagogical environment is editorial; the “last universalist” framing of Poincaré is a thesis, not a description. A reader who internalizes Bell’s framings without comparing them against scholarly biography is borrowing a confident voice without the evidence underneath. This is the cost of Bell’s strength: the rhetorical efficiency that makes him readable is the same efficiency that compresses out the qualifications.</p>
+<p>These critiques do not invalidate the book — they make it usable. <em>Men of Mathematics</em> is best read as a <em>primary source on twentieth-century mathematical popularization</em>, not as a secondary source on the lives it describes. The methodological stance to apply is something close to <a href="../01_Books/Karl-Popper---The-Logic-of-Scientific-Discovery" class="internal alias" data-slug="01_Books/Karl-Popper---The-Logic-of-Scientific-Discovery">Popperian</a>: take Bell’s claims as conjectures meant to be falsified or refined by archival work, not as conclusions to be cited.</p>
+<h2 id="links-to-other-books">Links to other books<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#links-to-other-books" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Reliability counterpart to</strong> <a href="../01_Books/Constance-Reid---Hilbert" class="internal alias" data-slug="01_Books/Constance-Reid---Hilbert">Constance Reid - Hilbert</a> — Reid is more careful on Hilbert specifically; Bell is broader and more theatrical across many figures.</li>
+<li><strong>Mathematical-aesthetics complement to</strong> <a href="../01_Books/G.-H.-Hardy---A-Mathematician's-Apology" class="internal alias" data-slug="01_Books/G.-H.-Hardy---A-Mathematician's-Apology">G. H. Hardy - A Mathematician’s Apology</a> — Hardy argues; Bell narrates; together they show defense-of-mathematics as both essay and story.</li>
+<li><strong>Idea-forward contrast to</strong> <a href="../01_Books/Courant-and-Robbins---What-Is-Mathematics" class="internal alias" data-slug="01_Books/Courant-and-Robbins---What-Is-Mathematics">Courant and Robbins - What Is Mathematics</a> — Courant and Robbins center mathematical content; Bell centers mathematicians, which helps you see two different gateway rhetorics.</li>
+<li><strong>Geometric-intuition neighbor to</strong> <a href="../01_Books/Tristan-Needham---Visual-Complex-Analysis" class="internal alias" data-slug="01_Books/Tristan-Needham---Visual-Complex-Analysis">Tristan Needham - Visual Complex Analysis</a> — not historical alignment, but a useful pairing if you want mythic biography plus modern visual explanation for complex-analysis culture.</li>
+<li><strong>Modern-biography corrective to Bell’s late-nineteenth-century coverage:</strong> <a href="../01_Books/Carol-Parikh---The-Unreal-Life-of-Oscar-Zariski" class="internal alias" data-slug="01_Books/Carol-Parikh---The-Unreal-Life-of-Oscar-Zariski">Carol Parikh - The Unreal Life of Oscar Zariski</a> — Parikh’s research-grade biography of a twentieth-century algebraic geometer is what Bell’s genre would look like if it took archival fidelity seriously.</li>
+<li><strong>Methodological corrective:</strong> <a href="../01_Books/Karl-Popper---The-Logic-of-Scientific-Discovery" class="internal alias" data-slug="01_Books/Karl-Popper---The-Logic-of-Scientific-Discovery">Karl Popper - The Logic of Scientific Discovery</a> — Popper supplies the falsificationist vocabulary for asking what would refute a Bell-style biographical claim.</li>
+<li><strong>Forward-looking pairing:</strong> <a href="../01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines" class="internal alias" data-slug="01_Books/Marvin-Lee-Minsky---Computation-Finite-and-Infinite-Machines">Marvin Lee Minsky - Computation Finite and Infinite Machines</a> — Minsky narrates the Turing/Gödel/Hilbert lineage that Bell’s Cantor chapter (ch. 29) sets up but does not live to resolve.</li>
+</ul>
+<h2 id="research-uses">Research uses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-uses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Recruitment and teaching</strong>: assign short Bell chapters alongside a fact-checked handout so students feel narrative momentum without ingesting inaccurate folklore as exam-ready truth.</li>
+<li><strong>History-of-mathematics literacy</strong>: use Bell as a primary exhibit for how popular biography shapes canon formation and what mistakes societies trade for accessibility. The book is itself a historical object — a 1937 American mathematician’s view of a European tradition.</li>
+<li><strong>Critical reading practice</strong>: compare Bell’s treatment of a single figure (Galois is the canonical exercise) against a scholarly chapter or paper such as Rothman 1982 to train students on sourcing standards and to make explicit the difference between dramatic biography and archival history.</li>
+<li><strong>Qualitative-research analogue</strong>: Bell’s biographies are an instructive case for <a href="../01_Books/Daron-Acemoglu---Microeconomics" class="internal alias" data-slug="01_Books/Daron-Acemoglu---Microeconomics">formal-method users</a> asking how narrative construction interacts with evidence, and for any researcher doing case studies where the <em>interpretation</em> is doing more work than the <em>data</em>.</li>
+</ul>
+<h2 id="what-i-would-miss-if-i-only-read-this-note">What I would miss if I only read this note<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-i-would-miss-if-i-only-read-this-note" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>You would miss Bell’s actual sentence rhythm and pacing — the book’s influence is not reducible to a list of mathematicians because the persuasion lives in how scenes are staged and how stakes escalate within a few pages. Bell’s Galois chapter is built like a tragedy in five acts: the precocious child, the persecuting teachers, the failed examinations, the political martyrdom, the duel; you have to read the actual chapter to feel why this structure has been borrowed by every popularizer since. You would also miss the tactile sense of how mid-twentieth-century popularizers imagined their audience: what counted as too technical, what counted as acceptable embellishment, and what responsibilities readers were assumed to have toward verification.</p>
+<p>You would miss the secondary pleasure of noticing where later mathematics education quietly argues back against Bell — where textbooks choose neutrality, where historians insist on sociological context, and where modern writers refuse heroic lone-genius framing. Finally, you would miss the opportunity to calibrate your own taste as a reader: some people find Bell galvanizing, others find him grating; either reaction is informative about whether you prefer mathematics introduced through lives, through problems, through structures, or through applications. The “continuous-vs-discrete” frame Bell sets up in chapter 1 is a <em>real</em> organizing principle for thinking about twentieth-century mathematics, and you only feel its force after you have read several chapters and noticed where the dichotomy holds, where it slips, and where Bell himself stops trusting it.</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-43" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#e-t-bell---men-of-mathematics" data-for="e-t-bell---men-of-mathematics">E. T. Bell - Men of Mathematics</a></li><li class="depth-1"><a href="#one-sentence-thesis" data-for="one-sentence-thesis">One-sentence thesis</a></li><li class="depth-1"><a href="#why-this-book-matters" data-for="why-this-book-matters">Why this book matters</a></li><li class="depth-1"><a href="#core-argument" data-for="core-argument">Core argument</a></li><li class="depth-1"><a href="#argument-map" data-for="argument-map">Argument map</a></li><li class="depth-1"><a href="#key-concepts" data-for="key-concepts">Key concepts</a></li><li class="depth-1"><a href="#chapter-by-chapter-distillation" data-for="chapter-by-chapter-distillation">Chapter-by-chapter distillation</a></li><li class="depth-1"><a href="#best-chapterspages-to-actually-read" data-for="best-chapterspages-to-actually-read">Best chapters/pages to actually read</a></li><li class="depth-1"><a href="#critiques-and-limitations" data-for="critiques-and-limitations">Critiques and limitations</a></li><li class="depth-1"><a href="#links-to-other-books" data-for="links-to-other-books">Links to other books</a></li><li class="depth-1"><a href="#research-uses" data-for="research-uses">Research uses</a></li><li class="depth-1"><a href="#what-i-would-miss-if-i-only-read-this-note" data-for="what-i-would-miss-if-i-only-read-this-note">What I would miss if I only read this note</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../00_Index/Library-Index" class="internal">Library Index</a></li><li><a href="../01_Books/Carol-Parikh---The-Unreal-Life-of-Oscar-Zariski" class="internal">The Unreal Life of Oscar Zariski</a></li><li><a href="../01_Books/Constance-Reid---Courant" class="internal">Courant in Göttingen and New York — The Story of an Improbable Mathematician</a></li><li><a href="../01_Books/Constance-Reid---Hilbert" class="internal">Hilbert</a></li><li><a href="../01_Books/Constance-Reid---Neyman" class="internal">Neyman — From Life</a></li><li><a href="../01_Books/Courant-and-Robbins---What-Is-Mathematics" class="internal">What Is Mathematics? An Elementary Approach to Ideas and Methods</a></li><li><a href="../01_Books/G.-H.-Hardy---A-Mathematician's-Apology" class="internal">A Mathematician's Apology</a></li><li><a href="../01_Books/Gareth-Loy---Musimathics" class="internal">Musimathics — The Mathematical Foundations of Music</a></li><li><a href="../01_Books/Richard-P.-Feynman---Surely-You're-Joking-Mr.-Feynman" class="internal">&quot;Surely You're Joking, Mr. Feynman!&quot; Adventures of a Curious Character</a></li><li><a href="../01_Books/Richard-P.-Feynman---What-Do-You-Care-What-Other-People-Think" class="internal">What Do You Care What Other People Think?</a></li><li><a href="../01_Books/Tim-Urban---Napkin" class="internal">An Infinitely Large Napkin (filed under provisional stem &quot;Tim Urban - Napkin&quot;)</a></li><li><a href="../01_Books/Tristan-Needham---Visual-Complex-Analysis" class="internal">Visual Complex Analysis</a></li><li><a href="../02_Atomic_Concepts/First-Principles-Reconstruction" class="internal">First-Principles Reconstruction</a></li><li><a href="../02_Atomic_Concepts/Göttingen-Tradition" class="internal">Göttingen Tradition</a></li><li><a href="../02_Atomic_Concepts/Institution-Building-as-Mathematical-Craft" class="internal">Institution-Building as Mathematical Craft</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/xiaolong-y/bookwiki">Source</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

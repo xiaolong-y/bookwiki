@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Microeconomics</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@400;700&amp;family=IBM Plex Serif:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="XL's BookWiki"/><meta property="og:title" content="Microeconomics"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Microeconomics"/><meta name="twitter:description" content="Daron Acemoglu - Microeconomics One-sentence thesis A modern principles-of-microeconomics textbook organised around three unifying themes — optimization, equilibrium, empiricism — that argues introductory students should learn behavioral deviations, field-experimental evidence, game-theoretic strate..."/><meta property="og:description" content="Daron Acemoglu - Microeconomics One-sentence thesis A modern principles-of-microeconomics textbook organised around three unifying themes — optimization, equilibrium, empiricism — that argues introductory students should learn behavioral deviations, field-experimental evidence, game-theoretic strate..."/><meta property="og:image:alt" content="Daron Acemoglu - Microeconomics One-sentence thesis A modern principles-of-microeconomics textbook organised around three unifying themes — optimization, equilibrium, empiricism — that argues introductory students should learn behavioral deviations, field-experimental evidence, game-theoretic strate..."/><meta property="og:image" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta property="og:image:url" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta name="twitter:image" content="https://xiaolong-y.github.io/bookwiki/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="xiaolong-y.github.io/bookwiki"/><meta property="og:url" content="https://xiaolong-y.github.io/bookwiki/01_Books/Daron-Acemoglu---Microeconomics"/><meta property="twitter:url" content="https://xiaolong-y.github.io/bookwiki/01_Books/Daron-Acemoglu---Microeconomics"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Daron Acemoglu - Microeconomics One-sentence thesis A modern principles-of-microeconomics textbook organised around three unifying themes — optimization, equilibrium, empiricism — that argues introductory students should learn behavioral deviations, field-experimental evidence, game-theoretic strate..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvYm9va3dpa2ktdmF1bHQvYm9va3dpa2ktdmF1bHQvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://xiaolong-y.github.io/bookwiki/index.xml"/></head><body data-slug="01_Books/Daron-Acemoglu---Microeconomics"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">XL's BookWiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>{let slug=node?.file?.slug??node?.slug;return!(slug&amp;&amp;slug.startsWith(\&quot;06_Source_Notes\&quot;)||node?.displayName===\&quot;06_Source_Notes\&quot;)}&quot;,&quot;mapFn&quot;:&quot;node=>{let names={\&quot;00_Index\&quot;:\&quot;Indices\&quot;,\&quot;01_Books\&quot;:\&quot;Books\&quot;,\&quot;02_Atomic_Concepts\&quot;:\&quot;Concepts\&quot;,\&quot;03_Arguments\&quot;:\&quot;Arguments\&quot;,\&quot;04_People\&quot;:\&quot;People\&quot;,\&quot;05_Comparative_Maps\&quot;:\&quot;Comparative Maps\&quot;};node?.displayName&amp;&amp;names[node.displayName]&amp;&amp;(node.displayName=names[node.displayName])}&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-121"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Browse</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-121" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../01_Books/">01_Books</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Microeconomics</a></div></nav><h1 class="article-title">Microeconomics</h1><ul class="tags"><li><a href="../tags/book" class="internal tag-link">book</a></li><li><a href="../tags/economics" class="internal tag-link">economics</a></li><li><a href="../tags/textbook" class="internal tag-link">textbook</a></li><li><a href="../tags/microeconomics" class="internal tag-link">microeconomics</a></li><li><a href="../tags/behavioral-economics" class="internal tag-link">behavioral-economics</a></li><li><a href="../tags/game-theory" class="internal tag-link">game-theory</a></li></ul></div></div><article class="popover-hint"><h1 id="daron-acemoglu---microeconomics">Daron Acemoglu - Microeconomics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#daron-acemoglu---microeconomics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="one-sentence-thesis">One-sentence thesis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#one-sentence-thesis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A modern principles-of-microeconomics textbook organised around three unifying themes — <strong>optimization, equilibrium, empiricism</strong> — that argues introductory students should learn behavioral deviations, field-experimental evidence, game-theoretic strategic interaction, and information-economics market failures <em>as core machinery</em> rather than as honors-track appendices, on the wager that contemporary undergraduates will follow markets in their own lives (Uber surge pricing, eBay auctions, Airbnb listings, Coronavirus externalities) more readily than they will follow Marshallian price-quantity diagrams shorn of empirical anchor.</p>
+<h2 id="why-this-book-matters">Why this book matters<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-this-book-matters" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>This is the <strong>Third Edition (Pearson, 2022)</strong> of the Acemoglu-Laibson-List principles textbook, with eighteen main chapters plus three web chapters (financial decision-making; life/health/environment; political economy). It is the book a 2024–2026 undergraduate is most likely to meet in a competitive U.S. micro principles course, and the most authoritative “principles” alternative to the older market leaders — Mankiw’s <em>Principles of Economics</em>, Krugman-Wells, and Bernanke-Frank. It distinguishes itself by <strong>integrating</strong> rather than segregating three frontier research traditions: Acemoglu (institutional / political-economy / labor-economics rigor; MIT Institute Professor; John Bates Clark Medal 2005), Laibson (behavioral economics / hyperbolic discounting / household finance; Harvard chair), and List (field experiments; UChicago, formerly White House CEA 2002–2003; Arrow Prize 2008). The integration is doctrinal, not cosmetic — present bias appears alongside time discounting in Chapter 15 rather than in a “behavioral aside” sidebar; field experiments anchor the empirical claims at the start of nearly every chapter (“Evidence-Based Economics” openers).</p>
+<p>For a research-oriented reader (quant-finance interview prep, AI-policy analysis, blockchain regulation, China political-economy modelling, lobbying-network research), this textbook serves three functions distinct from a graduate text like Mas-Colell/Whinston/Green or Varian <em>Intermediate Microeconomics</em>: it provides (i) a <strong>shared dialect</strong> for discussing micro-foundations with non-economist collaborators (data scientists, lawyers, policy analysts), (ii) a quick refresher map between standard diagrams and modern empirical citations, and (iii) a baseline curriculum-shape against which to detect what newer pedagogy (open-access OER, modular pods, Mankiw’s much narrower behavioral coverage) treats as core vs optional. The 2022 timing also matters: Chapters 1, 4, and 9 explicitly fold the COVID-19 health-vs-output trade-off, the April 2020 negative oil-price episode, and externality-driven vaccination policy into the standard examples — making the text a snapshot of how the principles canon absorbed the pandemic.</p>
+<h2 id="core-argument">Core argument<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-argument" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The argument is pedagogical (what to teach undergraduates) rather than research-frontier (what to discover next). It proceeds:</p>
+<ol>
+<li>
+<p><strong>Three unifying principles ground the entire curriculum (Preface; Chapter 1.2–1.5).</strong> Optimization (people try to choose the best feasible option, even when they fail), Equilibrium (systems sit where everyone is simultaneously trying to optimise), Empiricism (data are used to test the first two). The authors reject the idea that introductory micro is a series of “theoretical assertions with little empirical basis” (Preface, p. xx) — this is a methodological commitment, not just a stylistic one.</p>
+</li>
+<li>
+<p><strong>Optimization absorbs behavioral psychology by treating rational choice as a <em>limiting case</em>, not a literal description (Chapter 1.3, Chapter 3, Chapter 5).</strong> Cost-benefit analysis, marginal analysis, and budget-constraint geometry are taught as both descriptive and prescriptive tools. Choice-and-Consequence sidebars throughout (e.g. ch. 3 “Do People Actually Choose the Best Feasible Option?”, p. 46) explicitly admit deviations. Behavioral material is integrated rather than apologised for.</p>
+</li>
+<li>
+<p><strong>Demand and supply meet field-experimental data immediately (Chapter 4–5).</strong> The first detailed empirical example is gasoline-price elasticity (ch. 4.2), followed by the smoking-quit-for-$100 field experiment (ch. 5, pp. 99–101). The pedagogical wager is that students will internalise elasticity faster from a smoking-cessation RCT than from a textbook calculus exercise.</p>
+</li>
+<li>
+<p><strong>The Invisible Hand is presented with both its power and its failure modes side-by-side (Chapter 7, Chapter 9).</strong> Chapter 7 develops Pareto efficiency, social surplus, deadweight loss, and the Adam Smith / Hayek allocation argument (ch. 7.4, “FEMA and Walmart After Katrina”, “Command and Control at Kmart” — pp. 171, 173). Chapter 9 then immediately introduces externalities, public goods, common-pool resources, and the Coase Theorem (ch. 9.2, p. 218). The juxtaposition is the textbook’s central rhetorical move: <em>the invisible hand is real and the failures of the invisible hand are real and the second-best policy choices among interventions are the substance of public economics</em>.</p>
+</li>
+<li>
+<p><strong>Policy intervention is taught as constrained optimization with side-effects, not as panacea or villain (Chapter 10).</strong> Government Failures (10.3) — direct costs of bureaucracy, corruption, underground economy, regulatory capture — get equal billing with Market Failures. The “Equity Versus Efficiency” trade-off (10.4) and “Consumer Sovereignty and Paternalism” debate (10.5) are taught as live policy disputes, not as settled doctrine.</p>
+</li>
+<li>
+<p><strong>Strategic interaction is integrated, not bolted on (Chapters 12–14).</strong> Monopoly (ch. 12) leads into Game Theory (ch. 13: simultaneous-move games, Nash equilibrium, prisoners’ dilemma; backward induction in extensive-form games — ch. 13.5, p. 338), which then drives Oligopoly and Monopolistic Competition (ch. 14). The pedagogical claim is that you cannot understand modern industrial organisation (or, by extension, antitrust litigation, platform competition, or auction-design problems) without strategic-interaction tools.</p>
+</li>
+<li>
+<p><strong>Information economics is core curriculum (Chapter 16).</strong> Asymmetric information, adverse selection (used-car/Akerlof lemons exposition, ch. 16.1, pp. 396–397; health insurance, p. 397), signaling (Spence credentialing argument, ch. 16.1, p. 398), moral hazard (ch. 16.2), efficiency wages, and “skin in the game” insurance design (ch. 16.2, p. 404) — all treated as foundational rather than advanced.</p>
+</li>
+<li>
+<p><strong>Auctions, bargaining, and social economics extend the toolbox to the cases students actually encounter (Chapters 17–18).</strong> English/Dutch/first-price/second-price auctions and the Revenue Equivalence Theorem (ch. 17.1, p. 421) are taught because eBay exists; ultimatum games, charity, fairness, trust, revenge, peer effects, and herding (ch. 18) are taught because dictator-game and field-experiment evidence shows people care about these things in ways the older textbook canon largely ignored.</p>
+</li>
+<li>
+<p><strong>The cumulative argument is curricular, not predictive.</strong> A student who completes the eighteen chapters has a vocabulary in which to discuss any micro policy controversy — minimum wage, carbon tax, antitrust, platform regulation, two-sided markets, vaccine externalities, charity-tax-deduction design — without having to outsource the analytical work to specialists. The textbook’s <em>real</em> claim is that this vocabulary should be the modal undergraduate’s, not the honors student’s.</p>
+</li>
+</ol>
+<h2 id="argument-map">Argument map<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#argument-map" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The textbook’s pedagogical sequence runs <strong>principles → individual choice → markets → market failures → strategic interaction → information &amp; contracts → social/behavioral extensions</strong>. Web chapters (financial decision-making; life/health/environment; political economy) extend each branch. The three unifying themes (optimization / equilibrium / empiricism) thread vertically through every chapter.</p>
+<pre><code>                THREE PRINCIPLES (Ch. 1)
+   Optimization ──── Equilibrium ──── Empiricism
+        │                │                │
+        ▼                ▼                ▼
+    Demand/Supply (Ch. 2-4)  ──→  Marshallian engine
+        │
+        ▼
+PART II Foundations of Microeconomics (Ch. 5-11)
+  Consumer (5) → Seller (6) → Perfect Competition / Invisible Hand (7)
+                                   │
+                                   ▼
+                  Trade / Comparative Advantage (8)
+                                   │
+                                   ▼
+        Market Failures: Externalities &amp; Public Goods (9)
+                                   │
+                                   ▼
+        Government in the Economy: Tax &amp; Regulation (10)
+                                   │
+                                   ▼
+                Markets for Factors (Labor, Capital, Land) (11)
+                                   │
+                                   ▼
+        ┌──────────────────────────┴──────────────────────┐
+        ▼                                                 ▼
+PART III Market Structure                  PART IV Toolbox Extensions
+   Monopoly (12)                              Time &amp; Risk (15)
+       │                                          │
+       ▼                                          ▼
+   Game Theory (13)                          Information Economics (16)
+       │                              (asymmetric info / adverse selection
+       ▼                                / signaling / moral hazard)
+   Oligopoly &amp;                                   │
+   Monopolistic Competition (14)                 ▼
+                                              Auctions &amp; Bargaining (17)
+                                                  │
+                                                  ▼
+                                              Social Economics (18)
+                                            (charity, fairness, trust,
+                                             revenge, peer effects)
+</code></pre>
+<p>The two visible <em>vertical</em> moves are: (a) the price-theory → strategic-interaction shift between Parts II–III, which is where game theory becomes load-bearing rather than ornamental; and (b) the certainty → time-and-uncertainty shift between Parts III–IV, which is where behavioral / field-experimental tools earn their integration into core micro.</p>
+<h2 id="key-concepts">Key concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../02_Atomic_Concepts/Pareto-Efficiency" class="internal alias" data-slug="02_Atomic_Concepts/Pareto-Efficiency">Pareto Efficiency</a> — Acemoglu et al’s framing in ch. 7.1 (pp. 154–156): “An outcome is Pareto efficient if no individual can be made better off without making someone else worse off”; perfect competitive equilibrium is shown to be Pareto efficient. The First Welfare Theorem in textbook form.</li>
+<li><a href="../02_Atomic_Concepts/Game-Theory-Concepts" class="internal alias" data-slug="02_Atomic_Concepts/Game-Theory-Concepts">Game Theory Concepts</a> — Nash equilibrium, prisoners’ dilemma, dominant strategies, extensive-form games, backward induction (ch. 13). Includes the “first-mover advantage, commitment, and vengeance” treatment (ch. 13.5, p. 339) that connects game theory to credible-threat reasoning.</li>
+<li><a href="../02_Atomic_Concepts/Information-Asymmetry" class="internal alias" data-slug="02_Atomic_Concepts/Information-Asymmetry">Information Asymmetry</a> — adverse selection, signaling, moral hazard, principal-agent problem (ch. 16). Akerlof “lemons” used-car exposition (ch. 16.1, p. 396) and Spence signaling (p. 398) presented as the canonical pair.</li>
+<li><a href="../02_Atomic_Concepts/Market-Failure" class="internal alias" data-slug="02_Atomic_Concepts/Market-Failure">Market Failure</a> — externalities (negative and positive), public goods (non-rival, non-excludable), common-pool resources (tragedy of the commons), Coase Theorem (ch. 9). Used as the structural complement to the Invisible Hand chapter.</li>
+<li><a href="../02_Atomic_Concepts/Mechanism-Design" class="internal alias" data-slug="02_Atomic_Concepts/Mechanism-Design">Mechanism Design</a> — auction theory (English / Dutch / first-price / second-price; Revenue Equivalence Theorem, ch. 17.1, p. 421); bargaining and the Coase Theorem revisited (ch. 17.2). Introduced as the <em>applied</em> face of game theory plus information economics.</li>
+<li><a href="../02_Atomic_Concepts/Skin-in-the-Game" class="internal alias" data-slug="02_Atomic_Concepts/Skin-in-the-Game">Skin in the Game</a> — Acemoglu et al import this Talebian phrase explicitly (ch. 16.2, p. 404) for insurance-market moral-hazard solutions (deductibles, copays). One of the few cases where vault-canonical-concept-name and textbook-section-name coincide verbatim.</li>
+<li><a href="../02_Atomic_Concepts/Rational-Irrationality" class="internal alias" data-slug="02_Atomic_Concepts/Rational-Irrationality">Rational Irrationality</a> — relevant as the contrast case: Caplan’s argument that voters are systematically irrational <em>in low-cost domains</em> sits next to Acemoglu et al’s Chapter 18 evidence that consumers and donors are also systematically non-self-interested in measurable ways.</li>
+</ul>
+<h2 id="key-arguments-created-from-this-book">Key arguments created from this book<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-arguments-created-from-this-book" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><em>Behavioral and field-experimental material belongs in core principles, not appendix track</em> — operationalised in the textbook’s chapter integration; argument note candidate.</li>
+<li><em>The Invisible Hand and its Failures are pedagogical twins</em> — the ch. 7 / ch. 9 juxtaposition is itself a pedagogical claim, distinct from the deeper-curriculum claim of Mas-Colell.</li>
+</ul>
+<h2 id="best-chapterspages-to-actually-read">Best chapters/pages to actually read<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#best-chapterspages-to-actually-read" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>For a researcher returning to micro after time in adjacent fields (data science, ML, law, finance), the highest-leverage chapters are:</p>
+<ul>
+<li><strong>Chapter 1 (pp. 2–18)</strong> — the three-principle scaffold (optimization / equilibrium / empiricism) and the COVID-19 health-vs-output framing. ~16 pp; read in one sitting; sets the textbook’s epistemic stance for everything that follows.</li>
+<li><strong>Chapter 5 (pp. 90–119)</strong> — consumer optimisation and demand elasticities, with the “smoker quits for $100/month” field experiment (pp. 99–101) as the empirical anchor. The indifference-curve appendix (pp. 116–119) is optional; the main chapter alone trains the budget-constraint reflex.</li>
+<li><strong>Chapter 7 (pp. 152–180)</strong> — Perfect Competition and the Invisible Hand, including Pareto efficiency (pp. 154–156), deadweight loss (p. 165), and the “FEMA and Walmart after Katrina” / “Command and Control at Kmart” pair (pp. 171, 173). The single most important chapter for arguing <em>for</em> market mechanisms.</li>
+<li><strong>Chapter 9 (pp. 210–238)</strong> — Externalities and Public Goods, including the COVID vaccination externalities feature (p. 216), Coase Theorem (p. 218), command-and-control vs corrective taxes (pp. 220–224), and Tragedy of the Commons (p. 233). The single most important chapter for arguing <em>against</em> market mechanisms in specific failures. Read together with Chapter 7 — they are the textbook’s central diptych.</li>
+<li><strong>Chapter 13 (pp. 324–345)</strong> — Game Theory and Strategic Play. Nash equilibrium, prisoners’ dilemma, extensive-form games, backward induction, “first-mover advantage / commitment / vengeance” (p. 339). Highest-leverage chapter for finance, antitrust, platform-strategy, and any negotiation literacy.</li>
+<li><strong>Chapter 16 (pp. 394–410)</strong> — Economics of Information. Adverse selection (used cars and health insurance), signaling (Spence labor-market argument, p. 398), moral hazard, efficiency wages, “skin in the game” insurance design. Highest-leverage chapter for insurance, contract, and platform-design literacy.</li>
+<li><strong>Chapter 17 (pp. 412–431)</strong> — Auctions and Bargaining. Revenue Equivalence Theorem (p. 421), eBay sniping, ultimatum games, Coase-Theorem-revisited. The chapter that motivates mechanism design without using the phrase.</li>
+<li><strong>Skip on first pass:</strong> the indifference-curve appendices (Ch. 5 appendix, Ch. 6 appendix on different cost structures, Ch. 11 monopsony appendix) unless you’re preparing for a calculus-based exam. Web Chapter 1 (financial decision-making) is largely review for any reader with finance exposure.</li>
+</ul>
+<h2 id="chapter-by-chapter-distillation">Chapter-by-chapter distillation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chapter-by-chapter-distillation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>Title</th><th>Summary</th></tr></thead><tbody><tr><td>1</td><td>Principles and Practice of Economics</td><td>Three principles (optimization / equilibrium / empiricism); scope of economics; positive vs normative; trade-offs; opportunity cost; cost-benefit analysis. COVID-19 health-vs-output worked as the running example.</td></tr><tr><td>2</td><td>Economic Science: Data and Models</td><td>Scientific method; means vs medians; correlation vs causation; experimental and natural experiments. Appendix on charts/graphs.</td></tr><tr><td>3</td><td>Optimization: Trying to Do the Best You Can</td><td>Optimization-in-levels vs marginal analysis; budget constraints; apartment-renting as canonical worked example. Choice-and-Consequence sidebar admits people don’t always optimise (p. 46).</td></tr><tr><td>4</td><td>Demand, Supply, and Equilibrium</td><td>Market demand/supply curves; willingness to pay / accept; equilibrium; price ceilings/floors. COVID stay-at-home gasoline demand and the April 2020 negative oil-price episode are featured.</td></tr><tr><td>5</td><td>Consumers and Incentives</td><td>Buyer’s problem; budget constraints with two goods; consumer surplus; demand elasticities (price, cross-price, income). Smoking-quits-for-$100 RCT is the empirical anchor. Indifference-curve appendix.</td></tr><tr><td>6</td><td>Sellers and Incentives</td><td>Seller’s problem; production functions; cost curves; supply curve derivation; producer surplus; short-run vs long-run; firm entry/exit; zero economic profit in long-run competitive equilibrium; Uber-driver entry as worked example.</td></tr><tr><td>7</td><td>Perfect Competition and the Invisible Hand</td><td>Social surplus; Pareto efficiency; deadweight loss; allocation across industries; command-economy comparison (Kmart, FEMA-Walmart-after-Katrina). The chapter that argues <em>for</em> markets.</td></tr><tr><td>8</td><td>Trade</td><td>Production possibilities curve; comparative advantage; trade between states and countries; arguments against free trade (national security, infant industry, environmental); tariff effects.</td></tr><tr><td>9</td><td>Externalities and Public Goods</td><td>Negative/positive externalities; Coase Theorem; command-and-control vs corrective taxes/subsidies; public goods (non-rival, non-excludable); common-pool resources; tragedy of the commons. The chapter that argues <em>against</em> unfettered markets in specific failures.</td></tr><tr><td>10</td><td>Government in the Economy: Taxation and Regulation</td><td>Tax incidence; deadweight loss of taxes; direct regulation; government failures (bureaucracy, corruption, underground economy); equity vs efficiency; consumer sovereignty vs paternalism.</td></tr><tr><td>11</td><td>Markets for Factors of Production</td><td>Labor demand and supply; labor-leisure trade-off; wage inequality (human capital, compensating differentials, discrimination); markets for capital and land. Monopsony in labor-market appendix.</td></tr><tr><td>12</td><td>Monopoly</td><td>Sources of market power (legal, natural, control of key resources, economies of scale); monopolist’s optimal Q and P; deadweight loss of monopoly; price discrimination (three degrees); antitrust policy (Microsoft case).</td></tr><tr><td>13</td><td>Game Theory and Strategic Play</td><td>Simultaneous-move games; best responses; prisoners’ dilemma; dominant strategy equilibrium; Nash equilibrium; tragedy-of-commons revisited; zero-sum games; penalty-kick experimental data; extensive-form games; backward induction; first-mover advantage, commitment, vengeance.</td></tr><tr><td>14</td><td>Oligopoly and Monopolistic Competition</td><td>Two more market structures; oligopoly with homogeneous and differentiated products; collusion; monopolistic competition; long-run equilibrium; four-market-structure summary; political duopoly application.</td></tr><tr><td>15</td><td>Trade-offs Involving Time and Risk</td><td>Future value, present value, compounding, discounting; time preferences; preference reversals (present bias / hyperbolic discounting); probability and risk; expected value; extended warranties; risk preferences (risk aversion).</td></tr><tr><td>16</td><td>Economics of Information</td><td>Asymmetric information; hidden characteristics → adverse selection (used cars, health insurance); signaling; hidden actions → moral hazard; efficiency wages; “skin in the game”; principal-agent in crime and punishment.</td></tr><tr><td>17</td><td>Auctions and Bargaining</td><td>English / Dutch / first-price / second-price auctions; Revenue Equivalence Theorem; eBay sniping; bargaining; ultimatum game; Coase Theorem revisited; sex-ratio effects on bargaining power.</td></tr><tr><td>18</td><td>Social Economics</td><td>Economics of charity; fairness (dictator games); trust; revenge; peer effects; herding; “Are You an Internet Explorer?” Choice-and-Consequence sidebar.</td></tr><tr><td>W1</td><td>Web: Financial Decision-Making</td><td>Optional: portfolio choice, savings, retirement.</td></tr><tr><td>W2</td><td>Web: Life, Health, and the Environment</td><td>Optional: applied micro to health and environmental policy.</td></tr><tr><td>W3</td><td>Web: Political Economy</td><td>Optional: voting, public choice, lobbying — the chapter where Acemoglu’s research voice is most visible.</td></tr></tbody></table></div>
+<h2 id="important-examples--cases">Important examples / cases<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#important-examples--cases" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Smoking-quits-for-$100/month RCT (Chapter 5, pp. 99–101)</strong> — the Volpp et al. field experiment (paying smokers to quit) used to teach income-effect mechanics. The textbook’s most pedagogically successful integration of behavioral / experimental evidence into core consumer theory.</li>
+<li><strong>Negative oil prices, April 2020 (Chapter 4)</strong> — “Letting the Data Speak: The Day Oil Became Garbage” (p. 81). Used to teach equilibrium-price formation in genuinely degenerate cases. A 2022-edition novelty.</li>
+<li><strong>COVID-19 vaccination externalities (Chapter 9, p. 216)</strong> — Choice-and-Consequence sidebar argues a flu shot can have an external effect “as high as 1.5 infections” (p. 216). The empirical hook for positive-externality policy.</li>
+<li><strong>FEMA / Walmart / Hurricane Katrina (Chapter 7, p. 171)</strong> — Walmart’s just-in-time supply chain reaching disaster zones faster than FEMA, used to argue for the price-coordination mechanism. Pairs with “Command and Control at Kmart” (p. 173) on the costs of central planning.</li>
+<li><strong>Uber driver entry in long-run equilibrium (Chapter 6, p. 141)</strong> — base-fare increases and driver-entry response. Used to teach long-run zero-profit condition with current platform-economy data.</li>
+<li><strong>Akerlof used-car lemons + Spence labor-market signaling (Chapter 16)</strong> — the canonical Nobel-Prize-winning information-economics pair, presented as the unifying examples for hidden-characteristics / adverse-selection / signaling.</li>
+<li><strong>eBay sniping (Chapter 17)</strong> — last-second-bid experiment used to illustrate why bid timing matters even when Revenue Equivalence Theorem says the <em>expected</em> outcome should be invariant to auction format under standard assumptions.</li>
+<li><strong>Penalty-kick game theory (Chapter 13, p. 334)</strong> — soccer-penalty data used to test mixed-strategy Nash predictions empirically.</li>
+<li><strong>Microsoft antitrust case (Chapter 12, p. 316)</strong> — the canonical 1998–2001 monopoly / tying case, used to teach price-regulation and antitrust remedies.</li>
+</ul>
+<h2 id="critiques-and-limitations">Critiques and limitations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#critiques-and-limitations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The textbook has the characteristic limitations of any market-leading principles text written for a multi-author committee, plus a few specific to its 2022 third-edition vintage:</p>
+<ol>
+<li><strong>The integration is real but uneven.</strong> Behavioral material is genuinely woven into Chapters 5, 15, 18 — but Chapters 6, 7, 11, 14 retain a fairly traditional rational-actor texture. A student reading sequentially encounters the <em>vocabulary</em> of behavioral economics while still being trained on the <em>machinery</em> of neoclassical optimisation. This may understate how much of standard textbook reasoning the field has revised since Kahneman.</li>
+<li><strong>Game theory is integrated but compressed.</strong> Chapter 13 covers Nash, dominant strategies, extensive-form games, and backward induction in ~20 pages — adequate for principles but inadequate for any reader who wants to apply game theory to actual policy or strategy work. Compare Mas-Colell-Whinston-Green’s hundreds of game-theory pages.</li>
+<li><strong>Mechanism design appears only implicitly.</strong> Auction theory (ch. 17) and signaling (ch. 16) are mechanism-design topics but never named as such. A student finishes the textbook without knowing the phrase “mechanism design” or recognising that the Vickrey second-price auction (covered in ch. 17.1, p. 419) was the inaugural Nobel-winning mechanism-design contribution.</li>
+<li><strong>Political economy and institutions are exiled to the optional web chapter.</strong> Acemoglu’s most-cited research (with Robinson on extractive vs inclusive institutions; on AI-and-labor with Restrepo) is in Web Chapter 3 rather than the main eighteen chapters. The main book treats government as a generic regulator with capacity-and-corruption issues, not as the contested institutional outcome of bargaining among agents — a striking choice given the lead author’s research identity.</li>
+<li><strong>Developing-economy material is sparse.</strong> Examples are predominantly U.S. (with some U.K., E.U.) — small open economies, informal-sector labor markets, agricultural-economics specifics, and migration are mostly absent or relegated to short examples. A non-U.S. student gets the standard implicit-U.S. reference frame.</li>
+<li><strong>The Coase Theorem is presented as a clean result without serious discussion of its zero-transaction-costs assumption (ch. 9.2, p. 218).</strong> Real-world Coasean bargaining failures (when should we <em>not</em> expect bargaining to internalise externalities?) are touched but not foregrounded.</li>
+<li><strong>No serious treatment of network effects, two-sided markets, platform economics.</strong> The 2022 economy is dominated by these phenomena; the textbook handles them only as scattered examples in oligopoly (ch. 14) and externality (ch. 9) chapters, never as a unified topic. A student reading <a href="../01_Books/Andrew-Chen---The-Cold-Start-Problem" class="internal alias" data-slug="01_Books/Andrew-Chen---The-Cold-Start-Problem">Andrew Chen - The Cold Start Problem</a> would find this a striking gap.</li>
+<li><strong>General equilibrium is gestured at but not developed.</strong> Chapter 7’s invisible-hand argument is partial-equilibrium plus a hand-wave at allocation across industries (ch. 7.3). The Arrow-Debreu existence machinery isn’t taught (appropriate for principles, but worth flagging for any reader expecting to find it).</li>
+<li><strong>Climate, AI, and digital-platform regulation age unevenly.</strong> A 2022 textbook can’t anticipate post-ChatGPT antitrust questions or 2024-vintage AI-labor displacement debates that Acemoglu himself has since written extensively about (Acemoglu-Restrepo 2018–2024 papers). Treat the textbook’s current-events examples as 2020–2021 snapshots, not standing analysis.</li>
+<li><strong>Single-author voice vs three-author committee.</strong> The textbook is editorially polished, but a careful reader can sometimes feel the seams between Acemoglu-style institutional framing, Laibson-style behavioral specificity, and List-style field-experimental hooks. This isn’t a criticism so much as a fact.</li>
+</ol>
+<h2 id="links-to-other-books">Links to other books<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#links-to-other-books" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p><strong>Methodological contrast with</strong> <a href="../01_Books/Bryan-Caplan---The-Myth-of-the-Rational-Voter" class="internal alias" data-slug="01_Books/Bryan-Caplan---The-Myth-of-the-Rational-Voter">Bryan Caplan - The Myth of the Rational Voter</a> — Caplan argues voters are <em>systematically</em> irrational because the cost of error is privately near-zero in the political market (rational irrationality). Acemoglu et al document individual-level deviations (present bias, preference reversals, fairness preferences) but still teach median-voter and rational-actor machinery for normative analysis. The contrast is clean: Caplan’s argument should make a careful reader of Acemoglu et al uncomfortable about the textbook’s relatively unproblematised political-economy stance in Web Chapter 3.</p>
+</li>
+<li>
+<p><strong>Foundational micro for</strong> <a href="../01_Books/Joseph-E.-Stiglitz---Globalization-and-Its-Discontents-Revisited" class="internal alias" data-slug="01_Books/Joseph-E.-Stiglitz---Globalization-and-Its-Discontents-Revisited">Joseph E. Stiglitz - Globalization and Its Discontents Revisited</a> — Stiglitz’s IMF-conditionality critique is built on information-economics arguments (his Nobel work on asymmetric information, ch. 16 in this textbook). Reading the two together: Acemoglu et al supply the formal apparatus (adverse selection, moral hazard, signaling) that Stiglitz uses applied to country-level institutional failures.</p>
+</li>
+<li>
+<p><strong>Disagreement-by-emphasis with</strong> <a href="../01_Books/George-Soros---The-Alchemy-of-Finance" class="internal alias" data-slug="01_Books/George-Soros---The-Alchemy-of-Finance">George Soros - The Alchemy of Finance</a> — Soros’s reflexivity argument explicitly attacks the efficient-markets / rational-actor baseline that Acemoglu et al teach. Reading them together is productive: Acemoglu et al <em>is</em> the canonical baseline Soros’s <a href="../02_Atomic_Concepts/Reflexivity" class="internal" data-slug="02_Atomic_Concepts/Reflexivity">Reflexivity</a> is in dialogue with. Soros would say chapter 4’s clean equilibrium and chapter 7’s clean invisible hand miss the boom-bust feedback loop financial markets actually exhibit.</p>
+</li>
+<li>
+<p><strong>Methodological complement to</strong> <a href="../01_Books/Acharya-and-Lee---The-Cartel-System-of-States" class="internal alias" data-slug="01_Books/Acharya-and-Lee---The-Cartel-System-of-States">Acharya and Lee - The Cartel System of States</a> — Acharya-Lee model international politics as a state-cartel using formal political-economy tools that descend from the IO / oligopoly framework Acemoglu et al teach in chapters 12–14. The “state-cartel” is a Cournot oligopoly with countries as players. Reading both makes the cross-domain reuse of micro-machinery explicit.</p>
+</li>
+<li>
+<p><strong>Extends to platform economics in</strong> <a href="../01_Books/Andrew-Chen---The-Cold-Start-Problem" class="internal alias" data-slug="01_Books/Andrew-Chen---The-Cold-Start-Problem">Andrew Chen - The Cold Start Problem</a> — Chen’s network-effects framework is implicit in Acemoglu et al’s oligopoly (ch. 14) and externality (ch. 9) chapters but never named as such. Reading them together fills the textbook’s most striking topical gap; Chen’s “atomic network” / “hard side” framework slots naturally onto the textbook’s cost-curve and market-structure machinery.</p>
+</li>
+<li>
+<p><strong>Applied to capital allocation in</strong> <a href="../01_Books/Sebastian-Mallaby---The-Power-Law" class="internal alias" data-slug="01_Books/Sebastian-Mallaby---The-Power-Law">Sebastian Mallaby - The Power Law</a> — Mallaby’s venture-capital LP / GP incentive analysis is direct applied-micro using ch. 16’s principal-agent and signaling tools (LP-as-principal, GP-as-agent; track-record-as-signal; carry-as-skin-in-the-game). The textbook gives Mallaby’s vocabulary; Mallaby gives the textbook’s mechanism-design chapter its richest current case study.</p>
+</li>
+<li>
+<p><strong>Methodological contrast with</strong> <a href="../01_Books/Gary-Goertz-and-James-Mahoney---A-Tale-of-Two-Cultures" class="internal alias" data-slug="01_Books/Gary-Goertz-and-James-Mahoney---A-Tale-of-Two-Cultures">Gary Goertz and James Mahoney - A Tale of Two Cultures</a> — Acemoglu et al sit firmly in the quantitative-causal-inference tradition Goertz-Mahoney describe (set-theoretic vs probabilistic). Their Evidence-Based Economics features exemplify the quantitative-causal-effect approach. Reading the two together highlights what the principles textbook <em>cannot</em> do: within-case process-tracing of how a specific market or institution actually functions — exactly Goertz-Mahoney’s qualitative complement.</p>
+</li>
+<li>
+<p><strong>China-applied in</strong> <a href="../01_Books/Angela-Huyue-Zhang---High-Wire" class="internal alias" data-slug="01_Books/Angela-Huyue-Zhang---High-Wire">Angela Huyue Zhang - High Wire</a> and <a href="../01_Books/Meg-E.-Rithmire---Land-Bargains-and-Chinese-Capitalism" class="internal alias" data-slug="01_Books/Meg-E.-Rithmire---Land-Bargains-and-Chinese-Capitalism">Meg E. Rithmire - Land Bargains and Chinese Capitalism</a> — Zhang’s dynamic-pyramid framework analyses Chinese tech regulation using IO / antitrust tools (ch. 12, ch. 14) plus information-economics (ch. 16). Rithmire’s land-bargain model is direct applied micro on land markets, property rights, and intergovernmental fiscal incentives. Both books assume the reader is fluent in the Acemoglu et al vocabulary.</p>
+</li>
+<li>
+<p><strong>Note on Acemoglu’s own other books</strong>: <em>Why Nations Fail</em> (Acemoglu-Robinson 2012), <em>The Narrow Corridor</em> (2019), <em>Power and Progress</em> (Acemoglu-Johnson 2023), and <em>Introduction to Modern Economic Growth</em> (the graduate-level companion) are all listed in the About-the-Authors section (p. vi). They are the <em>political economy</em> and <em>growth</em> counterparts to this <em>micro principles</em> text. None are currently in this vault — cross-link to them only after they are ingested.</p>
+</li>
+</ul>
+<h2 id="open-questions">Open questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Where should mechanism-design sit in the principles canon?</strong> The textbook teaches its tools (auctions, signaling, principal-agent) without naming the field. Should principles students learn the term, or is it appropriately deferred to graduate work?</li>
+<li><strong>How much behavioral material should be load-bearing in core macro / micro?</strong> Acemoglu et al integrate it; Mankiw foregrounds rational choice; the field has not converged. A 2030-edition will still be answering this.</li>
+<li><strong>Will the multi-author committee format survive open-access modular pods?</strong> Pearson-Big-Three economics-textbook publishing has high margins and high switching costs; OER alternatives (CORE Econ, OpenStax) compete on price. Whether the integration the textbook accomplishes is replicable in a modular form is a live publishing-economics question.</li>
+<li><strong>What is the right relationship between principles micro and the political-economy / institutional-economics tradition Acemoglu personally exemplifies?</strong> Web Chapter 3 hints at integration; the main eighteen chapters resist it. A future edition could foreground rather than exile this material.</li>
+<li><strong>Should the Coase Theorem still be presented as a clean result?</strong> Empirical work on Coasean bargaining (high transaction-cost domains; behavioral deviations from rational bargaining) has accumulated. The textbook’s clean presentation may understate failure modes.</li>
+</ul>
+<h2 id="research-uses">Research uses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-uses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>This textbook serves five distinct research-prep functions for a reader with my (Yang’s) profile:</p>
+<ul>
+<li><strong>Goldman quant-finance interview prep.</strong> Chapters 5, 6, 7, 13, 15, 16 cover the micro fundamentals interview material: utility maximisation, cost curves, demand/supply, Nash equilibrium, present/future value, adverse selection. Useful as a structured refresher map; pair with <a href="../01_Books/Sebastian-Mallaby---The-Power-Law" class="internal alias" data-slug="01_Books/Sebastian-Mallaby---The-Power-Law">Sebastian Mallaby - The Power Law</a> for applied capital-allocation cases.</li>
+<li><strong>Blockchain-regulation research.</strong> Chapters 9 (externalities; Coase), 16 (asymmetric information; signaling), and 17 (auction / mechanism design) supply the analytical vocabulary for crypto-market failures (front-running, MEV, rug-pulls), token-distribution mechanism design (Dutch auctions, second-price), and stablecoin regulation (information-asymmetry / moral-hazard interpretations of run risk).</li>
+<li><strong>AI-policy analysis.</strong> The textbook’s main chapters predate Acemoglu’s recent AI-and-labor work (Acemoglu-Restrepo 2018–2024 papers; Acemoglu-Johnson <em>Power and Progress</em> 2023). Useful as foundation; supplement with Acemoglu’s research papers for the AI-displacement / task-automation modelling that the textbook does not yet contain.</li>
+<li><strong>China political-economy modelling.</strong> Use ch. 13 game theory and ch. 16 information economics as the formal apparatus; pair with <a href="../01_Books/Angela-Huyue-Zhang---High-Wire" class="internal alias" data-slug="01_Books/Angela-Huyue-Zhang---High-Wire">Angela Huyue Zhang - High Wire</a> and <a href="../01_Books/Meg-E.-Rithmire---Land-Bargains-and-Chinese-Capitalism" class="internal alias" data-slug="01_Books/Meg-E.-Rithmire---Land-Bargains-and-Chinese-Capitalism">Meg E. Rithmire - Land Bargains and Chinese Capitalism</a> for the institutional-economics applications. The textbook gives the toolkit; the China-PE books supply the cases.</li>
+<li><strong>Lobbying-network research with In Song Kim.</strong> Chapter 14 (oligopoly with differentiated products), Chapter 17 (bargaining), and Chapter 9 (public goods, free rider) supply the formal apparatus for industry-coalition / firm-government bargaining models. Chapter 18’s herding and peer effects translate naturally to political-coalition dynamics.</li>
+</ul>
+<h2 id="what-i-would-miss-if-i-only-read-this-note">What I would miss if I only read this note<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-i-would-miss-if-i-only-read-this-note" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A textbook is largely <strong>diagrams, worked examples, and exercises</strong>, not propositions — and this note can replicate none of these. Specifically, I would miss: (a) the cumulative reps from end-of-chapter problems that build automatic reflexes for budget-constraint geometry, marginal-cost reasoning, Nash-equilibrium identification, and present-value calculation — fluency that note-reading alone does not produce; (b) the <em>visual pedagogy</em> of the textbook’s exhibits — the 4×4 game-theory payoff matrices, the indifference-curve / budget-line tangencies, the cost-curve U-shapes, the deadweight-loss triangles — which are how the field actually communicates and which note prose flattens; (c) the <strong>Evidence-Based Economics</strong> opening-question / closing-answer arc per chapter that grounds abstract concepts in named field-experimental results (the smoking-RCT, the broadband-and-inequality study, the Goldin-Rouse-Bertrand-Mullainathan discrimination work cited in ch. 11); (d) the <strong>Letting the Data Speak / Choice &amp; Consequence / Letting the Podcast Speak</strong> pedagogical sidebars, which are dozens of distinct mini-cases that don’t get chapter-level summaries but cumulatively train the “stories about markets” muscle that distinguishes economists from adjacent quantitative analysts; (e) the <strong>MyLab Economics</strong> digital problem-set environment with adaptive-difficulty practice that the print/PDF reader doesn’t have access to but which the textbook’s pedagogy is designed around; (f) the <strong>Glossary</strong> (pp. 463+) and <strong>Index</strong> (pp. 473+) entries, which are themselves a curated map of which terms the field considers core; (g) the <strong>footnote-and-source-trail</strong> to the field-experimental literature that lets a curious reader go from the textbook example to the source paper to the replication / meta-analysis literature; (h) the <em>authorial voice</em>, particularly Laibson’s tendency to slip in retirement-savings examples and List’s tendency to slip in field-experimental “how I designed this” notes — small voice-of-a-practitioner moments that humanise the propositions and that bare summary erases entirely.</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-37" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#daron-acemoglu---microeconomics" data-for="daron-acemoglu---microeconomics">Daron Acemoglu - Microeconomics</a></li><li class="depth-1"><a href="#one-sentence-thesis" data-for="one-sentence-thesis">One-sentence thesis</a></li><li class="depth-1"><a href="#why-this-book-matters" data-for="why-this-book-matters">Why this book matters</a></li><li class="depth-1"><a href="#core-argument" data-for="core-argument">Core argument</a></li><li class="depth-1"><a href="#argument-map" data-for="argument-map">Argument map</a></li><li class="depth-1"><a href="#key-concepts" data-for="key-concepts">Key concepts</a></li><li class="depth-1"><a href="#key-arguments-created-from-this-book" data-for="key-arguments-created-from-this-book">Key arguments created from this book</a></li><li class="depth-1"><a href="#best-chapterspages-to-actually-read" data-for="best-chapterspages-to-actually-read">Best chapters/pages to actually read</a></li><li class="depth-1"><a href="#chapter-by-chapter-distillation" data-for="chapter-by-chapter-distillation">Chapter-by-chapter distillation</a></li><li class="depth-1"><a href="#important-examples--cases" data-for="important-examples--cases">Important examples / cases</a></li><li class="depth-1"><a href="#critiques-and-limitations" data-for="critiques-and-limitations">Critiques and limitations</a></li><li class="depth-1"><a href="#links-to-other-books" data-for="links-to-other-books">Links to other books</a></li><li class="depth-1"><a href="#open-questions" data-for="open-questions">Open questions</a></li><li class="depth-1"><a href="#research-uses" data-for="research-uses">Research uses</a></li><li class="depth-1"><a href="#what-i-would-miss-if-i-only-read-this-note" data-for="what-i-would-miss-if-i-only-read-this-note">What I would miss if I only read this note</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../00_Index/Library-Index" class="internal">Library Index</a></li><li><a href="../01_Books/Abhijit-V.-Banerjee---Good-Economics-for-Hard-Times" class="internal">Good Economics for Hard Times</a></li><li><a href="../01_Books/Bruce-Alberts---Molecular-Biology-of-the-Cell" class="internal">Molecular Biology of the Cell (Seventh Edition)</a></li><li><a href="../01_Books/Bryan-Caplan---The-Myth-of-the-Rational-Voter" class="internal">The Myth of the Rational Voter — Why Democracies Choose Bad Policies</a></li><li><a href="../01_Books/Constance-Reid---Neyman" class="internal">Neyman — From Life</a></li><li><a href="../01_Books/E.-T.-Bell---Men-of-Mathematics" class="internal">Men of Mathematics</a></li><li><a href="../01_Books/Eric-Ries---The-Lean-Startup" class="internal">The Lean Startup — How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</a></li><li><a href="../01_Books/George-Soros---The-Alchemy-of-Finance" class="internal">The Alchemy of Finance — Reading the Mind of the Market</a></li><li><a href="../01_Books/J.-Storrs-Hall---Where-Is-My-Flying-Car" class="internal">Where Is My Flying Car? A Memoir of Future Past</a></li><li><a href="../01_Books/Jonathan-Berk-and-Peter-DeMarzo---Corporate-Finance" class="internal">Corporate Finance</a></li><li><a href="../01_Books/Lee-Kuan-Yew---From-Third-World-to-First" class="internal">From Third World to First — The Singapore Story 1965-2000</a></li><li><a href="../01_Books/Masahiko-Aoki---Transboundary-Game-of-Life" class="internal">Transboundary Game of Life — Memoir of Masahiko Aoki</a></li><li><a href="../01_Books/Maurice-Obstfeld-and-Kenneth-Rogoff---Foundations-of-International-Macroeconomics" class="internal">Foundations of International Macroeconomics</a></li><li><a href="../01_Books/Neil-Campbell---Biology-Seventh-Edition" class="internal">Biology (Seventh Edition)</a></li><li><a href="../01_Books/Roger-Lowenstein---When-Genius-Failed" class="internal">When Genius Failed — The Rise and Fall of Long-Term Capital Management</a></li><li><a href="../01_Books/Sareen-Gropper---Advanced-Nutrition-and-Human-Metabolism" class="internal">Advanced Nutrition and Human Metabolism (Seventh Edition)</a></li><li><a href="../01_Books/Stephen-Blyth---An-Introduction-to-Quantitative-Finance" class="internal">An Introduction to Quantitative Finance</a></li><li><a href="../02_Atomic_Concepts/Comparative-Institutional-Analysis" class="internal">Comparative Institutional Analysis</a></li><li><a href="../02_Atomic_Concepts/Current-Account-Identity" class="internal">Current-Account Identity</a></li><li><a href="../02_Atomic_Concepts/Euler-Equation-(International-Macro)" class="internal">Euler Equation (International Macro)</a></li><li><a href="../02_Atomic_Concepts/Game-Theory-Concepts" class="internal">Game Theory Concepts</a></li><li><a href="../02_Atomic_Concepts/Information-Asymmetry" class="internal">Information Asymmetry</a></li><li><a href="../02_Atomic_Concepts/Intertemporal-Budget-Constraint" class="internal">Intertemporal Budget Constraint</a></li><li><a href="../02_Atomic_Concepts/Market-Failure" class="internal">Market Failure</a></li><li><a href="../02_Atomic_Concepts/Mechanism-Design" class="internal">Mechanism Design</a></li><li><a href="../02_Atomic_Concepts/Pareto-Efficiency" class="internal">Pareto Efficiency</a></li><li><a href="../02_Atomic_Concepts/Population-Thinking" class="internal">Population Thinking</a></li><li><a href="../06_Source_Notes/chapter_summaries/jonathan-berk-corporate-finance/ch_00_preface_and_authors" class="internal">ch_00_preface_and_authors</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/xiaolong-y/bookwiki">Source</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>
